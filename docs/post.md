@@ -8,7 +8,7 @@ tags: devchallenge, hf26challenge, gemma, opensource
 
 Halloween started here. Long before plastic pumpkins, Samhain was the night at the end of October when the Irish said the wall between this world and the other one wore thin, and the dead walked the roads.
 
-I live in Ireland, and a few weeks ago I found out that in the 1890s an American folklorist, Jeremiah Curtin, sat by firesides in Kerry and wrote down what people told him: a man walking to Sneem at night who meets a ghost and fights it off with a steel sword, a midwife carried away to a fairy fort on a horse that turns out to be a plough beam, a drowned girl walking a strand in her bare feet asking for shoes. He printed thirty of them in 1895 as *Tales of the Fairies and of the Ghost World*.
+I live in Ireland. In the 1890s an American folklorist, Jeremiah Curtin, sat by firesides in Kerry and wrote down what people told him: a man walking to Sneem at night who meets a ghost and fights it off with a steel sword, a midwife carried away to a fairy fort on a horse that turns out to be a plough beam, a dead mother walking a strand at night, perishing with the cold, asking for a pair of shoes to be given to the poor in her name. He printed thirty of them in 1895 as *Tales of the Fairies and of the Ghost World*.
 
 Every one of those tales happens somewhere real. The road to Sneem. Blackwater bridge. Ventry strand. You can still walk most of them. But in the book they're just words on a page, and the old spellings (Lochlein, Rahonain) don't match any modern map.
 
@@ -20,10 +20,12 @@ So I built **Samhain Map**: click a place anywhere in Ireland and read the ghost
 
 ![Samhain Map: all of Ireland with glowing marks where the stories happen, filters by ghost, banshee, poltergeist and fairy, and a list of stories](https://raw.githubusercontent.com/SRG-Cy/samhain-map/main/docs/img/home.jpg)
 
-{{TALE VIEW SCREENSHOT OR GIF}}
+![A story open on a phone: The Ghost of Sneem, set in old-print type, with a link to the scanned 1895 page](https://raw.githubusercontent.com/SRG-Cy/samhain-map/main/docs/img/story.jpg)
+
+*A story on a phone: Curtin's own words, in type close to how they were first printed, with the scanned 1895 page one tap away.*
 
 - **A map of Ireland** with a glowing mark at every place the stories happen: 156 stories, 82 places in 22 of the 32 counties, north and south. Click one and you get the stories set there.
-- **Each story** has a one-line summary, the line that shows its ghost or fairy, every place it names with a ✓ or ✗ and the reason, the full text, and a link to the 1895 page scan or the 1914 book.
+- **Each story** opens with the old text itself, then a one-line summary, the line that shows its ghost or fairy, every place it names with a ✓ or ✗ and the reason, and a link to the scanned page or the book on Project Gutenberg.
 - **Famous haunted sites**, as pale ghosts on the map: Leap Castle, Loftus Hall, Charles Fort, Kilkea Castle, Dunluce and Dunseverick castles, Clare Abbey, and Lough Leane, where O'Donoghue's ghost rides the lake on May mornings. Each one is there only because a public-domain book (1825 to 1914) tells its story, and code checked the quote word for word. Famous places none of these books tells, like the Hellfire Club, aren't on the map.
 - **Filters** by what haunts the story: ghosts, banshees, poltergeists, death warnings, fairies, the dead returning, a seal woman.
 - **A count of what the checker refused**, right on the front page. That number matters to me as much as the pins.
@@ -34,7 +36,7 @@ The rule behind all of it: **Gemma reads. Code decides.**
 
 **Live:** [samhain-map.onrender.com](https://samhain-map.onrender.com) (no sign-up, works on a phone)
 
-Try: filter by **Ghost**, click **Sneem**, open *The Ghost of Sneem*, then scroll to "Places in this tale". Then zoom into Dublin Bay and click **Dún Laoghaire**: the 1914 story calls it Kingstown.
+Try: filter by **Ghost**, click **Sneem**, open *The Ghost of Sneem*, then scroll to "Where it happened". Then zoom into Dublin Bay and click **Dún Laoghaire**: the 1914 story calls it Kingstown. Or click any white ghost, like **Leap Castle**.
 
 ## Code
 
@@ -95,7 +97,7 @@ Each site has an image from Wikimedia Commons, taken only if its licence is free
 
 My first 1914 map pinned Waterloo, in Co. Cavan. The story says the widow's husband "fought at Waterloo". It also pinned the town of Shannon for "the estuary of the Shannon", and Cashel for "the diocese of Cashel". A review of every 1914 pin found them.
 
-Gemma had already marked each place as `setting` or `mentioned`, and every one of those bad pins was `mentioned`. The 1914 contributors constantly say where they live ("the Archdeacon of Limerick sends…"), which isn't where the ghost is. So for that book only settings are pinned, and the other 65 are listed with the reason. A story whose only place is a county (*The Pig-Headed Ghost*, somewhere in Co. Cavan) is pinned on the county, marked as county-level.
+Gemma had already marked each place as `setting` or `mentioned`, and every one of those bad pins was `mentioned`. The 1914 contributors constantly say where they live ("the Archdeacon of Limerick sends…"), which isn't where the ghost is. So for that book only settings are pinned, and the rest are listed with the reason. A story whose only place is a county (*The Pig-Headed Ghost*, somewhere in Co. Cavan) is pinned on the county, marked as county-level.
 
 ### The 1890s spellings
 
@@ -135,7 +137,7 @@ For 7 of the shorter tales, every real place in Ireland they name was labelled b
 
 - **Gemma's reading was excellent.** It found all 22 places and invented none.
 - **Every pin on the map in these tales is right.** The 4 it couldn't pin are 1890s spellings that no modern map has: Rahin, Rahonain, Drumfada and "Ventry Strand".
-- **The honest limits:** it's 7 tales and 22 places, not a benchmark. {{LABEL_NOTE}} The 1914 book has no hand labels yet; its pins were checked by reading through the checker's decision list, which is how Waterloo was caught.
+- **The honest limits:** it's 7 tales and 22 places, not a benchmark. The labels were drafted with my coding agent rather than by an independent annotator, so read them as a sanity check, not ground truth. The 1914 book has no hand labels yet; its pins were checked by reading through the checker's decision list, which is how Waterloo was caught.
 
 ### Things that went wrong
 
@@ -149,14 +151,15 @@ For 7 of the shorter tales, every real place in Ireland they name was labelled b
 - **"Waterford North Station" and "Larne River".** When a town, its station and its river sit within 4 km, they count as one place, and code first picked the wrong one to show. Now the town wins.
 - **Still wrong: the Curragh.** A story where "they gallop round the Curragh", near Athy and Kilkea in Kildare, is pinned on a townland called Curragh in Co. Laois, because the River Greese, matched in Laois, pulls the story's centre that way. It's the nearest-place rule doing exactly what it says. I left it in rather than add a special case.
 - **Rate limits and 500s from the free tier** for most of an evening. Every reply is cached, so two workers ran the 124 stories from both ends.
+- **On a phone, the stories didn't show at all.** The page was locked to one screen height, and the header, map and footer left the story panel 33 pixels tall, hidden behind the footer. Now a phone scrolls like a page: map first, then the stories.
 
 ## Why Does Open Innovation Matter?
 
 **Archives don't want their collections fed to AI companies, and I understand why.** Ireland's largest folklore archive, duchas.ie, blocks AI crawlers by name in its robots.txt. Those are people's grandparents' stories.
 
-That's exactly why the model being open matters. Gemma's weights are public, so an archive can run this same pipeline on its own server, on its own collection, and nothing ever leaves the building. I ran it on a hosted Gemma for the demo, using a public-domain book. The National Folklore Collection could run it in-house without asking anyone's permission.
+That's exactly why the model being open matters. Gemma's weights are public, so an archive can run this same pipeline on its own server, on its own collection, and nothing ever leaves the building. I ran it on a hosted Gemma for the demo, using public-domain books. The National Folklore Collection could run it in-house without asking anyone's permission.
 
-**It's checkable.** Same open model, same prompt, same public-domain book, same public maps: anyone can re-run it and argue with any pin. Every Gemma reply is committed in `data/extract/`.
+**It's checkable.** Same open model, same prompts, same public-domain books, same public maps: anyone can re-run it and argue with any pin. Every Gemma reply is committed in `data/extract/`.
 
 **It isn't locked inside a service that might disappear.** When the bigger Gemma was down, I changed one line. If the hosted API went away tomorrow, the same weights run on a laptop.
 
@@ -164,11 +167,13 @@ That's exactly why the model being open matters. Gemma's weights are public, so 
 
 ## The Spirit of It
 
-{{the moment: a place you know, or showing someone their own townland's tale}}
+The Samhain stories in these books are less about monsters than about the dead being close, and close to particular places: a bend in the road, an old fort in a field, a lake at sunrise. Most of those places are still there, under the same names or close to them.
+
+So that's what I'd ask you to do with it: find your own place on the map. If a story happened there, it has been waiting about a hundred years for someone from home to read it.
 
 ## Prize Categories
 
-- **Best Use of Gemma:** Gemma 4 26B finds where each of 124 untitled accounts starts, reads all 154 stories for the beings, the summary and every place with its exact quote and role, and suggests modern spellings for old names. Every answer is checked in code before it reaches the map.
+- **Best Use of Gemma:** Gemma 4 26B finds where each of 124 untitled accounts starts, reads all 156 stories for the beings, the summary and every place with its exact quote and role, and suggests modern spellings for old names. Every answer is checked in code before it reaches the map.
 - **Best Use of Render:** the whole map is a static site deployed from a `render.yaml` Blueprint in the repo. Every push to `main` redeploys it, so each re-run of the checker goes live on its own.
 
 ---
