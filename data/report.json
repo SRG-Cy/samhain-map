@@ -1,15 +1,15 @@
 {
- "beings_quote_ok": 150,
- "reported": 318,
- "pinned": 108,
+ "beings_quote_ok": 152,
+ "reported": 330,
+ "pinned": 109,
  "ambiguous_resolved": 42,
- "pinned_modern": 9,
- "too_broad": 68,
- "unmatched": 52,
+ "pinned_modern": 11,
+ "too_broad": 69,
+ "unmatched": 57,
  "refused_quote": 5,
  "refused_far": 4,
  "beings_quote_bad": 4,
- "mentioned_only": 65,
+ "mentioned_only": 68,
  "pinned_county": 20,
  "ambiguous_refused": 4
 }

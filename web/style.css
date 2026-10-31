@@ -54,6 +54,21 @@ a { color: var(--flame); }
 
 .filters { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
 @media (max-width: 860px) { .filters { justify-content: flex-start; } }
+
+/* famous haunted sites: pale ghosts, apart from the candle-orange story places */
+.ghost-pin { background: none; border: none; }
+.ghost-pin svg { filter: drop-shadow(0 0 6px rgba(214, 228, 255, .75)); }
+.ghost-pin path { fill: #e6edf7; stroke: #6f7f96; stroke-width: 1; }
+.ghost-pin circle { fill: #1a1612; }
+.site-chip { border-color: #8fa3bf; }
+.site-chip[aria-pressed="true"] { border-color: #e6edf7; background: rgba(214, 228, 255, .14); }
+.site-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.site-btn {
+  border: 1px solid #8fa3bf; background: rgba(214, 228, 255, .06); color: var(--text);
+  border-radius: 8px; padding: 6px 10px; font: 600 13px var(--sans); cursor: pointer; text-align: left;
+}
+.site-btn span { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
+.site-btn:hover, .site-btn:focus-visible { border-color: #e6edf7; outline: none; }
 .chip {
   border: 1px solid var(--line); background: var(--surface); color: var(--text);
   border-radius: 999px; padding: 5px 12px; font: 500 13px var(--sans); cursor: pointer;

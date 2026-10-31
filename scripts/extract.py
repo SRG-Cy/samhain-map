@@ -28,6 +28,12 @@ BOOKS = {
     "seymour1914": {"version": "v2",
                     "context": "one account from \"True Irish Ghost Stories\" (1914), a collection of ghost stories sent in from all over Ireland. The text is a transcription of the printed book.",
                     "beings": "ghost, poltergeist, banshee, fairy, pooka, devil, dead_returning, death_warning, saint, other"},
+    "croker1825": {"version": "v2",
+                   "context": "one legend from \"Fairy Legends and Traditions of the South of Ireland\" (1825) by Thomas Crofton Croker. The text is a transcription of the printed book.",
+                   "beings": "ghost, poltergeist, banshee, fairy, pooka, devil, dead_returning, death_warning, saint, other"},
+    "mcanally1888": {"version": "v2",
+                     "context": "one passage from \"Irish Wonders\" (1888) by D. R. McAnally, about Irish ghost beliefs. The text is a transcription of the printed book.",
+                     "beings": "ghost, poltergeist, banshee, fairy, pooka, devil, dead_returning, death_warning, saint, other"},
 }
 
 PROMPT = """You are reading {context}

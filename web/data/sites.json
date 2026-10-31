@@ -1,0 +1,90 @@
+[
+ {
+  "name": "Leap Castle",
+  "county": "Offaly",
+  "lat": 53.02694,
+  "lon": -7.80833,
+  "located": "GeoNames: Leap Castle, Co. Offaly",
+  "quote": "has been described as perhaps the worst haunted mansion in the British Isles",
+  "tale": 137,
+  "note": "The book calls it \"Kilman\" Castle, a made-up name, and says its owner described the haunting in the Occult Review (Dec. 1908 and Jan. 1909). That was Mildred Darby of Leap Castle.",
+  "note_source": "https://en.wikipedia.org/wiki/Mildred_Darby"
+ },
+ {
+  "name": "Loftus Hall",
+  "county": "Wexford",
+  "lat": 52.14611,
+  "lon": -6.90389,
+  "located": "GeoNames: Loftus Hall, Co. Wexford",
+  "quote": "Loftus Hall, in County Wexford, was built on the site of a stronghold",
+  "tale": 216,
+  "note": null,
+  "note_source": null
+ },
+ {
+  "name": "Charles Fort",
+  "county": "Cork",
+  "lat": 51.6965,
+  "lon": -8.499,
+  "located": "coordinates from https://en.wikipedia.org/wiki/Charles_Fort_(Ireland)",
+  "quote": "Another military station, Charles Fort, near Kinsale, has long had",
+  "tale": 127,
+  "note": null,
+  "note_source": null
+ },
+ {
+  "name": "Kilkea Castle",
+  "county": "Kildare",
+  "lat": 52.94167,
+  "lon": -6.89222,
+  "located": "GeoNames: Kilkea Castle, Co. Kildare",
+  "quote": "round the Curragh, thence across country to Kilkea Castle",
+  "tale": 210,
+  "note": null,
+  "note_source": null
+ },
+ {
+  "name": "Dunluce Castle",
+  "county": "Antrim",
+  "lat": 55.2,
+  "lon": -6.58333,
+  "located": "GeoNames: Dunluce Castle, Co. Antrim",
+  "quote": "the castles of Dunluce, of Magrath, and many others are similarly peopled by the wicked dead",
+  "tale": 302,
+  "note": null,
+  "note_source": null
+ },
+ {
+  "name": "Dunseverick Castle",
+  "county": "Antrim",
+  "lat": 55.238369,
+  "lon": -6.44823,
+  "located": "coordinates from https://en.wikipedia.org/wiki/Dunseverick_Castle",
+  "quote": "The Castle of Dunseverick, in Antrim, is believed to be still inhabited by the spirit of a chief",
+  "tale": 302,
+  "note": null,
+  "note_source": null
+ },
+ {
+  "name": "Clare Abbey",
+  "county": "Clare",
+  "lat": 52.82944,
+  "lon": -8.97667,
+  "located": "GeoNames: Clare Abbey, Co. Clare",
+  "quote": "In the Abbey of Clare, the ghost of a sinful abbot walks",
+  "tale": 302,
+  "note": null,
+  "note_source": null
+ },
+ {
+  "name": "Lough Leane",
+  "county": "Kerry",
+  "lat": 52.03333,
+  "lon": -9.55,
+  "located": "GeoNames: Lough Leane, Co. Kerry",
+  "quote": "it is believed that at sunrise, on every May-dew morning, the anniversary of his departure, he revisits his ancient domains",
+  "tale": 301,
+  "note": null,
+  "note_source": null
+ }
+]

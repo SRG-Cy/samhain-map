@@ -22,8 +22,9 @@ So I built **Samhain Map**: click a place anywhere in Ireland and read the ghost
 
 {{TALE VIEW SCREENSHOT OR GIF}}
 
-- **A map of Ireland** with a glowing mark at every place the stories happen: 154 stories, 80 places, 22 of the 32 counties, north and south. Click one and you get the stories set there.
+- **A map of Ireland** with a glowing mark at every place the stories happen: 156 stories, 82 places in 22 of the 32 counties, north and south. Click one and you get the stories set there.
 - **Each story** has a one-line summary, the line that shows its ghost or fairy, every place it names with a ✓ or ✗ and the reason, the full text, and a link to the 1895 page scan or the 1914 book.
+- **Famous haunted sites**, as pale ghosts on the map: Leap Castle, Loftus Hall, Charles Fort, Kilkea Castle, Dunluce and Dunseverick castles, Clare Abbey, and Lough Leane, where O'Donoghue's ghost rides the lake on May mornings. Each one is there only because a public-domain book (1825 to 1914) tells its story, and code checked the quote word for word. Famous places none of these books tells, like the Hellfire Club, aren't on the map.
 - **Filters** by what haunts the story: ghosts, banshees, poltergeists, death warnings, fairies, the dead returning, a seal woman.
 - **A count of what the checker refused**, right on the front page. That number matters to me as much as the pins.
 
@@ -81,6 +82,12 @@ That Kingstown is my favourite fix. Co. Dublin has three townlands called Kingst
 ### The 1914 book has no story headings
 
 *True Irish Ghost Stories* runs 124 accounts together inside ten chapters. I didn't let Gemma rewrite or split the text. It sees each chapter with numbered paragraphs and answers only "account starts at paragraph 4, call it *The Spectral Charwoman*". Code checks the numbers exist and does the cutting, so every word on the map is the book's. The titles of those stories are Gemma's, and each one says so.
+
+### Famous haunted sites, but only with a source
+
+Leap Castle is the one everyone in Ireland names. The 1914 book has it, but under a made-up name: "Kilman" Castle, "perhaps the worst haunted mansion in the British Isles". Seymour gives the clue himself: its owner wrote about it in the *Occult Review* in December 1908. That was Mildred Darby of Leap Castle, and the site page says so and links the source.
+
+The sites are a short hand-picked list, but nothing on it is taken on trust. For each one, code checks that its quote is word for word in exactly one story, and takes the location from the same gazetteer as everything else. Only Charles Fort and Dunseverick Castle, which the gazetteer doesn't have, use Wikipedia's coordinates, and say so. Gill Hall, home of the famous Beresford ghost, is in the 1914 book, but I couldn't find a source for exactly where the house stood, so it isn't a ghost on the map.
 
 ### Mentioned is not where it happened
 
@@ -164,4 +171,4 @@ That's exactly why the model being open matters. Gemma's weights are public, so 
 
 ---
 
-*Tales: Jeremiah Curtin (1895), public domain, scan by Cornell University Library via archive.org. Stories: St John D. Seymour and Harry L. Neligan (1914), public domain, Project Gutenberg #14099. Townland boundaries © Tailte Éireann, CC BY 4.0; Northern Ireland townlands and counties from OSNI Open Data, OGL v3. Places: GeoNames, CC BY 4.0. Built with Claude Code; I directed it and checked the results.*
+*Tales: Jeremiah Curtin (1895), public domain, scan by Cornell University Library via archive.org. Stories: St John D. Seymour and Harry L. Neligan (1914), public domain, Project Gutenberg #14099. Haunted sites also from T. Crofton Croker (1825) and D. R. McAnally (1888), public domain, Project Gutenberg. Townland boundaries © Tailte Éireann, CC BY 4.0; Northern Ireland townlands and counties from OSNI Open Data, OGL v3. Places: GeoNames, CC BY 4.0. Built with Claude Code; I directed it and checked the results.*

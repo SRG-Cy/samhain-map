@@ -30,7 +30,7 @@ MAX_KM = 30  # a respelled place further than this from the tale's other places 
 SAME_PLACE_KM = 4  # a townland and a GeoNames point this close with one name are one place
 FAR_KM = 60  # an exact match further than this from the tale's other places is refused
 # Curtin collected in south-west Munster; the 1914 book was sent in from anywhere in Ireland
-HOME = {"curtin1895": {"Kerry", "Cork"}, "seymour1914": None}
+HOME = {"curtin1895": {"Kerry", "Cork"}, "seymour1914": None, "croker1825": None, "mcanally1888": None}
 TRAVEL_KINDS = {"geonames:PPLA", "geonames:PPLA2", "geonames:PPLC"}  # county towns and cities
 BROAD = {
     "ireland", "erin", "munster", "ulster", "leinster", "connacht", "connaught", "kerry", "cork county",

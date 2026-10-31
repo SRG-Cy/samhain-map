@@ -1,0 +1,66 @@
+{
+ "tale_id": 302,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 93.3,
+ "usage": {
+  "promptTokenCount": 712,
+  "candidatesTokenCount": 418,
+  "totalTokenCount": 5069,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 712
+   }
+  ],
+  "thoughtsTokenCount": 3939,
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\",\n      \"dead_returning\"\n    ],\n    \"beings_quote\": \"the ghost of a sinful abbot walks\",\n    \"summary\": \"Spirits of the dead remain near their former earthly haunts to either enjoy happiness or perform penance for their sins.\",\n    \"places\": [\n      {\n        \"name\": \"Ireland\",\n        \"quote\": \"In some parts of Ireland there exists a belief\",\n        \"modern_name\": \"Ireland\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Castle of Dunseverick\",\n        \"quote\": \"The Castle of Dunseverick, in Antrim, is believed\",\n        \"modern_name\": \"Dunseverick Castle\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Antrim\",\n        \"quote\": \"The Castle of Dunseverick, in Antrim, is believed\",\n        \"modern_name\": \"Antrim\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Dunluce\",\n        \"quote\": \"the castles of Dunluce, of Magrath, and many others\",\n        \"modern_name\": \"Dunluce\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Magrath\",\n        \"quote\": \"the castles of Dunluce, of Magrath, and many others\",\n        \"modern_name\": \"Magrath\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Abbey of Clare\",\n        \"quote\": \"In the Abbey of Clare, the ghost of a sinful abbot\",\n        \"modern_name\": \"Clare Abbey\",\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost",
+   "dead_returning"
+  ],
+  "beings_quote": "the ghost of a sinful abbot walks",
+  "summary": "Spirits of the dead remain near their former earthly haunts to either enjoy happiness or perform penance for their sins.",
+  "places": [
+   {
+    "name": "Ireland",
+    "quote": "In some parts of Ireland there exists a belief",
+    "modern_name": "Ireland",
+    "role": "mentioned"
+   },
+   {
+    "name": "Castle of Dunseverick",
+    "quote": "The Castle of Dunseverick, in Antrim, is believed",
+    "modern_name": "Dunseverick Castle",
+    "role": "setting"
+   },
+   {
+    "name": "Antrim",
+    "quote": "The Castle of Dunseverick, in Antrim, is believed",
+    "modern_name": "Antrim",
+    "role": "setting"
+   },
+   {
+    "name": "Dunluce",
+    "quote": "the castles of Dunluce, of Magrath, and many others",
+    "modern_name": "Dunluce",
+    "role": "mentioned"
+   },
+   {
+    "name": "Magrath",
+    "quote": "the castles of Dunluce, of Magrath, and many others",
+    "modern_name": "Magrath",
+    "role": "mentioned"
+   },
+   {
+    "name": "Abbey of Clare",
+    "quote": "In the Abbey of Clare, the ghost of a sinful abbot",
+    "modern_name": "Clare Abbey",
+    "role": "setting"
+   }
+  ]
+ }
+}

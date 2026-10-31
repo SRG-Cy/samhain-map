@@ -1,0 +1,25 @@
+{
+ "_about": "Famous haunted sites, chosen by hand. Each must be told in a public-domain book: 'quote' must appear word for word in one story (checked by scripts/sites.py). Location comes from the gazetteer by 'name' in 'county'; only where the gazetteer has no entry are coordinates given, with their source.",
+ "passages": [
+  {"id": 301, "book": "croker1825", "file": "croker_1825.txt", "title": "The Legend of O'Donoghue",
+   "start": "In an age so distant that the precise period is unknown, a chieftain",
+   "end": "repetition died away, and the hearers awoke as from a dream of bliss."},
+  {"id": 302, "book": "mcanally1888", "file": "mcanally_1888.txt", "title": "The Banshee",
+   "start": "In some parts of Ireland there exists a belief that the spirits of the",
+   "end": "unceasingly mutters in his tireless march up and down the aisles of the\nruined nave."}
+ ],
+ "sites": [
+  {"name": "Leap Castle", "county": "Offaly", "quote": "has been described as perhaps the worst haunted mansion in the British Isles",
+   "note": "The book calls it \"Kilman\" Castle, a made-up name, and says its owner described the haunting in the Occult Review (Dec. 1908 and Jan. 1909). That was Mildred Darby of Leap Castle.",
+   "note_source": "https://en.wikipedia.org/wiki/Mildred_Darby"},
+  {"name": "Loftus Hall", "county": "Wexford", "quote": "Loftus Hall, in County Wexford, was built on the site of a stronghold"},
+  {"name": "Charles Fort", "county": "Cork", "quote": "Another military station, Charles Fort, near Kinsale, has long had",
+   "lat": 51.6965, "lon": -8.499, "coords_source": "https://en.wikipedia.org/wiki/Charles_Fort_(Ireland)"},
+  {"name": "Kilkea Castle", "county": "Kildare", "quote": "round the Curragh, thence across country to Kilkea Castle"},
+  {"name": "Dunluce Castle", "county": "Antrim", "quote": "the castles of Dunluce, of Magrath, and many others are similarly peopled by the wicked dead"},
+  {"name": "Dunseverick Castle", "county": "Antrim", "quote": "The Castle of Dunseverick, in Antrim, is believed to be still inhabited by the spirit of a chief",
+   "lat": 55.238369, "lon": -6.44823, "coords_source": "https://en.wikipedia.org/wiki/Dunseverick_Castle"},
+  {"name": "Clare Abbey", "county": "Clare", "quote": "In the Abbey of Clare, the ghost of a sinful abbot walks"},
+  {"name": "Lough Leane", "county": "Kerry", "quote": "it is believed that at sunrise, on every May-dew morning, the anniversary of his departure, he revisits his ancient domains"}
+ ]
+}

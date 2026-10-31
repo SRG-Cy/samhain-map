@@ -1,0 +1,65 @@
+{
+ "tale_id": 301,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 10.3,
+ "usage": {
+  "promptTokenCount": 1333,
+  "candidatesTokenCount": 442,
+  "totalTokenCount": 1775,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1333
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\",\n      \"other\"\n    ],\n    \"beings_quote\": \"as the moonlight fairies glide through the fields of air\",\n    \"summary\": \"The spirit of the chieftain O'Donoghue is seen riding a white horse across the surface of Lough Lean accompanied by youths and maidens.\",\n    \"places\": [\n      {\n        \"name\": \"Lough Lean\",\n        \"quote\": \"O’Donoghue ruled over the country which surrounds the romantic Lough Lean, now called the lake of Killarney.\",\n        \"modern_name\": \"Lough Leane\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Killarney\",\n        \"quote\": \"Lough Lean, now called the lake of Killarney.\",\n        \"modern_name\": \"Killarney\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"O’Donoghue’s Prison\",\n        \"quote\": \"a rocky island is pointed out to strangers, called “O’Donoghue’s Prison,”\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Glenaa\",\n        \"quote\": \"The first beams of the rising sun were just gilding the lofty summit of Glenaa\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Toomies mountain\",\n        \"quote\": \"rushed across the lake towards Toomies mountain.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Dinis\",\n        \"quote\": \"as they entered the narrow strait between Glenaa and Dinis\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy",
+   "other"
+  ],
+  "beings_quote": "as the moonlight fairies glide through the fields of air",
+  "summary": "The spirit of the chieftain O'Donoghue is seen riding a white horse across the surface of Lough Lean accompanied by youths and maidens.",
+  "places": [
+   {
+    "name": "Lough Lean",
+    "quote": "O’Donoghue ruled over the country which surrounds the romantic Lough Lean, now called the lake of Killarney.",
+    "modern_name": "Lough Leane",
+    "role": "setting"
+   },
+   {
+    "name": "Killarney",
+    "quote": "Lough Lean, now called the lake of Killarney.",
+    "modern_name": "Killarney",
+    "role": "mentioned"
+   },
+   {
+    "name": "O’Donoghue’s Prison",
+    "quote": "a rocky island is pointed out to strangers, called “O’Donoghue’s Prison,”",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Glenaa",
+    "quote": "The first beams of the rising sun were just gilding the lofty summit of Glenaa",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Toomies mountain",
+    "quote": "rushed across the lake towards Toomies mountain.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Dinis",
+    "quote": "as they entered the narrow strait between Glenaa and Dinis",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

@@ -30,10 +30,12 @@ python -m venv .venv && .venv/Scripts/pip install pyproj shapely
 # put GEMINI_API_KEY=... in .env (Google AI Studio key)
 python scripts/split_tales.py        # Curtin -> data/tales.json (ids 1-30)
 python scripts/split_seymour.py      # Seymour & Neligan -> data/tales.json (ids 101+), Gemma marks story starts
+python scripts/add_passages.py      # haunted-site passages from data/sites.json -> data/tales.json (ids 301+)
 python scripts/build_gazetteer.py    # townlands + GeoNames -> data/gazetteer.json, web/data/counties.geojson
 python scripts/extract.py            # Gemma 4 26B -> data/extract/NN.json (cached, resumable)
 python scripts/verify.py             # checks -> web/data/tales.json, web/data/places.geojson
 python scripts/respell.py && python scripts/verify.py   # modern spellings for old names, then re-check
+python scripts/sites.py              # famous haunted sites: quote must be in the story -> web/data/sites.json
 python scripts/eval.py               # against data/labels.json
 python -m http.server 8765 --directory web
 ```
@@ -41,6 +43,8 @@ python -m http.server 8765 --directory web
 Raw inputs (not committed) go in `data/raw/`:
 - `curtin_1895.txt`: https://archive.org/download/cu31924029910563/cu31924029910563_djvu.txt
 - `seymour_1914.txt`: https://www.gutenberg.org/cache/epub/14099/pg14099.txt
+- `croker_1825.txt`: https://www.gutenberg.org/cache/epub/39752/pg39752.txt
+- `mcanally_1888.txt`: https://www.gutenberg.org/cache/epub/19486/pg19486.txt
 - `townlands_20m.geojson`: Townland Boundaries Generalised 20m (Tailte Éireann, data.gov.ie)
 - `osni_townlands.geojson`, `osni_counties.geojson`: OSNI Open Data townland and county boundaries (ArcGIS Hub), as WGS84 GeoJSON
 - `geonames_IE/IE.txt`: https://download.geonames.org/export/dump/IE.zip
@@ -50,6 +54,8 @@ Raw inputs (not committed) go in `data/raw/`:
 
 - Tales: Jeremiah Curtin (1895), public domain. Scan: Cornell University Library via archive.org.
 - Stories: St John D. Seymour and Harry L. Neligan (1914), public domain. Text: Project Gutenberg #14099.
+- Haunted sites: also T. Crofton Croker (1825, Gutenberg #39752) and D. R. McAnally (1888, Gutenberg #19486), public domain.
+  Two site locations (Charles Fort, Dunseverick Castle) are Wikipedia coordinates; the rest come from GeoNames.
 - Townland boundaries: © Tailte Éireann, CC BY 4.0. Northern Ireland: OSNI Open Data, Open Government Licence v3.
 - Place names: GeoNames, CC BY 4.0.
 - Map tiles: © OpenStreetMap contributors.
