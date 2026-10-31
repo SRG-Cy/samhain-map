@@ -56,7 +56,7 @@ def load_key():
     return key
 
 
-def call_gemma(model, key, prompt, max_tokens=8192):
+def call_gemma(model, key, prompt, max_tokens=8192, timeout=400):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     body = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
@@ -68,7 +68,7 @@ def call_gemma(model, key, prompt, max_tokens=8192):
         data=json.dumps(body).encode(),
         headers={"Content-Type": "application/json", "x-goog-api-key": key},
     )
-    with urllib.request.urlopen(req, timeout=400) as r:
+    with urllib.request.urlopen(req, timeout=timeout) as r:
         data = json.loads(r.read())
     parts = data["candidates"][0]["content"]["parts"]
     # Gemma 4 can return its reasoning as separate "thought" parts; keep only the answer

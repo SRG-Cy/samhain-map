@@ -1,12 +1,12 @@
 {
  "beings_quote_ok": 29,
  "reported": 95,
- "unmatched": 29,
+ "unmatched": 25,
  "pinned": 51,
  "too_broad": 9,
  "refused_quote": 2,
  "ambiguous_resolved": 7,
- "beings_quote_bad": 1,
- "pinned_modern": 1,
- "refused_far": 1
+ "pinned_modern": 4,
+ "refused_far": 2,
+ "beings_quote_bad": 1
 }

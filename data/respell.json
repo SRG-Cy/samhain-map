@@ -1,1 +1,86 @@
-{}
+{
+ "awnascawil": {
+  "name": "Awnascawil",
+  "quote": "There was a cattle jobber once who was going to a fair near Awnascawil",
+  "suggestions": [
+   "Annascaul"
+  ]
+ },
+ "rahin": {
+  "name": "Rahin",
+  "quote": "this side of Rahin.",
+  "suggestions": [
+   "Rahan",
+   "Rathin"
+  ]
+ },
+ "north of ireland": {
+  "name": "North of Ireland",
+  "quote": "They started off and never stopped nor drew bridle till they reached the North of Ireland",
+  "suggestions": []
+ },
+ "dublin": {
+  "name": "Dublin",
+  "quote": "wished her parents, who lived near Dublin, to know where she was.",
+  "suggestions": [
+   "Dublin"
+  ]
+ },
+ "dun lean": {
+  "name": "Dun Lean",
+  "quote": "There was a man at Dun Lean named Maurice Griffin.",
+  "suggestions": [
+   "Dunlea"
+  ]
+ },
+ "travug": {
+  "name": "Travug",
+  "quote": "Do you remember that when you were passing Travug your horse stooped to drink",
+  "suggestions": [
+   "Trá Bhuí",
+   "Tra Bui",
+   "Yellow Strand"
+  ]
+ },
+ "iveragh": {
+  "name": "Iveragh",
+  "quote": "In Iveragh, not very far from the town of Cahirciveen,",
+  "suggestions": [
+   "Iveragh"
+  ]
+ },
+ "kerry mountains": {
+  "name": "Kerry Mountains",
+  "quote": "This was before the roads and cars were in the Kerry Mountains.",
+  "suggestions": []
+ },
+ "castlemain": {
+  "name": "Castlemain",
+  "quote": "who lived near Castlemain.",
+  "suggestions": [
+   "Castlemaine"
+  ]
+ },
+ "drumfada": {
+  "name": "Drumfada",
+  "quote": "I came from Drumfada.",
+  "suggestions": [
+   "Drumfada",
+   "Drum Fada"
+  ]
+ },
+ "ventry strand": {
+  "name": "Ventry Strand",
+  "quote": "fairy tales told at Ventry Strand.",
+  "suggestions": [
+   "Ventry Strand"
+  ]
+ },
+ "kilshanig": {
+  "name": "Kilshanig",
+  "quote": "In the village of Kilshanig, two miles north-east of Castlegregory, there lived at one time",
+  "suggestions": [
+   "Kilshannig"
+  ]
+ }
+}

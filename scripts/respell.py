@@ -39,14 +39,18 @@ def main():
         return
     key = load_key()
     names = list(todo.values())
-    # small batches: one call with all names reasoned past the time limit
-    for i in range(0, len(names), 5):
-        batch = names[i : i + 5]
-        items = "\n".join(f'- "{v["name"]}" (from: "{v["quote"]}")' for v in batch)
-        # reasoning used the whole 8k budget on the first try, so allow more here
-        raw, usage = call_gemma("gemma-4-26b-a4b-it", key, PROMPT.format(items=items), max_tokens=32768)
+    # one name per call, with a time limit: batches of 29 and then 5 names reasoned for over
+    # six minutes. A name that times out is skipped (left unpinned), not retried forever.
+    for v in names:
+        items = f'- "{v["name"]}" (from: "{v["quote"]}")'
+        try:
+            raw, usage = call_gemma("gemma-4-26b-a4b-it", key, PROMPT.format(items=items),
+                                    max_tokens=12000, timeout=150)
+        except (TimeoutError, OSError) as e:
+            print(f"{v['name']!r:28} -> skipped ({type(e).__name__})")
+            continue
         if "{" not in raw:
-            print(f"batch {i // 5}: no answer ({usage.get('thoughtsTokenCount')} reasoning tokens)")
+            print(f"{v['name']!r:28} -> no answer ({usage.get('thoughtsTokenCount')} reasoning tokens)")
             continue
         for a in json.loads(raw[raw.find("{"): raw.rfind("}") + 1])["answers"]:
             k = norm(a.get("name"))

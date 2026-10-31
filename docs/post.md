@@ -27,13 +27,13 @@ The rule behind all of it: **Gemma reads. Code decides.**
 
 ## Demo
 
-**Live:** {{RENDER URL}}
+**Live:** [samhain-map.onrender.com](https://samhain-map.onrender.com) (no sign-up, works on a phone)
 
 Try: filter by **Ghost**, click **Sneem**, open *The Ghost of Sneem*, then scroll to "Places in this tale".
 
 ## Code
 
-{% github {{REPO}} %}
+{% github SRG-Cy/samhain-map %}
 
 ## How I Built It
 
@@ -99,7 +99,7 @@ That's exactly why the model being open matters. Gemma's weights are public, so 
 ## Prize Categories
 
 - **Best Use of Gemma:** Gemma 4 26B reads all 30 tales, picks out the beings, the summary and every place with its exact quote, and suggests modern spellings for 1890s names. Every answer is checked in code before it reaches the map.
-- **Best Use of Render:** {{static site from render.yaml}}
+- **Best Use of Render:** the whole map is a static site deployed from a `render.yaml` Blueprint in the repo. Every push to `main` redeploys it, so each re-run of the checker goes live on its own.
 
 ---
 
