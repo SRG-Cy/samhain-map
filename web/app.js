@@ -1,5 +1,5 @@
 // Samhain Map: tales and verified places come from web/data, written by scripts/verify.py and scripts/sites.py.
-const DATA_VERSION = 6;
+const DATA_VERSION = 7;
 const BOOKS = {
   croker1825: {
     source: "Thomas Crofton Croker, Fairy Legends and Traditions of the South of Ireland (1825)",
@@ -25,7 +25,7 @@ const BEING_LABEL = {
   poltergeist: "Poltergeist", death_warning: "Death warning",
 };
 
-const state = { tales: [], byId: new Map(), places: null, sites: [], filter: null, layer: null, siteLayer: null };
+const state = { tales: [], byId: new Map(), places: null, sites: [], narration: {}, filter: null, layer: null, siteLayer: null };
 const SITES = "sites"; // the "Haunted sites" chip: only famous haunted sites and their stories
 const panel = document.getElementById("panel-body");
 const FIRE = "#e8913a";
@@ -77,6 +77,7 @@ function storyRow(t) {
     <div class="t">${esc(t.title)}</div>
     <div class="s">${esc(t.summary || "")}</div>
     ${t.beings.length ? `<div class="b">${esc(beingsLine(t))}</div>` : ""}
+    ${state.narration[t.id] ? `<div class="aloud">Read aloud</div>` : ""}
   </button></li>`;
 }
 
@@ -123,6 +124,7 @@ function showHome() {
       <p>Jeremiah Curtin, <em>Tales of the Fairies and of the Ghost World</em> (1895), public domain, scan by Cornell University Library via <a href="https://archive.org/details/cu31924029910563">archive.org</a>. St John D. Seymour and Harry L. Neligan, <em>True Irish Ghost Stories</em> (1914), T. Crofton Croker (1825) and D. R. McAnally (1888), public domain, via <a href="https://www.gutenberg.org/">Project Gutenberg</a>.</p>
       <p>Townlands © Tailte Éireann, CC BY 4.0. Northern Ireland townlands and counties: OSNI Open Data, OGL v3. Places: <a href="https://www.geonames.org/">GeoNames</a>, CC BY 4.0. Map © OpenStreetMap contributors.</p>
       <p>Images of the haunted sites from Wikimedia Commons, each credited on its site page with its licence (CC BY-SA).</p>
+      <p>Narration by an ElevenLabs voice, reading the books' own words.</p>
       <p>Summaries and place reading by Gemma, an open-weight model. Every pin is checked by code. <a href="https://github.com/SRG-Cy/samhain-map">Code on GitHub</a>.</p>
     </details>`;
   bind();
@@ -182,6 +184,11 @@ function showTale(id) {
     ${t.beings.length ? `<p class="beings">${esc(beingsLine(t))}</p>` : ""}
     <p class="summary">${esc(t.summary || "")}</p>
     ${t.beings_quote ? `<blockquote>${esc(t.beings_quote)}</blockquote>` : ""}
+    ${state.narration[t.id] ? `<div class="listen">
+      <p class="listen-label">Listen to the story</p>
+      <audio controls preload="none" src="${esc(state.narration[t.id].file)}"></audio>
+      <p class="meta">Read aloud by an ElevenLabs voice. Every word is the book's.</p>
+    </div>` : ""}
     <div class="reader">
       <div class="page${long ? " folded" : ""}">${paras}</div>
       ${long ? `<button class="more">Read the whole story</button>` : ""}
@@ -254,6 +261,8 @@ async function init() {
   tales.forEach((t) => state.byId.set(t.id, t));
   state.places = places;
   state.sites = sites;
+  // narration is optional: no file yet means no Listen buttons
+  state.narration = await fetch(`data/narration.json?v=${DATA_VERSION}`).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
   drawPlaces();
   drawSites();
   showHome();

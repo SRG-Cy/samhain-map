@@ -27,6 +27,7 @@ So I built **Samhain Map**: click a place anywhere in Ireland and read the ghost
 - **A map of Ireland** with a glowing mark at every place the stories happen: 156 stories, 82 places in 22 of the 32 counties, north and south. Click one and you get the stories set there.
 - **Each story** opens with the old text itself, then a one-line summary, the line that shows its ghost or fairy, every place it names with a ✓ or ✗ and the reason, and a link to the scanned page or the book on Project Gutenberg.
 - **Famous haunted sites**, as pale ghosts on the map: Leap Castle, Loftus Hall, Charles Fort, Kilkea Castle, Dunluce and Dunseverick castles, Clare Abbey, and Lough Leane, where O'Donoghue's ghost rides the lake on May mornings. Each one is there only because a public-domain book (1825 to 1914) tells its story, and code checked the quote word for word. Famous places none of these books tells, like the Hellfire Club, aren't on the map.
+- **Stories you can listen to.** The haunted sites' stories and a few of the best short ones are read aloud by an ElevenLabs storyteller voice: slow, low, a little unsteady, the way they were first told by a fire.
 - **Filters** by what haunts the story: ghosts, banshees, poltergeists, death warnings, fairies, the dead returning, a seal woman.
 - **A count of what the checker refused**, right on the front page. That number matters to me as much as the pins.
 
@@ -92,6 +93,12 @@ Leap Castle is the one everyone in Ireland names. The 1914 book has it, but unde
 The sites are a short hand-picked list, but nothing on it is taken on trust. For each one, code checks that its quote is word for word in exactly one story, and takes the location from the same gazetteer as everything else. Only Charles Fort and Dunseverick Castle, which the gazetteer doesn't have, use Wikipedia's coordinates, and say so. Gill Hall, home of the famous Beresford ghost, is in the 1914 book, but I couldn't find a source for exactly where the house stood, so it isn't a ghost on the map.
 
 Each site has an image from Wikimedia Commons, taken only if its licence is free (all turned out CC BY-SA) and credited on the page. Kilkea Castle has none: Commons tags its postcard CC BY-SA, but the postcard's own credit line says CC BY-NC, and when two licences disagree I leave the image out.
+
+### Told aloud again
+
+These stories were told by a fire long before anyone wrote them down, so reading them silently felt like half of them. Twelve are now read aloud by an ElevenLabs voice ("George", an older storyteller), set slow and slightly unsteady: lower stability so the voice can drop and linger, speed at 0.9.
+
+The same rule holds: the voice reads only the book's own words and the story's title, nothing generated. The audio is made once by a script and served as small static files (32 kbps speech, about a quarter of a megabyte a minute), so the API key never reaches the page and the site still costs nothing to host. Long stories go up in 4,000-character pieces cut at paragraph ends, each sent with the end of the piece before it, so the voice keeps its tone across the joins.
 
 ### Mentioned is not where it happened
 
@@ -163,6 +170,8 @@ That's exactly why the model being open matters. Gemma's weights are public, so 
 
 **It isn't locked inside a service that might disappear.** When the bigger Gemma was down, I changed one line. If the hosted API went away tomorrow, the same weights run on a laptop.
 
+**The one closed piece is the voice.** ElevenLabs reads the stories aloud because I didn't want to run a voice model on my own laptop, and its Hacktoberfest credits gave me a storyteller voice in an evening. An open voice model could take its place. It sits at the very end of the pipeline, though: it reads text the open model and the checker have already handled, it decides nothing, and if it disappeared the map would lose its voice but not one pin.
+
 **Where a closed model might do better:** probably the old spellings. A bigger model might know more 1890s Kerry place names. It would still need the same checker, because a confident model inventing a townland is the one thing a map of real places can't have.
 
 ## The Spirit of It
@@ -174,6 +183,7 @@ So that's what I'd ask you to do with it: find your own place on the map. If a s
 ## Prize Categories
 
 - **Best Use of Gemma:** Gemma 4 26B finds where each of 124 untitled accounts starts, reads all 156 stories for the beings, the summary and every place with its exact quote and role, and suggests modern spellings for old names. Every answer is checked in code before it reaches the map.
+- **Best Use of ElevenLabs:** twelve stories narrated with `eleven_multilingual_v2` and voice settings tuned for a fireside ghost story (stability 0.35, style 0.45, speed 0.9), chunked at paragraph ends with `previous_text`/`next_text` for continuity, cached once as static audio.
 - **Best Use of Render:** the whole map is a static site deployed from a `render.yaml` Blueprint in the repo. Every push to `main` redeploys it, so each re-run of the checker goes live on its own.
 
 ---
