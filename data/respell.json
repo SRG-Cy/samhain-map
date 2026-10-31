@@ -89,5 +89,20 @@
   "suggestions": [
    "Lough Leane"
   ]
+ },
+ "skneem": {
+  "name": "Skneem",
+  "quote": "Tom Daly lived between Kenmare and Skneem, but nearer to Kenmare",
+  "suggestions": [
+   "Sneem"
+  ]
+ },
+ "drummor": {
+  "name": "Drummor",
+  "quote": "In the parish of Drummor lived a farmer, whose name was Tom Connors.",
+  "suggestions": [
+   "Drummore",
+   "Dromore"
+  ]
  }
 }

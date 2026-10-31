@@ -75,6 +75,8 @@ So there's a second, small Gemma pass: for every name the map couldn't find, Gem
 
 | Curtin wrote | Gemma suggested | Code said |
 |---|---|---|
+| Lochlein | Lough Leane | ✓ pinned: the big lake at Killarney (two tales) |
+| Skneem | Sneem | ✓ pinned |
 | Awnascawil | Annascaul | ✓ pinned: a real village in the right corner of Kerry |
 | Castlemain | Castlemaine | ✓ pinned (two tales) |
 | Kilshanig | Kilshannig | ✓ pinned |
@@ -84,7 +86,7 @@ So there's a second, small Gemma pass: for every name the map couldn't find, Gem
 
 The Rahan one is my favourite row in the project. Gemma's suggestion was a real place. It just wasn't *this* place, and only the distance check could tell.
 
-This pass was also the flakiest part of the build. Asked about 29 names at once, Gemma reasoned past every time limit I gave it. Even 5 at a time timed out. One name per call, with a hard 150-second limit, got answers for {{RESPELL_ANSWERED}} of 28 names; the rest simply stay unpinned.
+This pass was also the flakiest part of the build. Asked about 29 names at once, Gemma reasoned past every time limit I gave it. Even 5 at a time timed out. One name per call, with a hard 150-second limit, got answers for 15 of 26 names after two runs; the rest (Rahonain among them) simply stay unpinned. In the end 8 place names are on the map because of this pass, and every one of them is labelled as a suggestion.
 
 ### Measuring it
 
