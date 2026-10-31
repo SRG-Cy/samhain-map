@@ -4,43 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Samhain Map</title>
-  <meta name="description" content="Irish ghost and fairy stories from two public-domain books, 1895 and 1914, put back on the map. Places found by an open-weight model, checked by code against real townlands.">
+  <meta name="description" content="Irish ghost and fairy stories from public-domain books, 1825 to 1914, put back on the map. Places found by an open-weight model, checked by code against real townlands.">
+  <meta name="theme-color" content="#121a24">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
   <header class="top">
-    <div class="brand">
-      <span class="candle" aria-hidden="true"></span>
-      <div>
-        <h1>Samhain Map</h1>
-        <p>Irish ghost and fairy stories from old books, back where they happened.</p>
-      </div>
-    </div>
-    <div class="filters" id="filters" role="group" aria-label="Filter by being"></div>
+    <h1 class="wordmark"><span class="flame" aria-hidden="true"></span>Samhain Map</h1>
+    <p class="tagline">Irish ghost stories from old books, put back where they happened</p>
   </header>
 
   <main class="layout">
-    <div id="map" aria-label="Map of Ireland with the places named in the stories"></div>
-    <aside class="panel" id="panel" aria-live="polite">
+    <div id="map" aria-label="Map of Ireland: orange lights are places stories name, white ghosts are famous haunted sites"></div>
+    <aside class="leaf" id="panel" aria-live="polite">
       <div id="panel-body"></div>
     </aside>
   </main>
 
-  <footer class="foot">
-    Tales: Jeremiah Curtin, <em>Tales of the Fairies and of the Ghost World</em> (1895), public domain, via
-    <a href="https://archive.org/details/cu31924029910563">archive.org</a> (Cornell University Library).
-    St John D. Seymour &amp; Harry L. Neligan, <em>True Irish Ghost Stories</em> (1914), public domain, via
-    <a href="https://www.gutenberg.org/ebooks/14099">Project Gutenberg</a>.
-    Haunted sites also from T. Crofton Croker (1825) and D. R. McAnally (1888), public domain, via Project Gutenberg.
-    Townlands: © Tailte Éireann, CC BY 4.0; Northern Ireland townlands and counties: OSNI Open Data, OGL v3.
-    Places: <a href="https://www.geonames.org/">GeoNames</a>, CC BY 4.0.
-    Summaries and place reading by Gemma, an open-weight model; every pin checked by code.
-  </footer>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-  <script src="app.js?v=7"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>

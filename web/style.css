@@ -1,140 +1,181 @@
+/* Samhain Map: a moonlit blue night. Two lights with two meanings:
+   turf-fire orange = a place a story names, moonlight white = a famous haunted site.
+   Old-print IM Fell for titles and the stories themselves; Alegreya Sans for the interface. */
 :root {
-  --bg: #0f0d0b;
-  --surface: #191512;
-  --surface-2: #231d18;
-  --line: #3a3029;
-  --text: #efe6da;
-  --muted: #a8998a;
-  --flame: #f2a33a;
-  --flame-soft: rgba(242, 163, 58, 0.18);
-  --ghost: #b9c7d6;
-  --bad: #d9776a;
-  --ok: #9cc58a;
-  --serif: "Fraunces", Georgia, serif;
-  --sans: "Inter", system-ui, sans-serif;
+  --night: #121a24;
+  --slate: #1c2733;
+  --slate-2: #243241;
+  --rule: #33445a;
+  --bone: #ebe5d6;
+  --mist: #93a3b5;
+  --fire: #e8913a;
+  --fire-dim: rgba(232, 145, 58, .16);
+  --moon: #dfe8f3;
+  --moon-dim: rgba(223, 232, 243, .1);
+  --yes: #a9c98f;
+  --no: #e09a8c;
+  --fell: "IM Fell English", "Iowan Old Style", Georgia, serif;
+  --sans: "Alegreya Sans", "Gill Sans", system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
 body {
-  background: var(--bg);
-  color: var(--text);
-  font: 15px/1.55 var(--sans);
+  background: var(--night);
+  color: var(--bone);
+  font: 17px/1.5 var(--sans);
   display: flex;
   flex-direction: column;
 }
-a { color: var(--flame); }
+a { color: var(--fire); text-underline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--moon); outline-offset: 2px; }
+button { font: inherit; color: inherit; }
 
+/* header: just the name */
 .top {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 24px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 20px;
-  border-bottom: 1px solid var(--line);
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 18px;
+  padding: 12px 22px 10px;
+  border-bottom: 1px solid var(--rule);
 }
-.brand { display: flex; gap: 14px; align-items: center; }
-.brand h1 { font: 600 24px/1.1 var(--serif); margin: 0; letter-spacing: 0.01em; }
-.brand p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
-.candle {
-  width: 10px; height: 26px; border-radius: 3px;
-  background: linear-gradient(#e9dcc6, #c9b79c);
-  position: relative; flex: none;
+.wordmark { margin: 0; font: 400 30px/1 var(--fell); letter-spacing: .005em; display: flex; align-items: baseline; gap: 10px; }
+.tagline { margin: 0; color: var(--mist); font: italic 17px var(--fell); }
+.flame {
+  width: 10px; height: 16px; align-self: center; flex: none;
+  border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%;
+  background: radial-gradient(ellipse at 50% 72%, #fff1c9 0 22%, var(--fire) 58%, rgba(232, 145, 58, 0) 74%);
+  animation: flicker 2.6s infinite ease-in-out;
 }
-.candle::before {
-  content: ""; position: absolute; left: 50%; top: -14px; width: 10px; height: 14px;
-  transform: translateX(-50%);
-  background: radial-gradient(ellipse at 50% 70%, #ffe7a3 0 30%, var(--flame) 55%, transparent 72%);
-  border-radius: 50% 50% 45% 45%;
-  animation: flicker 2.4s infinite ease-in-out;
-}
-@keyframes flicker { 0%,100% { opacity: 1; transform: translateX(-50%) scale(1); } 50% { opacity: .82; transform: translateX(-50%) scale(.92, 1.05); } }
-@media (prefers-reduced-motion: reduce) { .candle::before { animation: none; } }
+@keyframes flicker { 0%, 100% { transform: scale(1); opacity: 1; } 45% { transform: scale(.9, 1.06); opacity: .85; } }
 
-.filters { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
-@media (max-width: 860px) { .filters { justify-content: flex-start; } }
+.layout { flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) 440px; min-height: 0; }
+#map { min-height: 420px; background: var(--night); }
 
-/* famous haunted sites: pale ghosts, apart from the candle-orange story places */
-.ghost-pin { background: none; border: none; }
-.ghost-pin svg { filter: drop-shadow(0 0 6px rgba(214, 228, 255, .75)); }
-.ghost-pin path { fill: #e6edf7; stroke: #6f7f96; stroke-width: 1; }
-.ghost-pin circle { fill: #1a1612; }
-.site-chip { border-color: #8fa3bf; }
-.site-chip[aria-pressed="true"] { border-color: #e6edf7; background: rgba(214, 228, 255, .14); }
-.site-list { display: flex; flex-wrap: wrap; gap: 6px; }
-.site-btn {
-  border: 1px solid #8fa3bf; background: rgba(214, 228, 255, .06); color: var(--text);
-  border-radius: 8px; padding: 6px 10px; font: 600 13px var(--sans); cursor: pointer; text-align: left;
+/* the leaf: the reading side */
+.leaf { background: var(--slate); border-left: 1px solid var(--rule); overflow-y: auto; padding: 22px 26px 40px; }
+.leaf h2 { font: 400 32px/1.1 var(--fell); margin: 0 0 6px; }
+.leaf h3 { font: italic 400 20px/1.2 var(--fell); color: var(--mist); margin: 30px 0 10px; }
+.meta { color: var(--mist); font-size: 15px; margin: 0 0 16px; }
+.intro { font: 19px/1.55 var(--fell); margin: 0 0 12px; }
+.counts { color: var(--mist); font-size: 15px; margin: 0; }
+.counts b { color: var(--bone); font-weight: 500; }
+.back {
+  all: unset; cursor: pointer; color: var(--mist); font-size: 15px; display: inline-block; margin-bottom: 14px;
 }
-.site-btn span { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
-.site-btn:hover, .site-btn:focus-visible { border-color: #e6edf7; outline: none; }
+.back:hover { color: var(--bone); }
+.back:focus-visible { outline: 2px solid var(--moon); outline-offset: 2px; }
+
+/* filters */
+.filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 6px; }
 .chip {
-  border: 1px solid var(--line); background: var(--surface); color: var(--text);
-  border-radius: 999px; padding: 5px 12px; font: 500 13px var(--sans); cursor: pointer;
+  border: 1px solid var(--rule); background: transparent; border-radius: 999px;
+  padding: 3px 12px 4px; font-size: 15px; cursor: pointer; color: var(--bone);
 }
-.chip[aria-pressed="true"] { border-color: var(--flame); background: var(--flame-soft); }
-.chip .n { color: var(--muted); margin-left: 4px; }
+.chip:hover { border-color: var(--mist); }
+.chip[aria-pressed="true"] { border-color: var(--fire); background: var(--fire-dim); }
+.chip .n { color: var(--mist); margin-left: 5px; font-size: 13px; }
+.chip.moon[aria-pressed="true"] { border-color: var(--moon); background: var(--moon-dim); }
 
-.layout { flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) 420px; min-height: 0; }
-#map { min-height: 420px; background: #0b0a09; }
-.panel { border-left: 1px solid var(--line); background: var(--surface); overflow-y: auto; padding: 18px 20px 28px; }
-
-.panel h2 { font: 600 20px/1.25 var(--serif); margin: 0 0 6px; }
-.panel h3 { font: 600 13px var(--sans); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 22px 0 8px; }
-.eyebrow { color: var(--muted); font-size: 13px; margin: 0 0 14px; }
-.lede { color: var(--muted); }
-.stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 14px 0; }
-.stat { background: var(--surface-2); border: 1px solid var(--line); border-radius: 10px; padding: 10px; }
-.stat b { display: block; font: 600 22px var(--serif); }
-.stat span { font-size: 12px; color: var(--muted); }
-
-.tale-card {
-  display: block; width: 100%; text-align: left; cursor: pointer;
-  background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px;
-  padding: 12px 14px; margin: 0 0 10px; color: var(--text); font: inherit;
+/* haunted sites: a moonlit list */
+.sites { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 18px; }
+.sites li { break-inside: avoid; }
+.site {
+  all: unset; cursor: pointer; display: flex; gap: 8px; align-items: baseline; padding: 4px 0; width: 100%;
 }
-.tale-card:hover, .tale-card:focus-visible { border-color: var(--flame); outline: none; }
-.tale-card .t { font: 600 16px/1.3 var(--serif); }
-.tale-card .s { color: var(--muted); font-size: 14px; margin-top: 4px; }
-.tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
-.tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: rgba(185, 199, 214, .12); color: var(--ghost); }
+.site svg { width: 12px; height: 14px; flex: none; fill: var(--moon); transform: translateY(1px); }
+.site b { font: 400 18px/1.2 var(--fell); color: var(--moon); }
+.site span { color: var(--mist); font-size: 14px; }
+.site:hover b { text-decoration: underline; text-underline-offset: 3px; }
+.site:focus-visible { outline: 2px solid var(--moon); outline-offset: 2px; }
+
+/* stories: a ruled list, not boxed cards */
+.stories { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.story {
+  all: unset; display: block; cursor: pointer; width: 100%; padding: 12px 0 13px; border-bottom: 1px solid var(--rule);
+}
+.story .t { font: 400 21px/1.2 var(--fell); }
+.story .s { color: var(--mist); font-size: 15px; margin-top: 3px; }
+.story .b { color: var(--fire); font-size: 14px; margin-top: 4px; }
+.story:hover .t { color: #fff; text-decoration: underline; text-decoration-color: var(--fire); text-underline-offset: 3px; }
+.story:focus-visible { outline: 2px solid var(--moon); outline-offset: 2px; }
+.empty { color: var(--mist); font-style: italic; }
+
+/* a story: the old text is the main thing */
+.beings { color: var(--fire); font-size: 15px; margin: 0 0 12px; }
+.summary { font-size: 17px; margin: 0 0 18px; }
+.page {
+  font: 19px/1.72 var(--fell); color: #efe8da; max-width: 62ch; hyphens: auto;
+}
+.page p { margin: 0 0 .9em; }
+.page p:first-child::first-letter {
+  float: left; font-size: 3.4em; line-height: .82; padding: 6px 8px 0 0; color: var(--fire);
+}
+.reader { border-top: 1px solid var(--rule); padding-top: 18px; }
+.more {
+  border: 1px solid var(--fire); background: var(--fire-dim); border-radius: 999px; cursor: pointer;
+  padding: 6px 16px 7px; font-size: 16px; margin: 4px 0 6px;
+}
+.more:hover { background: rgba(232, 145, 58, .26); }
+.page.folded { max-height: 15.5em; overflow: hidden; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
 
 blockquote {
-  margin: 12px 0; padding: 10px 14px; border-left: 3px solid var(--flame);
-  background: var(--flame-soft); font: 16px/1.5 var(--serif); border-radius: 0 8px 8px 0;
+  margin: 0 0 18px; padding: 2px 0 2px 16px; border-left: 2px solid var(--fire);
+  font: italic 20px/1.45 var(--fell);
 }
-.place-list { list-style: none; padding: 0; margin: 0; }
-.place-list li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
-.place-list .st { font-size: 12px; margin-left: 6px; }
-.st.ok { color: var(--ok); }
-.st.bad { color: var(--bad); }
-.place-list .q { color: var(--muted); font-size: 13px; display: block; margin-top: 2px; }
-.place-list button { all: unset; cursor: pointer; color: var(--flame); }
+blockquote.moon { border-left-color: var(--moon); }
 
-.back { all: unset; cursor: pointer; color: var(--muted); font-size: 13px; margin-bottom: 10px; display: inline-block; }
-.back:hover { color: var(--text); }
-details { margin-top: 18px; }
-summary { cursor: pointer; color: var(--flame); }
-.tale-text { font: 16px/1.7 var(--serif); white-space: pre-wrap; color: #e4d9cb; }
+/* the checker's evidence */
+.evidence { list-style: none; padding: 0; margin: 0; }
+.evidence li { padding: 9px 0 10px 24px; border-bottom: 1px solid var(--rule); position: relative; font-size: 16px; }
+.evidence li::before { position: absolute; left: 2px; top: 9px; font-size: 15px; }
+.evidence .yes::before { content: "✓"; color: var(--yes); }
+.evidence .no::before { content: "✗"; color: var(--no); }
+.evidence .info::before { content: "·"; color: var(--mist); font-size: 22px; top: 2px; }
+.evidence .why { display: block; font-size: 14px; color: var(--mist); }
+.evidence .no .why { color: var(--no); }
+.evidence .yes .why { color: var(--yes); }
+.evidence q { display: block; font: italic 16px/1.4 var(--fell); color: var(--mist); margin-top: 3px; }
+.evidence button { all: unset; cursor: pointer; color: var(--fire); }
+.evidence button:hover { text-decoration: underline; }
+.fine { color: var(--mist); font-size: 14px; margin-top: 22px; }
 
-.foot { padding: 10px 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+/* sources, folded away at the bottom of the home view */
+details.sources { margin-top: 28px; border-top: 1px solid var(--rule); padding-top: 12px; color: var(--mist); font-size: 14px; }
+details.sources summary { cursor: pointer; color: var(--bone); font-size: 15px; }
+details.sources p { margin: 8px 0; }
 
-.leaflet-container { font: 14px var(--sans); background: #0b0a09; }
-.dark-tiles { filter: invert(1) hue-rotate(180deg) brightness(0.62) contrast(0.95) sepia(0.25); }
-.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--surface-2); color: var(--text); }
-.leaflet-tooltip { background: var(--surface-2); color: var(--text); border-color: var(--line); }
-.leaflet-tooltip-top::before { border-top-color: var(--surface-2); }
+/* map */
+.leaflet-container { font: 15px var(--sans); background: var(--night); }
+/* OSM tiles turned to a moonlit blue night */
+.dark-tiles { filter: invert(1) hue-rotate(195deg) brightness(.6) contrast(.92) saturate(.45); }
+.leaflet-tooltip { background: var(--slate-2); color: var(--bone); border: 1px solid var(--rule); box-shadow: none; font-size: 15px; }
+.leaflet-tooltip-top::before { border-top-color: var(--slate-2); }
+.leaflet-bar a { background: var(--slate); color: var(--bone); border-color: var(--rule); }
+.leaflet-bar a:hover { background: var(--slate-2); }
+.leaflet-control-attribution { background: rgba(18, 26, 36, .8) !important; color: var(--mist); }
+.leaflet-control-attribution a { color: var(--mist); }
+.ghost-pin { background: none; border: none; }
+.ghost-pin svg { filter: drop-shadow(0 0 7px rgba(223, 232, 243, .8)); }
+.ghost-pin path { fill: var(--moon); stroke: #5d6e84; stroke-width: 1; }
+.ghost-pin circle { fill: var(--night); }
+
+@media (prefers-reduced-motion: reduce) {
+  .flame { animation: none; }
+}
 
 @media (max-width: 860px) {
-  /* phones: the page scrolls as a whole (map, then stories, then footer) instead of
-     squeezing everything into one screen, which left the story panel 33px tall */
+  /* phones: the page scrolls as a whole, map first, then the leaf at full length */
   html, body { height: auto; }
   body { display: block; }
+  .top { padding: 10px 16px 8px; }
+  .wordmark { font-size: 26px; }
+  .tagline { font-size: 15px; }
   .layout { display: block; }
-  #map { height: 55vh; min-height: 300px; }
-  .panel { border-left: 0; border-top: 1px solid var(--line); overflow: visible; padding: 16px; scroll-margin-top: 8px; }
-  .top { padding: 12px 16px; }
-  .filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
-  .filters .chip { flex: none; }
+  #map { height: 52vh; min-height: 300px; }
+  .leaf { border-left: 0; border-top: 1px solid var(--rule); overflow: visible; padding: 18px 16px 36px; scroll-margin-top: 0; }
+  .leaf h2 { font-size: 28px; }
+  .filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-right: -16px; padding-right: 16px; }
+  .chip { flex: none; }
+  .intro { font-size: 17px; }
+  .site b { font-size: 17px; }
+  .page { font-size: 18px; }
 }
