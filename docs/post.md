@@ -16,7 +16,9 @@ So I built **Samhain Map**: click a place in Kerry and read the ghost stories th
 
 ## What I Built
 
-{{GIF: click a pin -> tale opens -> quote -> places with ticks}}
+![Samhain Map: the Kerry coast with glowing marks where the tales happen, filters for ghosts, fairies and the dead returning, and a list of tales](https://raw.githubusercontent.com/SRG-Cy/samhain-map/main/docs/img/home.jpg)
+
+{{TALE VIEW SCREENSHOT OR GIF}}
 
 - **A map of Munster** with a glowing mark at every place the tales name. Click one and you get the tales set there.
 - **Each tale** has a one-line summary, the line that shows its ghost or fairy, every place it names with a ✓ or ✗ and the reason, the full text, and a link to the scanned 1895 page.
@@ -50,11 +52,18 @@ each tale ─▶ Gemma 4 26B (JSON mode): beings, summary, every place + the exa
 
 For every place, Gemma has to return the place **and the exact words it came from**. Code then checks two things: the quote is really in the tale, and the name is really in the quote. If either fails, the place is refused, and the map says so.
 
-{{example of a refused place}}
+Across all 30 tales, Gemma reported 95 place names. Two failed the quote check, and they surprised me: **neither was invented.** Both places are really in the tales. Gemma just changed one word while copying:
+
+| Tale says | Gemma quoted |
+|---|---|
+| "…the fort **on** the place where I am living now, in Lismore." | "**in** the place where I am living now, in Lismore." |
+| "…the eldest son to marry **and** Gort na Leachtan (the field of the stone heaps)…" | "**is** Gort na Leachtan (the field of the stone heaps) as fortune." |
+
+I kept the rule strict anyway. A checker that lets "close enough" through is a checker that will one day let a made-up townland through. Losing two pins is the cheaper mistake.
 
 ### A real place, or nothing
 
-A name that passes the quote check still isn't pinned until it matches a real place: one of {{N}} townlands from Tailte Éireann's boundary data, or a town, hill, lake or bridge from GeoNames, inside Munster. "Munster" or "Kerry" are listed but never pinned: too broad to be a place you could stand.
+A name that passes the quote check still isn't pinned until it matches a real place: one of 16,947 Munster townlands from Tailte Éireann's boundary data, or a town, hill, lake or bridge from GeoNames, inside Munster. "Munster" or "Kerry" are listed but never pinned: too broad to be a place you could stand.
 
 Many names exist more than once. Ireland has several Ballymores. When a name matches more than one real place, code picks the one nearest the tale's other places, and the tale card says it made that choice.
 
@@ -62,15 +71,39 @@ Many names exist more than once. Ireland has several Ballymores. When a name mat
 
 Curtin wrote names as he heard them. *Lochlein* is Lough Leane. *Rahonain* is probably Rahinnane. Modern maps have never heard of the first spelling.
 
-So there's a second, small Gemma pass: for every name the map couldn't find, Gemma suggests up to three modern spellings. **Code still decides.** A suggestion is accepted only if that place exists *and* lies within {{MAX_KM}} km of the tale's other places. Those pins are labelled "via modern spelling, suggested by Gemma", so you can see which ones the model helped with.
+So there's a second, small Gemma pass: for every name the map couldn't find, Gemma suggests up to three modern spellings. **Code still decides.** A suggestion is accepted only if that place exists *and* lies within 30 km of the tale's other places. Those pins are labelled "via modern spelling, suggested by Gemma", so you can see which ones the model helped with.
 
-{{respell table: old -> suggested -> accepted/refused}}
+| Curtin wrote | Gemma suggested | Code said |
+|---|---|---|
+| Awnascawil | Annascaul | ✓ pinned: a real village in the right corner of Kerry |
+| Castlemain | Castlemaine | ✓ pinned (two tales) |
+| Kilshanig | Kilshannig | ✓ pinned |
+| Rahin | Rahan | ✗ refused: Rahan exists, but 124 km from the tale's other places |
+| Dun Lean | Dunlea | not pinned: no such place |
+| Drumfada | Drumfada | not pinned: no such place on modern maps |
+
+The Rahan one is my favourite row in the project. Gemma's suggestion was a real place. It just wasn't *this* place, and only the distance check could tell.
+
+This pass was also the flakiest part of the build. Asked about 29 names at once, Gemma reasoned past every time limit I gave it. Even 5 at a time timed out. One name per call, with a hard 150-second limit, got answers for {{RESPELL_ANSWERED}} of 28 names; the rest simply stay unpinned.
 
 ### Measuring it
 
-{{eval table: per tale, places in the tale / Gemma found / Gemma wrong / pinned / pinned wrong}}
+For 7 of the shorter tales, every real place in Ireland they name was labelled by hand: 22 places. Then I compared two versions of the map: one that pins everything Gemma reported, and the real one.
 
-{{honest notes: labels drafted by my coding agent from the text and checked by me; small set; what was missed and why}}
+| Tale | Places in the tale | Gemma found | Gemma alone would also pin | Pinned (correct / wrong) |
+|---|---|---|---|---|
+| The Midwife of Listowel | 1 | 1 | | 1 / 0 |
+| Tom Connors and the Dead Girl | 5 | 5 | | 3 / 0 |
+| James Murray and Saint Martin | 3 | 3 | "Kerry" | 3 / 0 |
+| The Ghost of Sneem | 7 | 7 | | 6 / 0 |
+| The Dead Mother | 3 | 3 | "America" | 2 / 0 |
+| Tim Sheehy Sent Back… | 1 | 1 | | 1 / 0 |
+| The Four-leafed Shamrock | 2 | 2 | | 2 / 0 |
+| **Total** | **22** | **22** | **2** | **18 / 0** |
+
+- **Gemma's reading was excellent.** It found all 22 places and invented none.
+- **Every pin on the map in these tales is right.** The 4 it couldn't pin are 1890s spellings that no modern map has: Rahin, Rahonain, Drumfada and "Ventry Strand".
+- **The honest limits:** it's 7 tales and 22 places, not a benchmark. {{LABEL_NOTE}}
 
 ### Things that went wrong
 
@@ -78,7 +111,8 @@ So there's a second, small Gemma pass: for every name the map couldn't find, Gem
 - **At temperature 0, Gemma 26B got stuck in its own reasoning:** "Wait, 'Sneem' is a setting. Wait, 'Blackwater bridge' is a setting." for 26,000 characters. JSON mode fixed it: about 11 seconds a tale.
 - **Cork city wasn't on the map.** City centres have no townlands, so the city sits in a hole in the county outline. Points just outside the outline now count.
 - **The free tier rate-limited me** halfway through. Every reply is cached per tale, so the run picked up where it stopped.
-- {{more}}
+- **A Drummond in Tipperary dragged Waterville to Limerick.** In *Murderous Ghosts*, the only "Drummond" in Munster is 178 km away in Tipperary. My first checker trusted a single match as a reference point, and then picked the Waterville in Limerick because it was "nearest". Now only places in Kerry and Cork count as reference points, and a lone match that far from the rest of the tale is refused with the distance.
+- **Then my fix was too strict.** Tales where someone travels to Cork city lost Dingle and Brandon Mountain, because Cork pulled the centre of the tale east. A trip to the city isn't where a tale is set, so cities no longer count as reference points.
 
 ## Why Does Open Innovation Matter?
 
