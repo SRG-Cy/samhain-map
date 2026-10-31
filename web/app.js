@@ -56,6 +56,10 @@ function taleCard(t) {
   </button>`;
 }
 
+// on a phone the panel sits below the map: bring it into view when a place or story opens
+const narrow = window.matchMedia("(max-width: 860px)");
+const reveal = () => { if (narrow.matches) document.getElementById("panel").scrollIntoView({ behavior: "smooth" }); };
+
 function bindCards() {
   panel.querySelectorAll("[data-tale]").forEach((el) => el.addEventListener("click", () => showTale(+el.dataset.tale)));
   panel.querySelectorAll("[data-place]").forEach((el) => el.addEventListener("click", () => focusPlace(el.dataset.place)));
@@ -96,6 +100,7 @@ function showSite(i) {
     ${taleCard(t)}
     <p class="eyebrow" style="margin-top:16px">Only sites a public-domain book tells are here; code checked that this quote is word for word in the story. Location: ${esc(s.located)}.</p>`;
   bindCards();
+  reveal();
   map.setView([s.lat, s.lon], Math.max(map.getZoom(), 10));
 }
 
@@ -107,6 +112,7 @@ function showPlace(props) {
     <p class="eyebrow">County ${esc(props.county)} · ${tales.length} tale${tales.length === 1 ? "" : "s"}</p>
     ${tales.map(taleCard).join("") || "<p class='lede'>No tales here match the filter.</p>"}`;
   bindCards();
+  reveal();
 }
 
 function showTale(id) {
@@ -133,6 +139,7 @@ function showTale(id) {
     <details><summary>Read the whole story</summary><div class="tale-text">${esc(t.text)}</div></details>
     <p class="eyebrow" style="margin-top:16px">Summary and places read by ${esc(t.model)}${t.title_by === "gemma" ? "; the book gives this story no title, so Gemma named it, and code cut the story at the paragraph Gemma said it starts" : ""}. Only places whose quote is in the story and whose name is a real place in Ireland are pinned.</p>`;
   bindCards();
+  reveal();
   const pins = t.places.filter((p) => p.lat).map((p) => [p.lat, p.lon]);
   if (pins.length) map.fitBounds(pins, { padding: [60, 60], maxZoom: 11 });
 }
