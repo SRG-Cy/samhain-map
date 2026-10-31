@@ -1,4 +1,5 @@
 // Samhain Map: tales and verified places come from web/data, written by scripts/verify.py.
+const DATA_VERSION = 4;
 const BOOKS = {
   curtin1895: {
     short: "Kerry, 1895", source: "Jeremiah Curtin, Tales of the Fairies and of the Ghost World (1895)",
@@ -166,7 +167,8 @@ function drawFilters() {
 
 async function init() {
   const [counties, tales, places] = await Promise.all(
-    ["data/counties.geojson", "data/tales.json", "data/places.geojson"].map((u) => fetch(u).then((r) => r.json())));
+    // data/* is cached for an hour (render.yaml): bump DATA_VERSION whenever verify.py output changes
+    ["data/counties.geojson", "data/tales.json", "data/places.geojson"].map((u) => fetch(`${u}?v=${DATA_VERSION}`).then((r) => r.json())));
   L.geoJSON(counties, {
     style: { color: "#6b5a4b", weight: 1, fillColor: "#2a221c", fillOpacity: 0.25 },
     onEachFeature: (f, l) => l.bindTooltip(`County ${f.properties.county}`, { sticky: true }),
