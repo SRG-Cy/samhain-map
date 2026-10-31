@@ -1,0 +1,89 @@
+{
+ "tale_id": 210,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 14.2,
+ "usage": {
+  "promptTokenCount": 1589,
+  "candidatesTokenCount": 629,
+  "totalTokenCount": 2218,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1589
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"dead_returning\",\n      \"fairy\"\n    ],\n    \"beings_quote\": \"an intimate friend of the Countess, long since dead, entered the room\",\n    \"summary\": \"The Wizard Earl of Kildare used supernatural powers to test his wife's courage, and legend says he and his knights sleep in an enchanted cave.\",\n    \"places\": [\n      {\n        \"name\": \"London\",\n        \"quote\": \"died in London on the 16th November 1585\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"St. Brigid's Cathedral\",\n        \"quote\": \"interred in St. Brigid's Cathedral, in Kildare.\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Kildare\",\n        \"quote\": \"interred in St. Brigid's Cathedral, in Kildare.\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Greese\",\n        \"quote\": \"the river Greese, which flows past the castle walls\",\n        \"modern_name\": \"Griffe\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Mullaghmast\",\n        \"quote\": \"on the hill of Mullaghmast, which stands\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Kilkea Castle\",\n        \"quote\": \"five miles to the north of Kilkea Castle.\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Curragh\",\n        \"quote\": \"They gallop round the Curragh, thence across country\",\n        \"modern_name\": \"The Curragh\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Athgarvan\",\n        \"quote\": \"in an ass-cart from Athgarvan to Kildare.\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Athy\",\n        \"quote\": \"returning from a fair in Athy late one evening\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Ballintore\",\n        \"quote\": \"in the direction of Ballintore, and when passing\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "dead_returning",
+   "fairy"
+  ],
+  "beings_quote": "an intimate friend of the Countess, long since dead, entered the room",
+  "summary": "The Wizard Earl of Kildare used supernatural powers to test his wife's courage, and legend says he and his knights sleep in an enchanted cave.",
+  "places": [
+   {
+    "name": "London",
+    "quote": "died in London on the 16th November 1585",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "St. Brigid's Cathedral",
+    "quote": "interred in St. Brigid's Cathedral, in Kildare.",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Kildare",
+    "quote": "interred in St. Brigid's Cathedral, in Kildare.",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Greese",
+    "quote": "the river Greese, which flows past the castle walls",
+    "modern_name": "Griffe",
+    "role": "setting"
+   },
+   {
+    "name": "Mullaghmast",
+    "quote": "on the hill of Mullaghmast, which stands",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Kilkea Castle",
+    "quote": "five miles to the north of Kilkea Castle.",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Curragh",
+    "quote": "They gallop round the Curragh, thence across country",
+    "modern_name": "The Curragh",
+    "role": "setting"
+   },
+   {
+    "name": "Athgarvan",
+    "quote": "in an ass-cart from Athgarvan to Kildare.",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Athy",
+    "quote": "returning from a fair in Athy late one evening",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Ballintore",
+    "quote": "in the direction of Ballintore, and when passing",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

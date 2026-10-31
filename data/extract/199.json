@@ -1,0 +1,28 @@
+{
+ "tale_id": 199,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 34.2,
+ "usage": {
+  "promptTokenCount": 458,
+  "candidatesTokenCount": 69,
+  "totalTokenCount": 2044,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 458
+   }
+  ],
+  "thoughtsTokenCount": 1517,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"a pale, indistinguishable figure laid therein\",\n  \"summary\": \"A lady saw a vision of a pale figure and a clergyman, and she fell ill a week later.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "a pale, indistinguishable figure laid therein",
+  "summary": "A lady saw a vision of a pale figure and a clergyman, and she fell ill a week later.",
+  "places": []
+ }
+}

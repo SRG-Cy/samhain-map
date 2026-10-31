@@ -1,0 +1,41 @@
+{
+ "tale_id": 122,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 153.0,
+ "usage": {
+  "promptTokenCount": 926,
+  "candidatesTokenCount": 191,
+  "totalTokenCount": 8177,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 926
+   }
+  ],
+  "thoughtsTokenCount": 7060,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"She saw a tall man, with one arm, carrying a lamp, who walked out of the pantry into the kitchen\",\n  \"summary\": \"A family living in a rectory in Donegal experienced strange noises and saw a tall man with one arm walk through walls.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Donegal\",\n      \"quote\": \"refers to a rectory in Co. Donegal.\",\n      \"modern_name\": \"County Donegal\",\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Ireland\",\n      \"quote\": \"while in Ireland such work is generally performed by the priest.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "She saw a tall man, with one arm, carrying a lamp, who walked out of the pantry into the kitchen",
+  "summary": "A family living in a rectory in Donegal experienced strange noises and saw a tall man with one arm walk through walls.",
+  "places": [
+   {
+    "name": "Co. Donegal",
+    "quote": "refers to a rectory in Co. Donegal.",
+    "modern_name": "County Donegal",
+    "role": "setting"
+   },
+   {
+    "name": "Ireland",
+    "quote": "while in Ireland such work is generally performed by the priest.",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "tale_id": 176,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 113.3,
+ "usage": {
+  "promptTokenCount": 806,
+  "candidatesTokenCount": 130,
+  "totalTokenCount": 6149,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 806
+   }
+  ],
+  "thoughtsTokenCount": 5213,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"banshee\"\n  ],\n  \"beings_quote\": \"the female spectre whom you have seen is always visible.\",\n  \"summary\": \"A woman visiting a baronial castle witnesses a female spectre appearing at a window before a family member's death.\",\n  \"places\": [\n    {\n      \"name\": \"Cortachy\",\n      \"quote\": \"the tale of the Scotch \\\"Drummer of Cortachy,\\\"\",\n      \"modern_name\": \"Cortachy\",\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "banshee"
+  ],
+  "beings_quote": "the female spectre whom you have seen is always visible.",
+  "summary": "A woman visiting a baronial castle witnesses a female spectre appearing at a window before a family member's death.",
+  "places": [
+   {
+    "name": "Cortachy",
+    "quote": "the tale of the Scotch \"Drummer of Cortachy,\"",
+    "modern_name": "Cortachy",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

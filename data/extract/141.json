@@ -1,0 +1,41 @@
+{
+ "tale_id": 141,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 5.4,
+ "usage": {
+  "promptTokenCount": 1048,
+  "candidatesTokenCount": 202,
+  "totalTokenCount": 1250,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1048
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\",\n      \"other\"\n    ],\n    \"beings_quote\": \"a little man of bizarre appearance accosted Mr. M----\",\n    \"summary\": \"A farmer's new cottage is plagued by loud, inexplicable noises, leading the family to abandon the house after being warned by a strange little man.\",\n    \"places\": [\n      {\n        \"name\": \"County Wexford\",\n        \"quote\": \"A correspondent from County Wexford, who desires to have his name suppressed\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Co. Wexford\",\n        \"quote\": \"Less than ten miles from the town of ----, Co. Wexford\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy",
+   "other"
+  ],
+  "beings_quote": "a little man of bizarre appearance accosted Mr. M----",
+  "summary": "A farmer's new cottage is plagued by loud, inexplicable noises, leading the family to abandon the house after being warned by a strange little man.",
+  "places": [
+   {
+    "name": "County Wexford",
+    "quote": "A correspondent from County Wexford, who desires to have his name suppressed",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Co. Wexford",
+    "quote": "Less than ten miles from the town of ----, Co. Wexford",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

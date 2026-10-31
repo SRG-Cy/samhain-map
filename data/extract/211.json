@@ -1,0 +1,47 @@
+{
+ "tale_id": 211,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 48.4,
+ "usage": {
+  "promptTokenCount": 573,
+  "candidatesTokenCount": 253,
+  "totalTokenCount": 2815,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 573
+   }
+  ],
+  "thoughtsTokenCount": 1989,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"His ghost was often seen about the place for years after his death.\",\n  \"summary\": \"The ghost of Henry Bennett, who died during the siege of Wallstown Castle, haunted the area and played pranks on the caretaker.\",\n  \"places\": [\n    {\n      \"name\": \"Wallstown Castle\",\n      \"quote\": \"In 1642 Wallstown Castle, the seat of the Wall family, in County Cork, was burnt down\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"County Cork\",\n      \"quote\": \"Wallstown Castle, the seat of the Wall family, in County Cork, was burnt down\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Cork jail\",\n      \"quote\": \"imprisoned in Cork jail, where he died.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "His ghost was often seen about the place for years after his death.",
+  "summary": "The ghost of Henry Bennett, who died during the siege of Wallstown Castle, haunted the area and played pranks on the caretaker.",
+  "places": [
+   {
+    "name": "Wallstown Castle",
+    "quote": "In 1642 Wallstown Castle, the seat of the Wall family, in County Cork, was burnt down",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "County Cork",
+    "quote": "Wallstown Castle, the seat of the Wall family, in County Cork, was burnt down",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Cork jail",
+    "quote": "imprisoned in Cork jail, where he died.",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

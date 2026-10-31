@@ -1,0 +1,34 @@
+{
+ "tale_id": 101,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 3.9,
+ "usage": {
+  "promptTokenCount": 1171,
+  "candidatesTokenCount": 132,
+  "totalTokenCount": 1303,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1171
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"My first encounter with a ghost occurred about twenty years ago.\",\n    \"summary\": \"A woman recounts multiple encounters with a spectral charwoman who haunted her house and disturbed her belongings.\",\n    \"places\": [\n      {\n        \"name\": \"Dublin\",\n        \"quote\": \"Mrs. G. Kelly, a lady well known in musical circles in Dublin\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "My first encounter with a ghost occurred about twenty years ago.",
+  "summary": "A woman recounts multiple encounters with a spectral charwoman who haunted her house and disturbed her belongings.",
+  "places": [
+   {
+    "name": "Dublin",
+    "quote": "Mrs. G. Kelly, a lady well known in musical circles in Dublin",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

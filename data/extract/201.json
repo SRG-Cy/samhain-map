@@ -1,0 +1,41 @@
+{
+ "tale_id": 201,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 148.3,
+ "usage": {
+  "promptTokenCount": 837,
+  "candidatesTokenCount": 184,
+  "totalTokenCount": 7745,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 837
+   }
+  ],
+  "thoughtsTokenCount": 6724,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"I saw, seated on a low, tabular tombstone close to the avenue, a lady with her back towards me.\",\n  \"summary\": \"A rector walking to a church in Chapel Russell sees a lady sitting on a tombstone who suddenly vanishes.\",\n  \"places\": [\n    {\n      \"name\": \"Limerick\",\n      \"quote\": \"The present Archdeacon of Limerick\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Chapel Russell\",\n      \"quote\": \"I was rector of the little rural parish of Chapel Russell.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "I saw, seated on a low, tabular tombstone close to the avenue, a lady with her back towards me.",
+  "summary": "A rector walking to a church in Chapel Russell sees a lady sitting on a tombstone who suddenly vanishes.",
+  "places": [
+   {
+    "name": "Limerick",
+    "quote": "The present Archdeacon of Limerick",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Chapel Russell",
+    "quote": "I was rector of the little rural parish of Chapel Russell.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

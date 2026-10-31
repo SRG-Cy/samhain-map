@@ -1,0 +1,59 @@
+{
+ "tale_id": 175,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 89.8,
+ "usage": {
+  "promptTokenCount": 763,
+  "candidatesTokenCount": 350,
+  "totalTokenCount": 4951,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 763
+   }
+  ],
+  "thoughtsTokenCount": 3838,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"she had the colour of one who had risen from the grave.\",\n  \"summary\": \"A woman in Philadelphia sees her aunt walking down the street, only to discover the aunt died two days after the encounter.\",\n  \"places\": [\n    {\n      \"name\": \"United States\",\n      \"quote\": \"The following incident occurred in the United States, but, as it is closely connected with this country\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Philadelphia\",\n      \"quote\": \"21 Montrose St., Philadelphia, to do some shopping.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Limerick\",\n      \"quote\": \"the last letter I had from home (Limerick) stated that she was dying\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Washington Avenue\",\n      \"quote\": \"she continued on to Washington Avenue, where she disappeared from me.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Ireland\",\n      \"quote\": \"the clothes, hat, etc., were those I knew so well before I left Ireland.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "she had the colour of one who had risen from the grave.",
+  "summary": "A woman in Philadelphia sees her aunt walking down the street, only to discover the aunt died two days after the encounter.",
+  "places": [
+   {
+    "name": "United States",
+    "quote": "The following incident occurred in the United States, but, as it is closely connected with this country",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Philadelphia",
+    "quote": "21 Montrose St., Philadelphia, to do some shopping.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Limerick",
+    "quote": "the last letter I had from home (Limerick) stated that she was dying",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Washington Avenue",
+    "quote": "she continued on to Washington Avenue, where she disappeared from me.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Ireland",
+    "quote": "the clothes, hat, etc., were those I knew so well before I left Ireland.",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

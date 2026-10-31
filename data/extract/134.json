@@ -1,0 +1,27 @@
+{
+ "tale_id": 134,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 2.8,
+ "usage": {
+  "promptTokenCount": 1071,
+  "candidatesTokenCount": 85,
+  "totalTokenCount": 1156,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1071
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"this ghost had manifested itself for many years\",\n    \"summary\": \"A schoolgirl experiences heavy footsteps and a door being dashed open in her dormitory at night, later learning it was the spirit of a man who committed suicide.\",\n    \"places\": []\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "this ghost had manifested itself for many years",
+  "summary": "A schoolgirl experiences heavy footsteps and a door being dashed open in her dormitory at night, later learning it was the spirit of a man who committed suicide.",
+  "places": []
+ }
+}

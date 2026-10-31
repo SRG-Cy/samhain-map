@@ -1,0 +1,35 @@
+{
+ "tale_id": 157,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 77.6,
+ "usage": {
+  "promptTokenCount": 582,
+  "candidatesTokenCount": 129,
+  "totalTokenCount": 4234,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 582
+   }
+  ],
+  "thoughtsTokenCount": 3523,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"a certain unfortunate person committed suicide on the railway\",\n  \"summary\": \"Two men hear voices in a railway waiting-room where a person who committed suicide had been kept pending an inquest.\",\n  \"places\": [\n    {\n      \"name\": \"Ireland\",\n      \"quote\": \"The second story relates to a certain railway station in the south of Ireland\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "a certain unfortunate person committed suicide on the railway",
+  "summary": "Two men hear voices in a railway waiting-room where a person who committed suicide had been kept pending an inquest.",
+  "places": [
+   {
+    "name": "Ireland",
+    "quote": "The second story relates to a certain railway station in the south of Ireland",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

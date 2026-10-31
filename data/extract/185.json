@@ -1,0 +1,41 @@
+{
+ "tale_id": 185,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 52.0,
+ "usage": {
+  "promptTokenCount": 605,
+  "candidatesTokenCount": 199,
+  "totalTokenCount": 3031,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 605
+   }
+  ],
+  "thoughtsTokenCount": 2227,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"death_warning\"\n  ],\n  \"beings_quote\": \"concluded that it was the death coach\",\n  \"summary\": \"A servant at Ennistymon hears a death coach passing, which foretells the death of a family member in London the next day.\",\n  \"places\": [\n    {\n      \"name\": \"Ennistymon\",\n      \"quote\": \"a servant of the MacNamaras was going his rounds at Ennistymon, a beautiful spot\",\n      \"modern_name\": \"Ennistymon\",\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"London\",\n      \"quote\": \"On the following day Admiral Sir Burton Macnamara died in London.\",\n      \"modern_name\": \"London\",\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "concluded that it was the death coach",
+  "summary": "A servant at Ennistymon hears a death coach passing, which foretells the death of a family member in London the next day.",
+  "places": [
+   {
+    "name": "Ennistymon",
+    "quote": "a servant of the MacNamaras was going his rounds at Ennistymon, a beautiful spot",
+    "modern_name": "Ennistymon",
+    "role": "setting"
+   },
+   {
+    "name": "London",
+    "quote": "On the following day Admiral Sir Burton Macnamara died in London.",
+    "modern_name": "London",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "tale_id": 169,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 26.5,
+ "usage": {
+  "promptTokenCount": 669,
+  "candidatesTokenCount": 72,
+  "totalTokenCount": 1883,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 669
+   }
+  ],
+  "thoughtsTokenCount": 1142,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"She saw quite distinctly the figure of the deceased cook pass towards the dairy\",\n  \"summary\": \"A woman saw the figure of a deceased cook passing through a kitchen door towards the dairy.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "She saw quite distinctly the figure of the deceased cook pass towards the dairy",
+  "summary": "A woman saw the figure of a deceased cook passing through a kitchen door towards the dairy.",
+  "places": []
+ }
+}

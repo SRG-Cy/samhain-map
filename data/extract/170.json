@@ -1,0 +1,53 @@
+{
+ "tale_id": 170,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 60.8,
+ "usage": {
+  "promptTokenCount": 686,
+  "candidatesTokenCount": 283,
+  "totalTokenCount": 3528,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 686
+   }
+  ],
+  "thoughtsTokenCount": 2559,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"the form of poor Sam, the upper half of it, seemed to pass before me\",\n  \"summary\": \"After Samuel Penrose dies following several accidents, the Rector sees a vision of the man's upper half passing before him.\",\n  \"places\": [\n    {\n      \"name\": \"Mitchelstown\",\n      \"quote\": \"Rector of Mitchelstown, contributes a personal experience.\",\n      \"modern_name\": \"Mitchelstown\",\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Argentine\",\n      \"quote\": \"returned to this parish from the Argentine.\",\n      \"modern_name\": \"Argentina\",\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Ireland\",\n      \"quote\": \"but for her sake he returned to Ireland.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Cork\",\n      \"quote\": \"He died in a Cork hospital soon after his admission\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the form of poor Sam, the upper half of it, seemed to pass before me",
+  "summary": "After Samuel Penrose dies following several accidents, the Rector sees a vision of the man's upper half passing before him.",
+  "places": [
+   {
+    "name": "Mitchelstown",
+    "quote": "Rector of Mitchelstown, contributes a personal experience.",
+    "modern_name": "Mitchelstown",
+    "role": "setting"
+   },
+   {
+    "name": "Argentine",
+    "quote": "returned to this parish from the Argentine.",
+    "modern_name": "Argentina",
+    "role": "mentioned"
+   },
+   {
+    "name": "Ireland",
+    "quote": "but for her sake he returned to Ireland.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Cork",
+    "quote": "He died in a Cork hospital soon after his admission",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

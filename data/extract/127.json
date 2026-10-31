@@ -1,0 +1,40 @@
+{
+ "tale_id": 127,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 5.7,
+ "usage": {
+  "promptTokenCount": 1544,
+  "candidatesTokenCount": 211,
+  "totalTokenCount": 1755,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1544
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"It is said to be haunted by a ghost known as the \\\"White Lady,\\\"\",\n    \"summary\": \"A bride's ghost, known as the White Lady, haunts Charles Fort after her husband was accidentally shot by his father-in-law.\",\n    \"places\": [\n      {\n        \"name\": \"Charles Fort\",\n        \"quote\": \"Another military station, Charles Fort, near Kinsale, has long had the reputation of being haunted.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Kinsale\",\n        \"quote\": \"Another military station, Charles Fort, near Kinsale, has long had the reputation of being haunted.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "It is said to be haunted by a ghost known as the \"White Lady,\"",
+  "summary": "A bride's ghost, known as the White Lady, haunts Charles Fort after her husband was accidentally shot by his father-in-law.",
+  "places": [
+   {
+    "name": "Charles Fort",
+    "quote": "Another military station, Charles Fort, near Kinsale, has long had the reputation of being haunted.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Kinsale",
+    "quote": "Another military station, Charles Fort, near Kinsale, has long had the reputation of being haunted.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

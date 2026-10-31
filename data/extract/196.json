@@ -1,0 +1,40 @@
+{
+ "tale_id": 196,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 4.9,
+ "usage": {
+  "promptTokenCount": 978,
+  "candidatesTokenCount": 184,
+  "totalTokenCount": 1162,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 978
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"a lady's \\\"double\\\" being seen, with no consequent results.\",\n    \"summary\": \"Mrs. Mary Murnane saw a double of her sister in Limerick, but her brother insisted the sister was not there.\",\n    \"places\": [\n      {\n        \"name\": \"Limerick\",\n        \"quote\": \"Here is a curious tale from the city of Limerick\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"George Street\",\n        \"quote\": \"As she was walking down George Street she saw\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "a lady's \"double\" being seen, with no consequent results.",
+  "summary": "Mrs. Mary Murnane saw a double of her sister in Limerick, but her brother insisted the sister was not there.",
+  "places": [
+   {
+    "name": "Limerick",
+    "quote": "Here is a curious tale from the city of Limerick",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "George Street",
+    "quote": "As she was walking down George Street she saw",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

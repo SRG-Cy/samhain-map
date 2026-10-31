@@ -1,0 +1,41 @@
+{
+ "tale_id": 152,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 63.4,
+ "usage": {
+  "promptTokenCount": 667,
+  "candidatesTokenCount": 176,
+  "totalTokenCount": 3617,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 667
+   }
+  ],
+  "thoughtsTokenCount": 2774,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"a very firm believer in ghosts\",\n  \"summary\": \"Two sisters walking along Kimmage Road hear a mysterious clinking chain and feel a sudden blast of air, though nothing is visible.\",\n  \"places\": [\n    {\n      \"name\": \"Dublin\",\n      \"quote\": \"occurrence near Dublin is sent us by a lady\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Kimmage Road\",\n      \"quote\": \"walking along a very lonely part of the Kimmage Road\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "a very firm believer in ghosts",
+  "summary": "Two sisters walking along Kimmage Road hear a mysterious clinking chain and feel a sudden blast of air, though nothing is visible.",
+  "places": [
+   {
+    "name": "Dublin",
+    "quote": "occurrence near Dublin is sent us by a lady",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Kimmage Road",
+    "quote": "walking along a very lonely part of the Kimmage Road",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

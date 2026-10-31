@@ -1,0 +1,28 @@
+{
+ "tale_id": 219,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 27.0,
+ "usage": {
+  "promptTokenCount": 454,
+  "candidatesTokenCount": 83,
+  "totalTokenCount": 1680,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 454
+   }
+  ],
+  "thoughtsTokenCount": 1143,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"death_warning\"\n  ],\n  \"beings_quote\": \"thought it was a warning to him that he was soon to leave this world\",\n  \"summary\": \"A man walking at night mistakes a seaweed outline for a coffin and a warning of his death, but discovers it is just seaweed.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "thought it was a warning to him that he was soon to leave this world",
+  "summary": "A man walking at night mistakes a seaweed outline for a coffin and a warning of his death, but discovers it is just seaweed.",
+  "places": []
+ }
+}

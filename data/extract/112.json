@@ -1,0 +1,40 @@
+{
+ "tale_id": 112,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 5.0,
+ "usage": {
+  "promptTokenCount": 1138,
+  "candidatesTokenCount": 193,
+  "totalTokenCount": 1331,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1138
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"the figure of a woman, stooping down and apparently looking at me.\",\n    \"summary\": \"A woman and her family encounter a ghostly figure in a haunted house in Kingstown.\",\n    \"places\": [\n      {\n        \"name\": \"Kingstown\",\n        \"quote\": \"A haunted house in Kingstown, Co. Dublin, was investigated\",\n        \"modern_name\": \"Dún Laoghaire\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Co. Dublin\",\n        \"quote\": \"A haunted house in Kingstown, Co. Dublin, was investigated\",\n        \"modern_name\": \"County Dublin\",\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the figure of a woman, stooping down and apparently looking at me.",
+  "summary": "A woman and her family encounter a ghostly figure in a haunted house in Kingstown.",
+  "places": [
+   {
+    "name": "Kingstown",
+    "quote": "A haunted house in Kingstown, Co. Dublin, was investigated",
+    "modern_name": "Dún Laoghaire",
+    "role": "setting"
+   },
+   {
+    "name": "Co. Dublin",
+    "quote": "A haunted house in Kingstown, Co. Dublin, was investigated",
+    "modern_name": "County Dublin",
+    "role": "setting"
+   }
+  ]
+ }
+}

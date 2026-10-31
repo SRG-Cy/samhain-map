@@ -1,0 +1,35 @@
+{
+ "tale_id": 223,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 28.6,
+ "usage": {
+  "promptTokenCount": 501,
+  "candidatesTokenCount": 132,
+  "totalTokenCount": 1821,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 501
+   }
+  ],
+  "thoughtsTokenCount": 1188,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"the departed husband returns to his sorrowing wife\",\n  \"summary\": \"A departed husband returns to his wife multiple times to chat and request money for cards before he ceases his visits.\",\n  \"places\": [\n    {\n      \"name\": \"County Clare\",\n      \"quote\": \"An occurrence of very much the same description took place in County Clare about three years ago.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "the departed husband returns to his sorrowing wife",
+  "summary": "A departed husband returns to his wife multiple times to chat and request money for cards before he ceases his visits.",
+  "places": [
+   {
+    "name": "County Clare",
+    "quote": "An occurrence of very much the same description took place in County Clare about three years ago.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "tale_id": 150,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 113.2,
+ "usage": {
+  "promptTokenCount": 600,
+  "candidatesTokenCount": 136,
+  "totalTokenCount": 5945,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 600
+   }
+  ],
+  "thoughtsTokenCount": 5209,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"where a \\\"ghost\\\" was seen, not at the witching hour\",\n  \"summary\": \"A lady walking near Cork saw an old-fashioned woman who suddenly disappeared, and she later learned the road was believed to be haunted.\",\n  \"places\": [\n    {\n      \"name\": \"Cork\",\n      \"quote\": \"She was walking along a country road in the vicinity of Cork one afternoon\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "where a \"ghost\" was seen, not at the witching hour",
+  "summary": "A lady walking near Cork saw an old-fashioned woman who suddenly disappeared, and she later learned the road was believed to be haunted.",
+  "places": [
+   {
+    "name": "Cork",
+    "quote": "She was walking along a country road in the vicinity of Cork one afternoon",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

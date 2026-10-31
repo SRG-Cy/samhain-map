@@ -1,0 +1,53 @@
+{
+ "tale_id": 218,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 106.3,
+ "usage": {
+  "promptTokenCount": 778,
+  "candidatesTokenCount": 300,
+  "totalTokenCount": 5752,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 778
+   }
+  ],
+  "thoughtsTokenCount": 4674,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"other\"\n  ],\n  \"beings_quote\": \"the sound of someone working the pump\",\n  \"summary\": \"A mysterious force-pump at Dunluce Rectory produced sounds of being worked at night, which was later explained as mechanical vibrations from a hammer.\",\n  \"places\": [\n    {\n      \"name\": \"St. Patrick's Cathedral, Dublin\",\n      \"quote\": \"is related by Dean Ovenden of St. Patrick's Cathedral, Dublin.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Dunluce Rectory\",\n      \"quote\": \"At Dunluce Rectory, Co. Antrim,\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Co. Antrim\",\n      \"quote\": \"At Dunluce Rectory, Co. Antrim,\",\n      \"modern_name\": \"County Antrim\",\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Bushmills\",\n      \"quote\": \"as it was better than any obtained at that time in Bushmills.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "other"
+  ],
+  "beings_quote": "the sound of someone working the pump",
+  "summary": "A mysterious force-pump at Dunluce Rectory produced sounds of being worked at night, which was later explained as mechanical vibrations from a hammer.",
+  "places": [
+   {
+    "name": "St. Patrick's Cathedral, Dublin",
+    "quote": "is related by Dean Ovenden of St. Patrick's Cathedral, Dublin.",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Dunluce Rectory",
+    "quote": "At Dunluce Rectory, Co. Antrim,",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Co. Antrim",
+    "quote": "At Dunluce Rectory, Co. Antrim,",
+    "modern_name": "County Antrim",
+    "role": "setting"
+   },
+   {
+    "name": "Bushmills",
+    "quote": "as it was better than any obtained at that time in Bushmills.",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

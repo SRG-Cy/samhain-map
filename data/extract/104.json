@@ -1,0 +1,41 @@
+{
+ "tale_id": 104,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 60.0,
+ "usage": {
+  "promptTokenCount": 709,
+  "candidatesTokenCount": 181,
+  "totalTokenCount": 3523,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 709
+   }
+  ],
+  "thoughtsTokenCount": 2633,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"an awful, evil Face, with an expression of wickedness and hate upon it\",\n  \"summary\": \"A clergyman sleeping in a schoolroom is terrified by an evil face that peers through his bed curtains.\",\n  \"places\": [\n    {\n      \"name\": \"Dublin\",\n      \"quote\": \"This cleric was curate of a Dublin parish\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Malahide\",\n      \"quote\": \"resided with his parents some distance out of town in the direction of Malahide.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "an awful, evil Face, with an expression of wickedness and hate upon it",
+  "summary": "A clergyman sleeping in a schoolroom is terrified by an evil face that peers through his bed curtains.",
+  "places": [
+   {
+    "name": "Dublin",
+    "quote": "This cleric was curate of a Dublin parish",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Malahide",
+    "quote": "resided with his parents some distance out of town in the direction of Malahide.",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

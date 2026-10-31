@@ -1,0 +1,47 @@
+{
+ "tale_id": 161,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 69.1,
+ "usage": {
+  "promptTokenCount": 928,
+  "candidatesTokenCount": 245,
+  "totalTokenCount": 4162,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 928
+   }
+  ],
+  "thoughtsTokenCount": 2989,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"saw a man walking rapidly after me\",\n  \"summary\": \"A woman is followed by a man on a road, who is later revealed to be the spirit of a sailor who died that morning.\",\n  \"places\": [\n    {\n      \"name\": \"Island Magee\",\n      \"quote\": \"At Island Magee is the Knowehead Lonan\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Knowehead Lonan\",\n      \"quote\": \"At Island Magee is the Knowehead Lonan\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Dick's Brae\",\n      \"quote\": \"I met A. B. on 'Dick's Brae,' on her way to church or Sunday school\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "saw a man walking rapidly after me",
+  "summary": "A woman is followed by a man on a road, who is later revealed to be the spirit of a sailor who died that morning.",
+  "places": [
+   {
+    "name": "Island Magee",
+    "quote": "At Island Magee is the Knowehead Lonan",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Knowehead Lonan",
+    "quote": "At Island Magee is the Knowehead Lonan",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Dick's Brae",
+    "quote": "I met A. B. on 'Dick's Brae,' on her way to church or Sunday school",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

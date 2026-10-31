@@ -1,0 +1,28 @@
+{
+ "tale_id": 203,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 64.7,
+ "usage": {
+  "promptTokenCount": 597,
+  "candidatesTokenCount": 67,
+  "totalTokenCount": 3623,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 597
+   }
+  ],
+  "thoughtsTokenCount": 2959,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"a ghost of an unusual type\",\n  \"summary\": \"A daughter sees the ghost of her deceased father, who tells her where to find a missing parchment book.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "a ghost of an unusual type",
+  "summary": "A daughter sees the ghost of her deceased father, who tells her where to find a missing parchment book.",
+  "places": []
+ }
+}

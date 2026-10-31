@@ -1,0 +1,59 @@
+{
+ "tale_id": 216,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 9.6,
+ "usage": {
+  "promptTokenCount": 3645,
+  "candidatesTokenCount": 412,
+  "totalTokenCount": 4057,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 3645
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"devil\",\n      \"ghost\"\n    ],\n    \"beings_quote\": \"it was believed that they were haunted by the Devil\",\n    \"summary\": \"A young woman named Anne Tottenham dies in madness after encountering a gentleman with a cloven foot, and her ghost continues to haunt the tapestry room of Loftus Hall.\",\n    \"places\": [\n      {\n        \"name\": \"Loftus Hall\",\n        \"quote\": \"\\\"Loftus Hall, in County Wexford, was built on the site of a stronghold erected by Raymond\\\"\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"County Wexford\",\n        \"quote\": \"\\\"Loftus Hall, in County Wexford, was built on the site of a stronghold erected by Raymond\\\"\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Dunmore\",\n        \"quote\": \"\\\"In the autumn of 1868 I was again in the locality, at Dunmore, on the opposite side\\\"\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Waterford Estuary\",\n        \"quote\": \"\\\"In the autumn of 1868 I was again in the locality, at Dunmore, on the opposite side of the Waterford Estuary.\\\"\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Dover\",\n        \"quote\": \"\\\"telling him what had occurred to myself in the room, and that the evidence of supernatural appearances there were so strong\\\"\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "devil",
+   "ghost"
+  ],
+  "beings_quote": "it was believed that they were haunted by the Devil",
+  "summary": "A young woman named Anne Tottenham dies in madness after encountering a gentleman with a cloven foot, and her ghost continues to haunt the tapestry room of Loftus Hall.",
+  "places": [
+   {
+    "name": "Loftus Hall",
+    "quote": "\"Loftus Hall, in County Wexford, was built on the site of a stronghold erected by Raymond\"",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "County Wexford",
+    "quote": "\"Loftus Hall, in County Wexford, was built on the site of a stronghold erected by Raymond\"",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Dunmore",
+    "quote": "\"In the autumn of 1868 I was again in the locality, at Dunmore, on the opposite side\"",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Waterford Estuary",
+    "quote": "\"In the autumn of 1868 I was again in the locality, at Dunmore, on the opposite side of the Waterford Estuary.\"",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Dover",
+    "quote": "\"telling him what had occurred to myself in the room, and that the evidence of supernatural appearances there were so strong\"",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

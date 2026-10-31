@@ -1,0 +1,40 @@
+{
+ "tale_id": 126,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 5.4,
+ "usage": {
+  "promptTokenCount": 1436,
+  "candidatesTokenCount": 215,
+  "totalTokenCount": 1651,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1436
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"E. declared that the place was haunted, and told her of a number of weird things\",\n    \"summary\": \"A visitor to an old barracks in Kilkenny experiences strange noises, violent coughing, and sees a dark figure in her bedroom.\",\n    \"places\": [\n      {\n        \"name\": \"Co. Kilkenny\",\n        \"quote\": \"The following weird incidents occurred, apparently in the Co. Kilkenny, to a Miss K. B.\",\n        \"modern_name\": \"County Kilkenny\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Co. Kilkenny\",\n        \"quote\": \"In large houses in Co. Kilkenny the fires are not lighted every day\",\n        \"modern_name\": \"County Kilkenny\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "E. declared that the place was haunted, and told her of a number of weird things",
+  "summary": "A visitor to an old barracks in Kilkenny experiences strange noises, violent coughing, and sees a dark figure in her bedroom.",
+  "places": [
+   {
+    "name": "Co. Kilkenny",
+    "quote": "The following weird incidents occurred, apparently in the Co. Kilkenny, to a Miss K. B.",
+    "modern_name": "County Kilkenny",
+    "role": "setting"
+   },
+   {
+    "name": "Co. Kilkenny",
+    "quote": "In large houses in Co. Kilkenny the fires are not lighted every day",
+    "modern_name": "County Kilkenny",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

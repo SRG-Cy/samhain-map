@@ -1,0 +1,35 @@
+{
+ "tale_id": 149,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 42.2,
+ "usage": {
+  "promptTokenCount": 646,
+  "candidatesTokenCount": 138,
+  "totalTokenCount": 2594,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 646
+   }
+  ],
+  "thoughtsTokenCount": 1810,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"It is very like a tinker who was found dead in that forge about six months ago.\",\n  \"summary\": \"A group driving in County Leitrim encounters a shabbily-dressed man who is later identified as a tinker who died in a nearby forge.\",\n  \"places\": [\n    {\n      \"name\": \"County Leitrim\",\n      \"quote\": \"driving along a country road in County Leitrim.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "It is very like a tinker who was found dead in that forge about six months ago.",
+  "summary": "A group driving in County Leitrim encounters a shabbily-dressed man who is later identified as a tinker who died in a nearby forge.",
+  "places": [
+   {
+    "name": "County Leitrim",
+    "quote": "driving along a country road in County Leitrim.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

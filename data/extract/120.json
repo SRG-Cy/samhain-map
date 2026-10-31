@@ -1,0 +1,35 @@
+{
+ "tale_id": 120,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 49.1,
+ "usage": {
+  "promptTokenCount": 846,
+  "candidatesTokenCount": 127,
+  "totalTokenCount": 3135,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 846
+   }
+  ],
+  "thoughtsTokenCount": 2162,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"a woman entered the room, dressed in white\",\n  \"summary\": \"A tailor and his wife are haunted by a woman in white in their rented house, leading to a legal dispute with their landlady.\",\n  \"places\": [\n    {\n      \"name\": \"Drogheda\",\n      \"quote\": \"A Drogheda solicitor appeared for the tenants\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "a woman entered the room, dressed in white",
+  "summary": "A tailor and his wife are haunted by a woman in white in their rented house, leading to a legal dispute with their landlady.",
+  "places": [
+   {
+    "name": "Drogheda",
+    "quote": "A Drogheda solicitor appeared for the tenants",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

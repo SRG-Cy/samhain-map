@@ -1,0 +1,35 @@
+{
+ "tale_id": 215,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 49.8,
+ "usage": {
+  "promptTokenCount": 498,
+  "candidatesTokenCount": 139,
+  "totalTokenCount": 2812,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 498
+   }
+  ],
+  "thoughtsTokenCount": 2175,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"the shadow of a skeleton \\\"climbing the wall like a huge spider.\\\"\",\n  \"summary\": \"A guest in a house in the Boyne valley sees a skeleton shadow that materializes into bones and falls to the floor.\",\n  \"places\": [\n    {\n      \"name\": \"Boyne valley\",\n      \"quote\": \"A strange legend is told of a house in the Boyne valley.\",\n      \"modern_name\": \"Boyne Valley\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the shadow of a skeleton \"climbing the wall like a huge spider.\"",
+  "summary": "A guest in a house in the Boyne valley sees a skeleton shadow that materializes into bones and falls to the floor.",
+  "places": [
+   {
+    "name": "Boyne valley",
+    "quote": "A strange legend is told of a house in the Boyne valley.",
+    "modern_name": "Boyne Valley",
+    "role": "setting"
+   }
+  ]
+ }
+}

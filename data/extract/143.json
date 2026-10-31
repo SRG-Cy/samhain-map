@@ -1,0 +1,41 @@
+{
+ "tale_id": 143,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 58.0,
+ "usage": {
+  "promptTokenCount": 741,
+  "candidatesTokenCount": 189,
+  "totalTokenCount": 3422,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 741
+   }
+  ],
+  "thoughtsTokenCount": 2492,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"poltergeist\"\n  ],\n  \"beings_quote\": \"Poltergeistic phenomena from their very nature lend themselves to spurious reproduction\",\n  \"summary\": \"A man was disturbed by mysterious noises and moving objects, which was actually a plot by his wife and son to force him to resign his post.\",\n  \"places\": [\n    {\n      \"name\": \"Passage East\",\n      \"quote\": \"in charge of an evicted farm in the Passage East district\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Waterford\",\n      \"quote\": \"eventually the family left and went to live in Waterford.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "poltergeist"
+  ],
+  "beings_quote": "Poltergeistic phenomena from their very nature lend themselves to spurious reproduction",
+  "summary": "A man was disturbed by mysterious noises and moving objects, which was actually a plot by his wife and son to force him to resign his post.",
+  "places": [
+   {
+    "name": "Passage East",
+    "quote": "in charge of an evicted farm in the Passage East district",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Waterford",
+    "quote": "eventually the family left and went to live in Waterford.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

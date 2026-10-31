@@ -1,0 +1,40 @@
+{
+ "tale_id": 192,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 5.0,
+ "usage": {
+  "promptTokenCount": 967,
+  "candidatesTokenCount": 184,
+  "totalTokenCount": 1151,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 967
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"death_warning\"\n    ],\n    \"beings_quote\": \"the strangest is the Gormanstown foxes.\",\n    \"summary\": \"Foxes congregate at Gormanstown Castle to signal the impending death of the head of the noble family.\",\n    \"places\": [\n      {\n        \"name\": \"Gormanstown Castle\",\n        \"quote\": \"congregate at Gormanstown Castle.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Dublin\",\n        \"quote\": \"Jenico, the 14th Viscount, died in Dublin.\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "the strangest is the Gormanstown foxes.",
+  "summary": "Foxes congregate at Gormanstown Castle to signal the impending death of the head of the noble family.",
+  "places": [
+   {
+    "name": "Gormanstown Castle",
+    "quote": "congregate at Gormanstown Castle.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Dublin",
+    "quote": "Jenico, the 14th Viscount, died in Dublin.",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

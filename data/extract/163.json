@@ -1,0 +1,53 @@
+{
+ "tale_id": 163,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 58.7,
+ "usage": {
+  "promptTokenCount": 604,
+  "candidatesTokenCount": 292,
+  "totalTokenCount": 3336,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 604
+   }
+  ],
+  "thoughtsTokenCount": 2440,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"they saw an elderly gentleman of their acquaintance coming up the path.\",\n  \"summary\": \"Two women in Dublin saw an acquaintance walking up their path, only to learn the next day that he had died at that exact time.\",\n  \"places\": [\n    {\n      \"name\": \"Grene Park\",\n      \"quote\": \"Miss Grene, of Grene Park, Co. Tipperary\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Co. Tipperary\",\n      \"quote\": \"Miss Grene, of Grene Park, Co. Tipperary\",\n      \"modern_name\": \"County Tipperary\",\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Cashel\",\n      \"quote\": \"sister of a former Dean of Cashel\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Dublin\",\n      \"quote\": \"staying with a friend in a house in the suburbs of Dublin\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "they saw an elderly gentleman of their acquaintance coming up the path.",
+  "summary": "Two women in Dublin saw an acquaintance walking up their path, only to learn the next day that he had died at that exact time.",
+  "places": [
+   {
+    "name": "Grene Park",
+    "quote": "Miss Grene, of Grene Park, Co. Tipperary",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Co. Tipperary",
+    "quote": "Miss Grene, of Grene Park, Co. Tipperary",
+    "modern_name": "County Tipperary",
+    "role": "mentioned"
+   },
+   {
+    "name": "Cashel",
+    "quote": "sister of a former Dean of Cashel",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Dublin",
+    "quote": "staying with a friend in a house in the suburbs of Dublin",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

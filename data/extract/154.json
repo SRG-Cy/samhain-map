@@ -1,0 +1,35 @@
+{
+ "tale_id": 154,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 65.3,
+ "usage": {
+  "promptTokenCount": 725,
+  "candidatesTokenCount": 121,
+  "totalTokenCount": 3769,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 725
+   }
+  ],
+  "thoughtsTokenCount": 2923,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"A story told of a ghost which haunts a certain spot\",\n  \"summary\": \"A girl and two boys see the apparition of a little boy in a sailor suit near a drain in a glen.\",\n  \"places\": [\n    {\n      \"name\": \"Waterford\",\n      \"quote\": \"near the city of Waterford\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "A story told of a ghost which haunts a certain spot",
+  "summary": "A girl and two boys see the apparition of a little boy in a sailor suit near a drain in a glen.",
+  "places": [
+   {
+    "name": "Waterford",
+    "quote": "near the city of Waterford",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

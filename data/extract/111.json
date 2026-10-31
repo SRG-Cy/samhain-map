@@ -1,0 +1,41 @@
+{
+ "tale_id": 111,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 77.7,
+ "usage": {
+  "promptTokenCount": 566,
+  "candidatesTokenCount": 183,
+  "totalTokenCount": 4213,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 566
+   }
+  ],
+  "thoughtsTokenCount": 3464,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"saw the figure of a nun approach the kitchen window\",\n  \"summary\": \"A servant saw the figure of a nun at a former monastery near Blanchardstown, where doors are violently flung open at night.\",\n  \"places\": [\n    {\n      \"name\": \"Blanchardstown\",\n      \"quote\": \"Near Blanchardstown, Co. Dublin, is a house\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Co. Dublin\",\n      \"quote\": \"Near Blanchardstown, Co. Dublin, is a house\",\n      \"modern_name\": \"County Dublin\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "saw the figure of a nun approach the kitchen window",
+  "summary": "A servant saw the figure of a nun at a former monastery near Blanchardstown, where doors are violently flung open at night.",
+  "places": [
+   {
+    "name": "Blanchardstown",
+    "quote": "Near Blanchardstown, Co. Dublin, is a house",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Co. Dublin",
+    "quote": "Near Blanchardstown, Co. Dublin, is a house",
+    "modern_name": "County Dublin",
+    "role": "setting"
+   }
+  ]
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "tale_id": 179,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 126.7,
+ "usage": {
+  "promptTokenCount": 499,
+  "candidatesTokenCount": 276,
+  "totalTokenCount": 6430,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 499
+   }
+  ],
+  "thoughtsTokenCount": 5655,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"banshee\"\n  ],\n  \"beings_quote\": \"my mother heard the bitter wailing of the Banshee.\",\n  \"summary\": \"A woman saw a white figure and heard a banshee wailing, and the next morning her grandfather fell in the city of Cork and never recovered.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Cork\",\n      \"quote\": \"a member of a Co. Cork family of English descent\",\n      \"modern_name\": \"County Cork\",\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Blackrock\",\n      \"quote\": \"their house at Blackrock, near Cork.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Cork\",\n      \"quote\": \"their house at Blackrock, near Cork.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"city of Cork\",\n      \"quote\": \"into the city of Cork.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "banshee"
+  ],
+  "beings_quote": "my mother heard the bitter wailing of the Banshee.",
+  "summary": "A woman saw a white figure and heard a banshee wailing, and the next morning her grandfather fell in the city of Cork and never recovered.",
+  "places": [
+   {
+    "name": "Co. Cork",
+    "quote": "a member of a Co. Cork family of English descent",
+    "modern_name": "County Cork",
+    "role": "mentioned"
+   },
+   {
+    "name": "Blackrock",
+    "quote": "their house at Blackrock, near Cork.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Cork",
+    "quote": "their house at Blackrock, near Cork.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "city of Cork",
+    "quote": "into the city of Cork.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

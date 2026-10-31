@@ -1,0 +1,35 @@
+{
+ "tale_id": 191,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 55.1,
+ "usage": {
+  "promptTokenCount": 613,
+  "candidatesTokenCount": 145,
+  "totalTokenCount": 3167,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 613
+   }
+  ],
+  "thoughtsTokenCount": 2409,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"death_warning\"\n  ],\n  \"beings_quote\": \"distinctly saw a small childlike figure running round and round the grass ring\",\n  \"summary\": \"A woman sees a crying childlike figure that appears before accidents or deaths, and shortly after, Mr. G---- is thrown from his carriage.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Galway\",\n      \"quote\": \"In front of the residence of the G---- family in Co. Galway there is\",\n      \"modern_name\": \"County Galway\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "distinctly saw a small childlike figure running round and round the grass ring",
+  "summary": "A woman sees a crying childlike figure that appears before accidents or deaths, and shortly after, Mr. G---- is thrown from his carriage.",
+  "places": [
+   {
+    "name": "Co. Galway",
+    "quote": "In front of the residence of the G---- family in Co. Galway there is",
+    "modern_name": "County Galway",
+    "role": "setting"
+   }
+  ]
+ }
+}

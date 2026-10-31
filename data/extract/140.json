@@ -1,0 +1,47 @@
+{
+ "tale_id": 140,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 60.1,
+ "usage": {
+  "promptTokenCount": 727,
+  "candidatesTokenCount": 233,
+  "totalTokenCount": 3538,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 727
+   }
+  ],
+  "thoughtsTokenCount": 2578,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"fairy\"\n  ],\n  \"beings_quote\": \"mischievous tricks which were played upon him by a company of fairies\",\n  \"summary\": \"Families in Upper Ballygowan were harassed by flying stones and laughter after taking stones from an old mansion inhabited by fairies.\",\n  \"places\": [\n    {\n      \"name\": \"Ireland\",\n      \"quote\": \"Another similar story comes from the north of Ireland.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Upper Ballygowan\",\n      \"quote\": \"two families residing at Upper Ballygowan, near Larne,\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Larne\",\n      \"quote\": \"two families residing at Upper Ballygowan, near Larne,\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "fairy"
+  ],
+  "beings_quote": "mischievous tricks which were played upon him by a company of fairies",
+  "summary": "Families in Upper Ballygowan were harassed by flying stones and laughter after taking stones from an old mansion inhabited by fairies.",
+  "places": [
+   {
+    "name": "Ireland",
+    "quote": "Another similar story comes from the north of Ireland.",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Upper Ballygowan",
+    "quote": "two families residing at Upper Ballygowan, near Larne,",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Larne",
+    "quote": "two families residing at Upper Ballygowan, near Larne,",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

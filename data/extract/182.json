@@ -1,0 +1,40 @@
+{
+ "tale_id": 182,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 4.8,
+ "usage": {
+  "promptTokenCount": 1077,
+  "candidatesTokenCount": 183,
+  "totalTokenCount": 1260,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1077
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"banshee\"\n    ],\n    \"beings_quote\": \"the description tallied with that of the Banshee\",\n    \"summary\": \"A Colonel sees a terrifying woman on an Italian yacht who is identified as a Banshee foretelling the death of the Count.\",\n    \"places\": [\n      {\n        \"name\": \"Italian lakes\",\n        \"quote\": \"on the deck of a private yacht on one of the Italian lakes\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Italy\",\n        \"quote\": \"fled across the frontier and settled in Italy.\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "banshee"
+  ],
+  "beings_quote": "the description tallied with that of the Banshee",
+  "summary": "A Colonel sees a terrifying woman on an Italian yacht who is identified as a Banshee foretelling the death of the Count.",
+  "places": [
+   {
+    "name": "Italian lakes",
+    "quote": "on the deck of a private yacht on one of the Italian lakes",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Italy",
+    "quote": "fled across the frontier and settled in Italy.",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

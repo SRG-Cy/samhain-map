@@ -1,0 +1,35 @@
+{
+ "tale_id": 164,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 50.3,
+ "usage": {
+  "promptTokenCount": 553,
+  "candidatesTokenCount": 121,
+  "totalTokenCount": 2869,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 553
+   }
+  ],
+  "thoughtsTokenCount": 2195,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"where they had seen the phantom disappear.\",\n  \"summary\": \"A clergyman and his brother see a mysterious figure in a graveyard, and the person they visited dies and is buried where the figure disappeared.\",\n  \"places\": [\n    {\n      \"name\": \"Ireland\",\n      \"quote\": \"held a curacy in Ireland.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "where they had seen the phantom disappear.",
+  "summary": "A clergyman and his brother see a mysterious figure in a graveyard, and the person they visited dies and is buried where the figure disappeared.",
+  "places": [
+   {
+    "name": "Ireland",
+    "quote": "held a curacy in Ireland.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

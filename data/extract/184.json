@@ -1,0 +1,35 @@
+{
+ "tale_id": 184,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 46.3,
+ "usage": {
+  "promptTokenCount": 520,
+  "candidatesTokenCount": 122,
+  "totalTokenCount": 2662,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 520
+   }
+  ],
+  "thoughtsTokenCount": 2020,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"saw a skeleton looking out\",\n  \"summary\": \"Two servants saw a skeleton in a coach that vanished, and the son of the family died shortly after arriving home.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Clare\",\n      \"quote\": \"Two other good stories come from Co. Clare.\",\n      \"modern_name\": \"County Clare\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "saw a skeleton looking out",
+  "summary": "Two servants saw a skeleton in a coach that vanished, and the son of the family died shortly after arriving home.",
+  "places": [
+   {
+    "name": "Co. Clare",
+    "quote": "Two other good stories come from Co. Clare.",
+    "modern_name": "County Clare",
+    "role": "setting"
+   }
+  ]
+ }
+}

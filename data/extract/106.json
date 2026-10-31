@@ -1,0 +1,35 @@
+{
+ "tale_id": 106,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 87.7,
+ "usage": {
+  "promptTokenCount": 606,
+  "candidatesTokenCount": 140,
+  "totalTokenCount": 4697,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 606
+   }
+  ],
+  "thoughtsTokenCount": 3951,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"reputed to be haunted by the ghost of its founder, Primate Narcissus Marsh.\",\n  \"summary\": \"The ghost of Primate Narcissus Marsh haunts his library, moving books as punishment for failing to find his niece's elopement note.\",\n  \"places\": [\n    {\n      \"name\": \"Chapelizod\",\n      \"quote\": \"married in a tavern to the curate of Chapelizod.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "reputed to be haunted by the ghost of its founder, Primate Narcissus Marsh.",
+  "summary": "The ghost of Primate Narcissus Marsh haunts his library, moving books as punishment for failing to find his niece's elopement note.",
+  "places": [
+   {
+    "name": "Chapelizod",
+    "quote": "married in a tavern to the curate of Chapelizod.",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

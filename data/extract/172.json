@@ -1,0 +1,70 @@
+{
+ "tale_id": 172,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 10.8,
+ "usage": {
+  "promptTokenCount": 1149,
+  "candidatesTokenCount": 467,
+  "totalTokenCount": 1616,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1149
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"dead_returning\"\n    ],\n    \"beings_quote\": \"that man the captain who had been buried several days previously\",\n    \"summary\": \"After a captain and two sailors die in a storm, the captain's apparition appears at a house on Inishinny before vanishing.\",\n    \"places\": [\n      {\n        \"name\": \"Inishinny\",\n        \"quote\": \"The island of Inishinny, which is the scene of this story\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Donegal\",\n        \"quote\": \"is one of the most picturesque islands on the Donegal coast.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Gola\",\n        \"quote\": \"With the islands of Gola and Inismaan it forms a perfectly natural harbour\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Inismaan\",\n        \"quote\": \"With the islands of Gola and Inismaan it forms a perfectly natural harbour\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Gola Roads\",\n        \"quote\": \"a small sailing-ship put into Gola Roads (as this anchorage is called)\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Bunbeg\",\n        \"quote\": \"the captain and two men had to obtain provisions from Bunbeg\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Derry\",\n        \"quote\": \"word was sent immediately to the captain's wife in Derry\",\n        \"modern_name\": \"Derry\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "that man the captain who had been buried several days previously",
+  "summary": "After a captain and two sailors die in a storm, the captain's apparition appears at a house on Inishinny before vanishing.",
+  "places": [
+   {
+    "name": "Inishinny",
+    "quote": "The island of Inishinny, which is the scene of this story",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Donegal",
+    "quote": "is one of the most picturesque islands on the Donegal coast.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Gola",
+    "quote": "With the islands of Gola and Inismaan it forms a perfectly natural harbour",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Inismaan",
+    "quote": "With the islands of Gola and Inismaan it forms a perfectly natural harbour",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Gola Roads",
+    "quote": "a small sailing-ship put into Gola Roads (as this anchorage is called)",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Bunbeg",
+    "quote": "the captain and two men had to obtain provisions from Bunbeg",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Derry",
+    "quote": "word was sent immediately to the captain's wife in Derry",
+    "modern_name": "Derry",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

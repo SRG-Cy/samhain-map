@@ -1,0 +1,28 @@
+{
+ "tale_id": 214,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 59.1,
+ "usage": {
+  "promptTokenCount": 762,
+  "candidatesTokenCount": 66,
+  "totalTokenCount": 3500,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 762
+   }
+  ],
+  "thoughtsTokenCount": 2672,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"the gloomy spectre went to unnecessary trouble\",\n  \"summary\": \"A reckless nobleman is visited by a mysterious stranger who later takes him away in a magical ship.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the gloomy spectre went to unnecessary trouble",
+  "summary": "A reckless nobleman is visited by a mysterious stranger who later takes him away in a magical ship.",
+  "places": []
+ }
+}

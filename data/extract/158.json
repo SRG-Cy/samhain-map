@@ -1,0 +1,46 @@
+{
+ "tale_id": 158,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 6.1,
+ "usage": {
+  "promptTokenCount": 1380,
+  "candidatesTokenCount": 233,
+  "totalTokenCount": 1613,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1380
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"dead_returning\"\n    ],\n    \"beings_quote\": \"that I was not the first person who had witnessed this strange sight.\",\n    \"summary\": \"A man witnesses a vision of a seventeenth-century battle involving a widow and her sons defending their cottage from soldiers.\",\n    \"places\": [\n      {\n        \"name\": \"Versailles\",\n        \"quote\": \"two English ladies who were paying a visit to Versailles\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Lifford\",\n        \"quote\": \"the officer in command of the infantry regiment stationed at Lifford.\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Derry\",\n        \"quote\": \"leading from the main road to Derry\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "that I was not the first person who had witnessed this strange sight.",
+  "summary": "A man witnesses a vision of a seventeenth-century battle involving a widow and her sons defending their cottage from soldiers.",
+  "places": [
+   {
+    "name": "Versailles",
+    "quote": "two English ladies who were paying a visit to Versailles",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Lifford",
+    "quote": "the officer in command of the infantry regiment stationed at Lifford.",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Derry",
+    "quote": "leading from the main road to Derry",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

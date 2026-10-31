@@ -1,0 +1,41 @@
+{
+ "tale_id": 144,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 73.4,
+ "usage": {
+  "promptTokenCount": 733,
+  "candidatesTokenCount": 184,
+  "totalTokenCount": 4149,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 733
+   }
+  ],
+  "thoughtsTokenCount": 3232,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"I had heard nothing of this story until after I had seen the ghost\",\n  \"summary\": \"A man sees a girl in white near Clonmel and later learns she is the spirit of a woman who died years ago.\",\n  \"places\": [\n    {\n      \"name\": \"Clonmel\",\n      \"quote\": \"The scene is outside Clonmel, on the main road\",\n      \"modern_name\": \"Clonmel\",\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"---- Lodge\",\n      \"quote\": \"on the side of the mountains called ---- Lodge.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "I had heard nothing of this story until after I had seen the ghost",
+  "summary": "A man sees a girl in white near Clonmel and later learns she is the spirit of a woman who died years ago.",
+  "places": [
+   {
+    "name": "Clonmel",
+    "quote": "The scene is outside Clonmel, on the main road",
+    "modern_name": "Clonmel",
+    "role": "setting"
+   },
+   {
+    "name": "---- Lodge",
+    "quote": "on the side of the mountains called ---- Lodge.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

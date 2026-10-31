@@ -1,0 +1,53 @@
+{
+ "tale_id": 139,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 8.0,
+ "usage": {
+  "promptTokenCount": 1405,
+  "candidatesTokenCount": 312,
+  "totalTokenCount": 1717,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1405
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"poltergeist\",\n      \"fairy\"\n    ],\n    \"beings_quote\": \"when things were moved by some unseen agent, and boots and candles thrown out of the house\",\n    \"summary\": \"A family in Fermanagh experiences unexplained noises and moving objects in their home until prayer and scripture are read by a visiting party.\",\n    \"places\": [\n      {\n        \"name\": \"County Fermanagh\",\n        \"quote\": \"The next case related by Professor Barrett occurred in County Fermanagh\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Enniskillen\",\n        \"quote\": \"at a spot eleven miles from Enniskillen\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Derrygonelly\",\n        \"quote\": \"about two miles from the hamlet of Derrygonelly\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Enniskillen\",\n        \"quote\": \"at the invitation of Mr. Thomas Plunkett of Enniskillen\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "poltergeist",
+   "fairy"
+  ],
+  "beings_quote": "when things were moved by some unseen agent, and boots and candles thrown out of the house",
+  "summary": "A family in Fermanagh experiences unexplained noises and moving objects in their home until prayer and scripture are read by a visiting party.",
+  "places": [
+   {
+    "name": "County Fermanagh",
+    "quote": "The next case related by Professor Barrett occurred in County Fermanagh",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Enniskillen",
+    "quote": "at a spot eleven miles from Enniskillen",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Derrygonelly",
+    "quote": "about two miles from the hamlet of Derrygonelly",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Enniskillen",
+    "quote": "at the invitation of Mr. Thomas Plunkett of Enniskillen",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

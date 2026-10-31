@@ -1,0 +1,28 @@
+{
+ "tale_id": 145,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 48.4,
+ "usage": {
+  "promptTokenCount": 901,
+  "candidatesTokenCount": 78,
+  "totalTokenCount": 3160,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 901
+   }
+  ],
+  "thoughtsTokenCount": 2181,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"The two men realised then that they had seen a ghost\",\n  \"summary\": \"Two constables see a policeman emerge from a hedge and enter a barrack, only to find the door bolted and no one inside.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "The two men realised then that they had seen a ghost",
+  "summary": "Two constables see a policeman emerge from a hedge and enter a barrack, only to find the door bolted and no one inside.",
+  "places": []
+ }
+}

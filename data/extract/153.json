@@ -1,0 +1,41 @@
+{
+ "tale_id": 153,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 44.2,
+ "usage": {
+  "promptTokenCount": 719,
+  "candidatesTokenCount": 196,
+  "totalTokenCount": 2774,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 719
+   }
+  ],
+  "thoughtsTokenCount": 1859,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"a monk was often seen in the churchyard.\",\n  \"summary\": \"A man riding near Abbeyshrule saw a mysterious figure in a churchyard, and another traveler mentioned avoiding the abbey to avoid seeing a monk.\",\n  \"places\": [\n    {\n      \"name\": \"Edgeworthstown\",\n      \"quote\": \"The story is told by Mr. G. H. Millar of Edgeworthstown:\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Abbeyshrule\",\n      \"quote\": \"I had to pass by the old ruins and burial-ground of Abbeyshrule.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "a monk was often seen in the churchyard.",
+  "summary": "A man riding near Abbeyshrule saw a mysterious figure in a churchyard, and another traveler mentioned avoiding the abbey to avoid seeing a monk.",
+  "places": [
+   {
+    "name": "Edgeworthstown",
+    "quote": "The story is told by Mr. G. H. Millar of Edgeworthstown:",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Abbeyshrule",
+    "quote": "I had to pass by the old ruins and burial-ground of Abbeyshrule.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

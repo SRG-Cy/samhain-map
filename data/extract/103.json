@@ -1,0 +1,41 @@
+{
+ "tale_id": 103,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 88.9,
+ "usage": {
+  "promptTokenCount": 901,
+  "candidatesTokenCount": 216,
+  "totalTokenCount": 5054,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 901
+   }
+  ],
+  "thoughtsTokenCount": 3937,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"it must have been the master's old Aunt Betty, who lived for many years in the upper part of that house\",\n  \"summary\": \"Major Macgregor felt a warm, human hand on his shoulder in a Dublin house, which servants claimed belonged to a relative who died fifty years earlier.\",\n  \"places\": [\n    {\n      \"name\": \"Ireland\",\n      \"quote\": \"I went over to Ireland to visit a relative living in a Square in the north side of Dublin.\",\n      \"modern_name\": \"Ireland\",\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Dublin\",\n      \"quote\": \"I went over to Ireland to visit a relative living in a Square in the north side of Dublin.\",\n      \"modern_name\": \"Dublin\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "it must have been the master's old Aunt Betty, who lived for many years in the upper part of that house",
+  "summary": "Major Macgregor felt a warm, human hand on his shoulder in a Dublin house, which servants claimed belonged to a relative who died fifty years earlier.",
+  "places": [
+   {
+    "name": "Ireland",
+    "quote": "I went over to Ireland to visit a relative living in a Square in the north side of Dublin.",
+    "modern_name": "Ireland",
+    "role": "mentioned"
+   },
+   {
+    "name": "Dublin",
+    "quote": "I went over to Ireland to visit a relative living in a Square in the north side of Dublin.",
+    "modern_name": "Dublin",
+    "role": "setting"
+   }
+  ]
+ }
+}

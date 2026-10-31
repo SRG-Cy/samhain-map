@@ -1,0 +1,35 @@
+{
+ "tale_id": 167,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 67.3,
+ "usage": {
+  "promptTokenCount": 636,
+  "candidatesTokenCount": 133,
+  "totalTokenCount": 3760,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 636
+   }
+  ],
+  "thoughtsTokenCount": 2991,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"Lord Tyrone appeared after death one night to Lady Beresford\",\n  \"summary\": \"Lord Tyrone appeared to Lady Beresford at Gill Hall after his death to fulfill a promise and foretell her future.\",\n  \"places\": [\n    {\n      \"name\": \"Gill Hall\",\n      \"quote\": \"Lord Tyrone appeared after death one night to Lady Beresford at Gill Hall\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "Lord Tyrone appeared after death one night to Lady Beresford",
+  "summary": "Lord Tyrone appeared to Lady Beresford at Gill Hall after his death to fulfill a promise and foretell her future.",
+  "places": [
+   {
+    "name": "Gill Hall",
+    "quote": "Lord Tyrone appeared after death one night to Lady Beresford at Gill Hall",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

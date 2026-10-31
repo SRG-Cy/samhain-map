@@ -1,0 +1,28 @@
+{
+ "tale_id": 178,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 50.6,
+ "usage": {
+  "promptTokenCount": 526,
+  "candidatesTokenCount": 74,
+  "totalTokenCount": 2875,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 526
+   }
+  ],
+  "thoughtsTokenCount": 2275,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"banshee\"\n  ],\n  \"beings_quote\": \"the Banshee had cried, was dead\",\n  \"summary\": \"Children saw a dark old woman crying near a gate, and the next day the gentleman living there died at that exact hour.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "banshee"
+  ],
+  "beings_quote": "the Banshee had cried, was dead",
+  "summary": "Children saw a dark old woman crying near a gate, and the next day the gentleman living there died at that exact hour.",
+  "places": []
+ }
+}

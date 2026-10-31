@@ -1,0 +1,59 @@
+{
+ "tale_id": 190,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 8.9,
+ "usage": {
+  "promptTokenCount": 965,
+  "candidatesTokenCount": 368,
+  "totalTokenCount": 1333,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 965
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"saint\",\n      \"other\"\n    ],\n    \"beings_quote\": \"Columcille went away, and that night a bright pillar of fire appeared\",\n    \"summary\": \"A pillar of fire and an angel helped Scanlan Mor escape prison after St. Columcille prophesied his freedom.\",\n    \"places\": [\n      {\n        \"name\": \"Ballyknockane\",\n        \"quote\": \"the family of Scanlan of Ballyknockane, Co. Limerick\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Co. Limerick\",\n        \"quote\": \"the family of Scanlan of Ballyknockane, Co. Limerick\",\n        \"modern_name\": \"County Limerick\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Ossory\",\n        \"quote\": \"King of Ossory, from whom the family claim descent\",\n        \"modern_name\": \"Ossory\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Drom Ceat\",\n        \"quote\": \"When St. Columcille attended the Synod of Drom Ceat\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Knockfierna\",\n        \"quote\": \"seen the lights on Knockfierna near Ballyknockane\",\n        \"modern_name\": \"Knockfierna\",\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "saint",
+   "other"
+  ],
+  "beings_quote": "Columcille went away, and that night a bright pillar of fire appeared",
+  "summary": "A pillar of fire and an angel helped Scanlan Mor escape prison after St. Columcille prophesied his freedom.",
+  "places": [
+   {
+    "name": "Ballyknockane",
+    "quote": "the family of Scanlan of Ballyknockane, Co. Limerick",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Co. Limerick",
+    "quote": "the family of Scanlan of Ballyknockane, Co. Limerick",
+    "modern_name": "County Limerick",
+    "role": "setting"
+   },
+   {
+    "name": "Ossory",
+    "quote": "King of Ossory, from whom the family claim descent",
+    "modern_name": "Ossory",
+    "role": "mentioned"
+   },
+   {
+    "name": "Drom Ceat",
+    "quote": "When St. Columcille attended the Synod of Drom Ceat",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Knockfierna",
+    "quote": "seen the lights on Knockfierna near Ballyknockane",
+    "modern_name": "Knockfierna",
+    "role": "setting"
+   }
+  ]
+ }
+}

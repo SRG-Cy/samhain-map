@@ -1,0 +1,87 @@
+{
+ "raw": "{\n  \"accounts\": [\n    {\n      \"start\": 3,\n      \"title\": \"The Banshee of the Baronial Castle\"\n    },\n    {\n      \"start\": 5,\n      \"title\": \"The Banshee of Kilchrist Church\"\n    },\n    {\n      \"start\": 6,\n      \"title\": \"The Banshee near the Bishop's Demesne\"\n    },\n    {\n      \"start\": 7,\n      \"title\": \"The Banshee at Blackrock\"\n    },\n    {\n      \"start\": 8,\n      \"title\": \"The Banshee in the Nursery\"\n    },\n    {\n      \"start\": 9,\n      \"title\": \"The Banshee in the Public School\"\n    },\n    {\n      \"start\": 11,\n      \"title\": \"The Banshee on the Italian Yacht\"\n    },\n    {\n      \"start\": 23,\n      \"title\": \"The Headless Coach in Co. Limerick\"\n    },\n    {\n      \"start\": 24,\n      \"title\": \"The Headless Coach in Co. Clare\"\n    },\n    {\n      \"start\": 25,\n      \"title\": \"The Death Coach at Ennistymon\"\n    },\n    {\n      \"start\": 28,\n      \"title\": \"Various Family Death-Warnings\"\n    },\n    {\n      \"start\": 29,\n      \"title\": \"The Crash in Wicklow\"\n    },\n    {\n      \"start\": 30,\n      \"title\": \"The Knocking on the Door\"\n    },\n    {\n      \"start\": 31,\n      \"title\": \"The Ball of Fire in Cork\"\n    },\n    {\n      \"start\": 32,\n      \"title\": \"The Scanlan Lights of Ballyknockane\"\n    },\n    {\n      \"start\": 35,\n      \"title\": \"The Childlike Figure in Co. Galway\"\n    },\n    {\n      \"start\": 36,\n      \"title\": \"The Gormanstown Foxes\"\n    }\n  ]\n}",
+ "usage": {
+  "promptTokenCount": 6138,
+  "candidatesTokenCount": 500,
+  "totalTokenCount": 6638,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 6138
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "result": {
+  "accounts": [
+   {
+    "start": 3,
+    "title": "The Banshee of the Baronial Castle"
+   },
+   {
+    "start": 5,
+    "title": "The Banshee of Kilchrist Church"
+   },
+   {
+    "start": 6,
+    "title": "The Banshee near the Bishop's Demesne"
+   },
+   {
+    "start": 7,
+    "title": "The Banshee at Blackrock"
+   },
+   {
+    "start": 8,
+    "title": "The Banshee in the Nursery"
+   },
+   {
+    "start": 9,
+    "title": "The Banshee in the Public School"
+   },
+   {
+    "start": 11,
+    "title": "The Banshee on the Italian Yacht"
+   },
+   {
+    "start": 23,
+    "title": "The Headless Coach in Co. Limerick"
+   },
+   {
+    "start": 24,
+    "title": "The Headless Coach in Co. Clare"
+   },
+   {
+    "start": 25,
+    "title": "The Death Coach at Ennistymon"
+   },
+   {
+    "start": 28,
+    "title": "Various Family Death-Warnings"
+   },
+   {
+    "start": 29,
+    "title": "The Crash in Wicklow"
+   },
+   {
+    "start": 30,
+    "title": "The Knocking on the Door"
+   },
+   {
+    "start": 31,
+    "title": "The Ball of Fire in Cork"
+   },
+   {
+    "start": 32,
+    "title": "The Scanlan Lights of Ballyknockane"
+   },
+   {
+    "start": 35,
+    "title": "The Childlike Figure in Co. Galway"
+   },
+   {
+    "start": 36,
+    "title": "The Gormanstown Foxes"
+   }
+  ]
+ }
+}

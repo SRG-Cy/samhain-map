@@ -1,0 +1,47 @@
+{
+ "tale_id": 195,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 109.8,
+ "usage": {
+  "promptTokenCount": 681,
+  "candidatesTokenCount": 233,
+  "totalTokenCount": 5833,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 681
+   }
+  ],
+  "thoughtsTokenCount": 4919,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"the \\\"double\\\" or \\\"wraith\\\" of a living man was seen\",\n  \"summary\": \"Witnesses saw a clergyman's double at a churchyard while he was actually traveling to Kilkenny.\",\n  \"places\": [\n    {\n      \"name\": \"A----\",\n      \"quote\": \"In May 1883 the parish of A---- was vacant\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"A---- churchyard\",\n      \"quote\": \"The house we then lived in looked down towards A---- churchyard\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Kilkenny\",\n      \"quote\": \"as he had to go to Kilkenny\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the \"double\" or \"wraith\" of a living man was seen",
+  "summary": "Witnesses saw a clergyman's double at a churchyard while he was actually traveling to Kilkenny.",
+  "places": [
+   {
+    "name": "A----",
+    "quote": "In May 1883 the parish of A---- was vacant",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "A---- churchyard",
+    "quote": "The house we then lived in looked down towards A---- churchyard",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Kilkenny",
+    "quote": "as he had to go to Kilkenny",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

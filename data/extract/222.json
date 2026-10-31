@@ -1,0 +1,41 @@
+{
+ "tale_id": 222,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 38.8,
+ "usage": {
+  "promptTokenCount": 733,
+  "candidatesTokenCount": 187,
+  "totalTokenCount": 2525,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 733
+   }
+  ],
+  "thoughtsTokenCount": 1605,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"he said that he was her late husband\",\n  \"summary\": \"A widow is visited by an apparition claiming to be her late husband, who asks for money before being caught by the police.\",\n  \"places\": [\n    {\n      \"name\": \"County Tipperary\",\n      \"quote\": \"An amusing account of a pseudo-haunting comes from County Tipperary\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Thurles\",\n      \"quote\": \"A farmer in the vicinity of Thurles died leaving behind him a young widow.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "he said that he was her late husband",
+  "summary": "A widow is visited by an apparition claiming to be her late husband, who asks for money before being caught by the police.",
+  "places": [
+   {
+    "name": "County Tipperary",
+    "quote": "An amusing account of a pseudo-haunting comes from County Tipperary",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Thurles",
+    "quote": "A farmer in the vicinity of Thurles died leaving behind him a young widow.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

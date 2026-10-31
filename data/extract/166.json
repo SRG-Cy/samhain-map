@@ -1,0 +1,35 @@
+{
+ "tale_id": 166,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 107.7,
+ "usage": {
+  "promptTokenCount": 624,
+  "candidatesTokenCount": 144,
+  "totalTokenCount": 5680,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 624
+   }
+  ],
+  "thoughtsTokenCount": 4912,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"heard his friend's voice say distinctly, 'There is a God, just but terrible in His judgments'\",\n  \"summary\": \"After promising to visit each other after death, Mr. Scott's spirit appears to Mr. Miller just before Mr. Scott dies.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Wexford\",\n      \"quote\": \"A gentleman named Miller resided in Co. Wexford\",\n      \"modern_name\": \"County Wexford\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "heard his friend's voice say distinctly, 'There is a God, just but terrible in His judgments'",
+  "summary": "After promising to visit each other after death, Mr. Scott's spirit appears to Mr. Miller just before Mr. Scott dies.",
+  "places": [
+   {
+    "name": "Co. Wexford",
+    "quote": "A gentleman named Miller resided in Co. Wexford",
+    "modern_name": "County Wexford",
+    "role": "setting"
+   }
+  ]
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "raw": "{\n  \"accounts\": [\n    {\n      \"start\": 2,\n      \"title\": \"The Haunted House near Portarlington\"\n    },\n    {\n      \"start\": 4,\n      \"title\": \"The Snoring Grandfather in Portarlington\"\n    },\n    {\n      \"start\": 6,\n      \"title\": \"The Minister Murdered in Queen's Co.\"\n    },\n    {\n      \"start\": 14,\n      \"title\": \"The Haunted Barracks in Co. Kilkenny\"\n    },\n    {\n      \"start\": 20,\n      \"title\": \"The White Lady of Charles Fort\"\n    },\n    {\n      \"start\": 27,\n      \"title\": \"The Haunted Cottages in South Ireland\"\n    },\n    {\n      \"start\": 33,\n      \"title\": \"The Skeleton in the Limerick House\"\n    },\n    {\n      \"start\": 34,\n      \"title\": \"The Haunted House in East Co. Clare\"\n    },\n    {\n      \"start\": 36,\n      \"title\": \"The Black Dog of the D---- Family\"\n    },\n    {\n      \"start\": 38,\n      \"title\": \"The Bloody Floor in Co. Limerick\"\n    },\n    {\n      \"start\": 39,\n      \"title\": \"The Man in Cap and Gown\"\n    },\n    {\n      \"start\": 42,\n      \"title\": \"The Ghostly Footsteps in the School\"\n    },\n    {\n      \"start\": 49,\n      \"title\": \"The Phantom Coach at the Rectory\"\n    },\n    {\n      \"start\": 54,\n      \"title\": \"The Voices in K---- Castle\"\n    },\n    {\n      \"start\": 62,\n      \"title\": \"The Ghosts of Kilman Castle\"\n    }\n  ]\n}",
+ "usage": {
+  "promptTokenCount": 11343,
+  "candidatesTokenCount": 449,
+  "totalTokenCount": 11792,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 11343
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "result": {
+  "accounts": [
+   {
+    "start": 2,
+    "title": "The Haunted House near Portarlington"
+   },
+   {
+    "start": 4,
+    "title": "The Snoring Grandfather in Portarlington"
+   },
+   {
+    "start": 6,
+    "title": "The Minister Murdered in Queen's Co."
+   },
+   {
+    "start": 14,
+    "title": "The Haunted Barracks in Co. Kilkenny"
+   },
+   {
+    "start": 20,
+    "title": "The White Lady of Charles Fort"
+   },
+   {
+    "start": 27,
+    "title": "The Haunted Cottages in South Ireland"
+   },
+   {
+    "start": 33,
+    "title": "The Skeleton in the Limerick House"
+   },
+   {
+    "start": 34,
+    "title": "The Haunted House in East Co. Clare"
+   },
+   {
+    "start": 36,
+    "title": "The Black Dog of the D---- Family"
+   },
+   {
+    "start": 38,
+    "title": "The Bloody Floor in Co. Limerick"
+   },
+   {
+    "start": 39,
+    "title": "The Man in Cap and Gown"
+   },
+   {
+    "start": 42,
+    "title": "The Ghostly Footsteps in the School"
+   },
+   {
+    "start": 49,
+    "title": "The Phantom Coach at the Rectory"
+   },
+   {
+    "start": 54,
+    "title": "The Voices in K---- Castle"
+   },
+   {
+    "start": 62,
+    "title": "The Ghosts of Kilman Castle"
+   }
+  ]
+ }
+}

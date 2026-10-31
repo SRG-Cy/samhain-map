@@ -1,0 +1,35 @@
+{
+ "tale_id": 142,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 52.1,
+ "usage": {
+  "promptTokenCount": 612,
+  "candidatesTokenCount": 126,
+  "totalTokenCount": 3038,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 612
+   }
+  ],
+  "thoughtsTokenCount": 2300,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"poltergeist\"\n  ],\n  \"beings_quote\": \"a silent testimony to the power of the poltergeist.\",\n  \"summary\": \"A man built a house on a fairy path, but a poltergeist caused disturbances until he was forced to leave.\",\n  \"places\": [\n    {\n      \"name\": \"Portarlington\",\n      \"quote\": \"which comes from Portarlington:\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "poltergeist"
+  ],
+  "beings_quote": "a silent testimony to the power of the poltergeist.",
+  "summary": "A man built a house on a fairy path, but a poltergeist caused disturbances until he was forced to leave.",
+  "places": [
+   {
+    "name": "Portarlington",
+    "quote": "which comes from Portarlington:",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

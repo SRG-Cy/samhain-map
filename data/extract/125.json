@@ -1,0 +1,40 @@
+{
+ "tale_id": 125,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 5.2,
+ "usage": {
+  "promptTokenCount": 1019,
+  "candidatesTokenCount": 201,
+  "totalTokenCount": 1220,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1019
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"I saw standing by it a man in a grey suit.\",\n    \"summary\": \"A family living in Queen's Co. is disturbed by a ghost that opens doors and walks through rooms at night.\",\n    \"places\": [\n      {\n        \"name\": \"Queen's Co.\",\n        \"quote\": \"A lady, formerly resident in Queen's Co., but who now lives near Dublin\",\n        \"modern_name\": \"Laois\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Dublin\",\n        \"quote\": \"A lady, formerly resident in Queen's Co., but who now lives near Dublin\",\n        \"modern_name\": \"Dublin\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "I saw standing by it a man in a grey suit.",
+  "summary": "A family living in Queen's Co. is disturbed by a ghost that opens doors and walks through rooms at night.",
+  "places": [
+   {
+    "name": "Queen's Co.",
+    "quote": "A lady, formerly resident in Queen's Co., but who now lives near Dublin",
+    "modern_name": "Laois",
+    "role": "setting"
+   },
+   {
+    "name": "Dublin",
+    "quote": "A lady, formerly resident in Queen's Co., but who now lives near Dublin",
+    "modern_name": "Dublin",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

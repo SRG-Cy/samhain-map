@@ -1,0 +1,27 @@
+{
+ "tale_id": 110,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 2.8,
+ "usage": {
+  "promptTokenCount": 1852,
+  "candidatesTokenCount": 85,
+  "totalTokenCount": 1937,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1852
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"the story of an extraordinary ghost, somewhat lacking in good manners\",\n    \"summary\": \"A troublesome ghost named Corney haunts a family by playing practical jokes and speaking from a coal-cellar until the house is sold.\",\n    \"places\": []\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the story of an extraordinary ghost, somewhat lacking in good manners",
+  "summary": "A troublesome ghost named Corney haunts a family by playing practical jokes and speaking from a coal-cellar until the house is sold.",
+  "places": []
+ }
+}

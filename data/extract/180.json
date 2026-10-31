@@ -1,0 +1,28 @@
+{
+ "tale_id": 180,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 25.7,
+ "usage": {
+  "promptTokenCount": 536,
+  "candidatesTokenCount": 71,
+  "totalTokenCount": 1714,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 536
+   }
+  ],
+  "thoughtsTokenCount": 1107,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"banshee\"\n  ],\n  \"beings_quote\": \"Did you hear the Banshee?\",\n  \"summary\": \"While a mother was ill, a family and their neighbors heard an extraordinary wailing that was identified as a banshee.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "banshee"
+  ],
+  "beings_quote": "Did you hear the Banshee?",
+  "summary": "While a mother was ill, a family and their neighbors heard an extraordinary wailing that was identified as a banshee.",
+  "places": []
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "tale_id": 118,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 2.9,
+ "usage": {
+  "promptTokenCount": 1515,
+  "candidatesTokenCount": 90,
+  "totalTokenCount": 1605,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1515
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"the appearance of a deceased member of the \\\"Force,\\\" uniform and all!\",\n    \"summary\": \"An ex-constable recounts various supernatural disturbances, including being pushed off a bed and witnessing a man struggle with an invisible foe in a police barracks.\",\n    \"places\": []\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the appearance of a deceased member of the \"Force,\" uniform and all!",
+  "summary": "An ex-constable recounts various supernatural disturbances, including being pushed off a bed and witnessing a man struggle with an invisible foe in a police barracks.",
+  "places": []
+ }
+}

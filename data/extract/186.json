@@ -1,0 +1,47 @@
+{
+ "tale_id": 186,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 147.7,
+ "usage": {
+  "promptTokenCount": 671,
+  "candidatesTokenCount": 242,
+  "totalTokenCount": 7585,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 671
+   }
+  ],
+  "thoughtsTokenCount": 6672,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"death_warning\"\n  ],\n  \"beings_quote\": \"A death-warning in the shape of a white owl\",\n  \"summary\": \"Various families experience different portents, such as spectres, broken glass, or animal sounds, that precede a death.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Wicklow\",\n      \"quote\": \"In a Co. Wicklow family a death is preceded\",\n      \"modern_name\": \"County Wicklow\",\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Queen's Co.\",\n      \"quote\": \"Before any member of a certain Queen's Co. family died\",\n      \"modern_name\": \"County Laois\",\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Clonaslee\",\n      \"quote\": \"A Mrs. F---- and her son lived near Clonaslee.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "A death-warning in the shape of a white owl",
+  "summary": "Various families experience different portents, such as spectres, broken glass, or animal sounds, that precede a death.",
+  "places": [
+   {
+    "name": "Co. Wicklow",
+    "quote": "In a Co. Wicklow family a death is preceded",
+    "modern_name": "County Wicklow",
+    "role": "setting"
+   },
+   {
+    "name": "Queen's Co.",
+    "quote": "Before any member of a certain Queen's Co. family died",
+    "modern_name": "County Laois",
+    "role": "setting"
+   },
+   {
+    "name": "Clonaslee",
+    "quote": "A Mrs. F---- and her son lived near Clonaslee.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

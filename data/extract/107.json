@@ -1,0 +1,35 @@
+{
+ "tale_id": 107,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 46.9,
+ "usage": {
+  "promptTokenCount": 672,
+  "candidatesTokenCount": 133,
+  "totalTokenCount": 2841,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 672
+   }
+  ],
+  "thoughtsTokenCount": 2036,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"The ghost of a deceased Canon was seen in one of the Dublin cathedrals\",\n  \"summary\": \"A lady saw the ghost of a deceased Canon sitting in a Dublin cathedral during a Sunday morning service.\",\n  \"places\": [\n    {\n      \"name\": \"Dublin\",\n      \"quote\": \"The ghost of a deceased Canon was seen in one of the Dublin cathedrals\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "The ghost of a deceased Canon was seen in one of the Dublin cathedrals",
+  "summary": "A lady saw the ghost of a deceased Canon sitting in a Dublin cathedral during a Sunday morning service.",
+  "places": [
+   {
+    "name": "Dublin",
+    "quote": "The ghost of a deceased Canon was seen in one of the Dublin cathedrals",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

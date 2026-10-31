@@ -1,0 +1,59 @@
+{
+ "raw": "{\n  \"accounts\": [\n    {\n      \"start\": 2,\n      \"title\": \"The Knocking at Emo House\"\n    },\n    {\n      \"start\": 5,\n      \"title\": \"The Tramping Horses in North Ireland\"\n    },\n    {\n      \"start\": 7,\n      \"title\": \"The House on an Ancient Graveyard\"\n    },\n    {\n      \"start\": 8,\n      \"title\": \"The Pig-Headed Ghost in Co. Cavan\"\n    },\n    {\n      \"start\": 9,\n      \"title\": \"The Haunted Grocery in Belturbet\"\n    },\n    {\n      \"start\": 10,\n      \"title\": \"The Haunted R.I.C. Barracks\"\n    },\n    {\n      \"start\": 15,\n      \"title\": \"The Old Woman in Galway\"\n    },\n    {\n      \"start\": 17,\n      \"title\": \"The White Lady of Drogheda\"\n    },\n    {\n      \"start\": 19,\n      \"title\": \"The Old Woman in Monaghan\"\n    },\n    {\n      \"start\": 20,\n      \"title\": \"The One-Armed Man in Donegal\"\n    }\n  ]\n}",
+ "usage": {
+  "promptTokenCount": 5603,
+  "candidatesTokenCount": 299,
+  "totalTokenCount": 5902,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5603
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "result": {
+  "accounts": [
+   {
+    "start": 2,
+    "title": "The Knocking at Emo House"
+   },
+   {
+    "start": 5,
+    "title": "The Tramping Horses in North Ireland"
+   },
+   {
+    "start": 7,
+    "title": "The House on an Ancient Graveyard"
+   },
+   {
+    "start": 8,
+    "title": "The Pig-Headed Ghost in Co. Cavan"
+   },
+   {
+    "start": 9,
+    "title": "The Haunted Grocery in Belturbet"
+   },
+   {
+    "start": 10,
+    "title": "The Haunted R.I.C. Barracks"
+   },
+   {
+    "start": 15,
+    "title": "The Old Woman in Galway"
+   },
+   {
+    "start": 17,
+    "title": "The White Lady of Drogheda"
+   },
+   {
+    "start": 19,
+    "title": "The Old Woman in Monaghan"
+   },
+   {
+    "start": 20,
+    "title": "The One-Armed Man in Donegal"
+   }
+  ]
+ }
+}

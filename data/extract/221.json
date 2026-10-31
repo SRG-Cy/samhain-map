@@ -1,0 +1,41 @@
+{
+ "tale_id": 221,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 60.9,
+ "usage": {
+  "promptTokenCount": 554,
+  "candidatesTokenCount": 200,
+  "totalTokenCount": 3404,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 554
+   }
+  ],
+  "thoughtsTokenCount": 2650,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"devil\"\n  ],\n  \"beings_quote\": \"the devil, the devil, he knocked three times at the window\",\n  \"summary\": \"Two maids believe the devil knocked at their window, but it was actually a swallow that broke its neck against the glass.\",\n  \"places\": [\n    {\n      \"name\": \"Ardee\",\n      \"quote\": \"A family living at Ardee, Co. Louth, were one night sitting reading in the parlour.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Co. Louth\",\n      \"quote\": \"A family living at Ardee, Co. Louth, were one night sitting reading in the parlour.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "devil"
+  ],
+  "beings_quote": "the devil, the devil, he knocked three times at the window",
+  "summary": "Two maids believe the devil knocked at their window, but it was actually a swallow that broke its neck against the glass.",
+  "places": [
+   {
+    "name": "Ardee",
+    "quote": "A family living at Ardee, Co. Louth, were one night sitting reading in the parlour.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Co. Louth",
+    "quote": "A family living at Ardee, Co. Louth, were one night sitting reading in the parlour.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

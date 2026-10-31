@@ -1,0 +1,41 @@
+{
+ "tale_id": 156,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 76.2,
+ "usage": {
+  "promptTokenCount": 769,
+  "candidatesTokenCount": 192,
+  "totalTokenCount": 4357,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 769
+   }
+  ],
+  "thoughtsTokenCount": 3396,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"from the creamery funnel there arose a dense volume of smoke mingled with the sharp hissing of steam\",\n  \"summary\": \"A man hears the sounds and sees the smoke of a creamery operating at midnight as if it were broad daylight.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Limerick\",\n      \"quote\": \"Mr. Patrick Ryan, of P----, Co. Limerick, gives us two stories\",\n      \"modern_name\": \"County Limerick\",\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Limerick\",\n      \"quote\": \"The Phantom Creamery near Limerick\",\n      \"modern_name\": \"Limerick\",\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "from the creamery funnel there arose a dense volume of smoke mingled with the sharp hissing of steam",
+  "summary": "A man hears the sounds and sees the smoke of a creamery operating at midnight as if it were broad daylight.",
+  "places": [
+   {
+    "name": "Co. Limerick",
+    "quote": "Mr. Patrick Ryan, of P----, Co. Limerick, gives us two stories",
+    "modern_name": "County Limerick",
+    "role": "setting"
+   },
+   {
+    "name": "Limerick",
+    "quote": "The Phantom Creamery near Limerick",
+    "modern_name": "Limerick",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

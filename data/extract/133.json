@@ -1,0 +1,27 @@
+{
+ "tale_id": 133,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 2.9,
+ "usage": {
+  "promptTokenCount": 977,
+  "candidatesTokenCount": 82,
+  "totalTokenCount": 1059,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 977
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"he saw a man in cap and gown come into the room\",\n    \"summary\": \"A student and later a teacher both encounter a man in cap and gown who passes through walls or reads in their rooms.\",\n    \"places\": []\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "he saw a man in cap and gown come into the room",
+  "summary": "A student and later a teacher both encounter a man in cap and gown who passes through walls or reads in their rooms.",
+  "places": []
+ }
+}

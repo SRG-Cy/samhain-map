@@ -1,0 +1,41 @@
+{
+ "tale_id": 207,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 5.3,
+ "usage": {
+  "promptTokenCount": 950,
+  "candidatesTokenCount": 199,
+  "totalTokenCount": 1149,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 950
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\",\n      \"devil\"\n    ],\n    \"beings_quote\": \"he had once seen the devil!\",\n    \"summary\": \"A labourer and later a family living near Donohill Rectory are both troubled by the appearance of a spectral black dog with blood-red eyes.\",\n    \"places\": [\n      {\n        \"name\": \"Donohill Rectory\",\n        \"quote\": \"just outside the avenue gate of Donohill Rectory, but neither of the compilers\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Ireland\",\n        \"quote\": \"Of all the strange beliefs to be found in Ireland\",\n        \"modern_name\": \"Ireland\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost",
+   "devil"
+  ],
+  "beings_quote": "he had once seen the devil!",
+  "summary": "A labourer and later a family living near Donohill Rectory are both troubled by the appearance of a spectral black dog with blood-red eyes.",
+  "places": [
+   {
+    "name": "Donohill Rectory",
+    "quote": "just outside the avenue gate of Donohill Rectory, but neither of the compilers",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Ireland",
+    "quote": "Of all the strange beliefs to be found in Ireland",
+    "modern_name": "Ireland",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

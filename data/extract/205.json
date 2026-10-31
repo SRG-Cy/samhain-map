@@ -1,0 +1,41 @@
+{
+ "tale_id": 205,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 67.9,
+ "usage": {
+  "promptTokenCount": 638,
+  "candidatesTokenCount": 182,
+  "totalTokenCount": 3781,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 638
+   }
+  ],
+  "thoughtsTokenCount": 2961,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"The table spelt out the name of a Bishop\",\n  \"summary\": \"A clergyman and his friends use table-turning to discover that a Bishop had died shortly before their meeting.\",\n  \"places\": [\n    {\n      \"name\": \"Clogher\",\n      \"quote\": \"A clergyman in the diocese of Clogher gave a personal experience\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"St. Patrick's\",\n      \"quote\": \"to the present Dean of St. Patrick's, who kindly sent\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "The table spelt out the name of a Bishop",
+  "summary": "A clergyman and his friends use table-turning to discover that a Bishop had died shortly before their meeting.",
+  "places": [
+   {
+    "name": "Clogher",
+    "quote": "A clergyman in the diocese of Clogher gave a personal experience",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "St. Patrick's",
+    "quote": "to the present Dean of St. Patrick's, who kindly sent",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

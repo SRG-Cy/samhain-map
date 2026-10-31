@@ -1,0 +1,35 @@
+{
+ "tale_id": 200,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 68.3,
+ "usage": {
+  "promptTokenCount": 844,
+  "candidatesTokenCount": 147,
+  "totalTokenCount": 4016,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 844
+   }
+  ],
+  "thoughtsTokenCount": 3025,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"death_warning\"\n  ],\n  \"beings_quote\": \"the date on the stone as given above was, from the day of her dream, exactly a year in advance.\",\n  \"summary\": \"A woman dreams of her own tombstone and death date, and she dies exactly one year later on that predicted date.\",\n  \"places\": [\n    {\n      \"name\": \"Glasnevin\",\n      \"quote\": \"she was in a cemetery, which she recognised as Glasnevin\",\n      \"modern_name\": \"Glasnevin\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "the date on the stone as given above was, from the day of her dream, exactly a year in advance.",
+  "summary": "A woman dreams of her own tombstone and death date, and she dies exactly one year later on that predicted date.",
+  "places": [
+   {
+    "name": "Glasnevin",
+    "quote": "she was in a cemetery, which she recognised as Glasnevin",
+    "modern_name": "Glasnevin",
+    "role": "setting"
+   }
+  ]
+ }
+}

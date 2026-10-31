@@ -1,0 +1,35 @@
+{
+ "tale_id": 193,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 47.3,
+ "usage": {
+  "promptTokenCount": 564,
+  "candidatesTokenCount": 142,
+  "totalTokenCount": 2747,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 564
+   }
+  ],
+  "thoughtsTokenCount": 2041,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"she distinctly felt a hand placed on her shoulder, and became conscious of a voice saying, \\\"Don't be afraid, Mary!\\\"\",\n  \"summary\": \"A young girl who feared the room where her grandmother died was comforted by a hand on her shoulder and a voice.\",\n  \"places\": [\n    {\n      \"name\": \"Dublin\",\n      \"quote\": \"When she was a little girl she resided in Dublin;\",\n      \"modern_name\": \"Dublin\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "she distinctly felt a hand placed on her shoulder, and became conscious of a voice saying, \"Don't be afraid, Mary!\"",
+  "summary": "A young girl who feared the room where her grandmother died was comforted by a hand on her shoulder and a voice.",
+  "places": [
+   {
+    "name": "Dublin",
+    "quote": "When she was a little girl she resided in Dublin;",
+    "modern_name": "Dublin",
+    "role": "setting"
+   }
+  ]
+ }
+}

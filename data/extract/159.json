@@ -1,0 +1,40 @@
+{
+ "tale_id": 159,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 5.3,
+ "usage": {
+  "promptTokenCount": 1127,
+  "candidatesTokenCount": 208,
+  "totalTokenCount": 1335,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1127
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"the sound of light, hurried footsteps, exactly suggestive of those of an active, restless young female\",\n    \"summary\": \"The Archdeacon of Limerick heard mysterious footsteps and a hand attempting to turn his study door handle on the night a friend's wife died.\",\n    \"places\": [\n      {\n        \"name\": \"Limerick\",\n        \"quote\": \"It is sent as a personal experience by the Archdeacon of Limerick\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Adare\",\n        \"quote\": \"there lived in the picturesque village of Adare, at a distance of about eight or nine miles\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the sound of light, hurried footsteps, exactly suggestive of those of an active, restless young female",
+  "summary": "The Archdeacon of Limerick heard mysterious footsteps and a hand attempting to turn his study door handle on the night a friend's wife died.",
+  "places": [
+   {
+    "name": "Limerick",
+    "quote": "It is sent as a personal experience by the Archdeacon of Limerick",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Adare",
+    "quote": "there lived in the picturesque village of Adare, at a distance of about eight or nine miles",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

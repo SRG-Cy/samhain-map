@@ -1,0 +1,35 @@
+{
+ "tale_id": 114,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 137.6,
+ "usage": {
+  "promptTokenCount": 926,
+  "candidatesTokenCount": 142,
+  "totalTokenCount": 7386,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 926
+   }
+  ],
+  "thoughtsTokenCount": 6318,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"a gentleman who had lived there some years ago, and was very much addicted to racing and gambling\",\n  \"summary\": \"A woman in a country house in the North of Ireland hears mysterious horse hoofs and kitchen noises attributed to a man shot in the house.\",\n  \"places\": [\n    {\n      \"name\": \"North of Ireland\",\n      \"quote\": \"in a country house in the North of Ireland some years ago\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "a gentleman who had lived there some years ago, and was very much addicted to racing and gambling",
+  "summary": "A woman in a country house in the North of Ireland hears mysterious horse hoofs and kitchen noises attributed to a man shot in the house.",
+  "places": [
+   {
+    "name": "North of Ireland",
+    "quote": "in a country house in the North of Ireland some years ago",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

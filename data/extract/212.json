@@ -1,0 +1,54 @@
+{
+ "tale_id": 212,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 99.6,
+ "usage": {
+  "promptTokenCount": 670,
+  "candidatesTokenCount": 288,
+  "totalTokenCount": 5348,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 670
+   }
+  ],
+  "thoughtsTokenCount": 4390,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\",\n    \"devil\"\n  ],\n  \"beings_quote\": \"a ghost haunted the rectory\",\n  \"summary\": \"A rector in Ardtrea was haunted by a ghost or devil that he eventually trapped in a whisky jar with the help of a priest.\",\n  \"places\": [\n    {\n      \"name\": \"Parish Church of Ardtrea\",\n      \"quote\": \"In the Parish Church of Ardtrea, near Cookstown\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Cookstown\",\n      \"quote\": \"In the Parish Church of Ardtrea, near Cookstown\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Trinity College, Dublin\",\n      \"quote\": \"a Fellow of Trinity College, Dublin\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Lough Neagh\",\n      \"quote\": \"as thin and long as a Lough Neagh eel\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost",
+   "devil"
+  ],
+  "beings_quote": "a ghost haunted the rectory",
+  "summary": "A rector in Ardtrea was haunted by a ghost or devil that he eventually trapped in a whisky jar with the help of a priest.",
+  "places": [
+   {
+    "name": "Parish Church of Ardtrea",
+    "quote": "In the Parish Church of Ardtrea, near Cookstown",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Cookstown",
+    "quote": "In the Parish Church of Ardtrea, near Cookstown",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Trinity College, Dublin",
+    "quote": "a Fellow of Trinity College, Dublin",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Lough Neagh",
+    "quote": "as thin and long as a Lough Neagh eel",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

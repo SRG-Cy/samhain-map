@@ -1,0 +1,39 @@
+{
+ "tale_id": 198,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 98.8,
+ "usage": {
+  "promptTokenCount": 641,
+  "candidatesTokenCount": 156,
+  "totalTokenCount": 5218,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 641
+   }
+  ],
+  "thoughtsTokenCount": 4421,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [],\n  \"beings_quote\": \"\",\n  \"summary\": \"A woman had a vision of a red-haired woman and a cow, which was later confirmed to be a real event.\",\n  \"places\": [\n    {\n      \"name\": \"Limerick\",\n      \"quote\": \"I sent a cow to the fair of Limerick\",\n      \"modern_name\": \"Limerick\",\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Limerick city\",\n      \"quote\": \"close to Limerick city\",\n      \"modern_name\": \"Limerick City\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [],
+  "beings_quote": "",
+  "summary": "A woman had a vision of a red-haired woman and a cow, which was later confirmed to be a real event.",
+  "places": [
+   {
+    "name": "Limerick",
+    "quote": "I sent a cow to the fair of Limerick",
+    "modern_name": "Limerick",
+    "role": "setting"
+   },
+   {
+    "name": "Limerick city",
+    "quote": "close to Limerick city",
+    "modern_name": "Limerick City",
+    "role": "setting"
+   }
+  ]
+ }
+}

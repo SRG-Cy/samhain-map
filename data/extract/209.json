@@ -1,0 +1,53 @@
+{
+ "tale_id": 209,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 79.8,
+ "usage": {
+  "promptTokenCount": 538,
+  "candidatesTokenCount": 285,
+  "totalTokenCount": 4306,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 538
+   }
+  ],
+  "thoughtsTokenCount": 3483,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"he heard the phantom carriage dash by rapidly\",\n  \"summary\": \"A coachman driving from Askeaton to Limerick heard the sounds of a phantom carriage, but saw nothing on the road.\",\n  \"places\": [\n    {\n      \"name\": \"Cappagh House\",\n      \"quote\": \"coachman to Miss Cooke, of Cappagh House, Co. Limerick.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Co. Limerick\",\n      \"quote\": \"coachman to Miss Cooke, of Cappagh House, Co. Limerick.\",\n      \"modern_name\": \"County Limerick\",\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Askeaton\",\n      \"quote\": \"driving along the road from Askeaton to Limerick\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Limerick\",\n      \"quote\": \"driving along the road from Askeaton to Limerick\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "he heard the phantom carriage dash by rapidly",
+  "summary": "A coachman driving from Askeaton to Limerick heard the sounds of a phantom carriage, but saw nothing on the road.",
+  "places": [
+   {
+    "name": "Cappagh House",
+    "quote": "coachman to Miss Cooke, of Cappagh House, Co. Limerick.",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Co. Limerick",
+    "quote": "coachman to Miss Cooke, of Cappagh House, Co. Limerick.",
+    "modern_name": "County Limerick",
+    "role": "mentioned"
+   },
+   {
+    "name": "Askeaton",
+    "quote": "driving along the road from Askeaton to Limerick",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Limerick",
+    "quote": "driving along the road from Askeaton to Limerick",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

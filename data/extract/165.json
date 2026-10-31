@@ -1,0 +1,28 @@
+{
+ "tale_id": 165,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 36.7,
+ "usage": {
+  "promptTokenCount": 549,
+  "candidatesTokenCount": 78,
+  "totalTokenCount": 2233,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 549
+   }
+  ],
+  "thoughtsTokenCount": 1606,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"the entrance of a tall figure in clerical attire\",\n  \"summary\": \"A girl in a boarding school sees her father's figure, and the next morning she learns he died at the time he appeared.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "the entrance of a tall figure in clerical attire",
+  "summary": "A girl in a boarding school sees her father's figure, and the next morning she learns he died at the time he appeared.",
+  "places": []
+ }
+}

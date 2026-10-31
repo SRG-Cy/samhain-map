@@ -1,0 +1,35 @@
+{
+ "tale_id": 183,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 36.4,
+ "usage": {
+  "promptTokenCount": 611,
+  "candidatesTokenCount": 125,
+  "totalTokenCount": 2264,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 611
+   }
+  ],
+  "thoughtsTokenCount": 1528,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"remarkably-attested apparition of the headless coach\",\n  \"summary\": \"A headless coach appeared at a house in Co. Limerick and drove into a locked gate just before a man died.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Limerick\",\n      \"quote\": \"At a house in Co. Limerick,\",\n      \"modern_name\": \"County Limerick\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "remarkably-attested apparition of the headless coach",
+  "summary": "A headless coach appeared at a house in Co. Limerick and drove into a locked gate just before a man died.",
+  "places": [
+   {
+    "name": "Co. Limerick",
+    "quote": "At a house in Co. Limerick,",
+    "modern_name": "County Limerick",
+    "role": "setting"
+   }
+  ]
+ }
+}

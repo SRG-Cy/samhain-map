@@ -1,0 +1,46 @@
+{
+ "tale_id": 173,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 7.2,
+ "usage": {
+  "promptTokenCount": 1111,
+  "candidatesTokenCount": 292,
+  "totalTokenCount": 1403,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1111
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"death_warning\"\n    ],\n    \"beings_quote\": \"was a vision foreshadowing the wreck of the boat\",\n    \"summary\": \"A woman sees a vision of an empty capsized boat on the lake, which later turns out to be a real shipwreck that killed thirteen people.\",\n    \"places\": [\n      {\n        \"name\": \"Killarney\",\n        \"quote\": \"The morning of May 18, 1902, was one of the worst that ever dawned in Killarney.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Lough Leane\",\n        \"quote\": \"huge white-crested waves, known locally as 'The O'Donoghue's white horses,' beat on the shores of Lough Leane.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Darby's Garden\",\n        \"quote\": \"foreshadowing the wreck of the boat off Darby's Garden at 5.30 P.M.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "was a vision foreshadowing the wreck of the boat",
+  "summary": "A woman sees a vision of an empty capsized boat on the lake, which later turns out to be a real shipwreck that killed thirteen people.",
+  "places": [
+   {
+    "name": "Killarney",
+    "quote": "The morning of May 18, 1902, was one of the worst that ever dawned in Killarney.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Lough Leane",
+    "quote": "huge white-crested waves, known locally as 'The O'Donoghue's white horses,' beat on the shores of Lough Leane.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Darby's Garden",
+    "quote": "foreshadowing the wreck of the boat off Darby's Garden at 5.30 P.M.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

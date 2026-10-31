@@ -1,0 +1,34 @@
+{
+ "tale_id": 128,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 4.0,
+ "usage": {
+  "promptTokenCount": 1241,
+  "candidatesTokenCount": 143,
+  "totalTokenCount": 1384,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1241
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"poltergeist\"\n    ],\n    \"beings_quote\": \"they began to hear raps all over it, on doors, windows, and walls\",\n    \"summary\": \"A family staying in a house built from old cottage materials experiences various unexplained noises, crashes, and sightings of flames.\",\n    \"places\": [\n      {\n        \"name\": \"Ireland\",\n        \"quote\": \"Near a seaside town in the south of Ireland a group of small cottages\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "poltergeist"
+  ],
+  "beings_quote": "they began to hear raps all over it, on doors, windows, and walls",
+  "summary": "A family staying in a house built from old cottage materials experiences various unexplained noises, crashes, and sightings of flames.",
+  "places": [
+   {
+    "name": "Ireland",
+    "quote": "Near a seaside town in the south of Ireland a group of small cottages",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

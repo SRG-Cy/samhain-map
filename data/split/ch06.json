@@ -1,0 +1,87 @@
+{
+ "raw": "{\n  \"accounts\": [\n    {\n      \"start\": 7,\n      \"title\": \"The Archdeacon of Limerick's Experience\"\n    },\n    {\n      \"start\": 11,\n      \"title\": \"The Illuminated Armchair\"\n    },\n    {\n      \"start\": 12,\n      \"title\": \"The Man at Knowehead Lonan\"\n    },\n    {\n      \"start\": 19,\n      \"title\": \"The Visitation of P. Q.\"\n    },\n    {\n      \"start\": 22,\n      \"title\": \"The Gentleman at the Dublin House\"\n    },\n    {\n      \"start\": 23,\n      \"title\": \"The Figure in the Graveyard\"\n    },\n    {\n      \"start\": 24,\n      \"title\": \"The Clerical Figure in the Boarding School\"\n    },\n    {\n      \"start\": 25,\n      \"title\": \"Mr. Miller and the Promise\"\n    },\n    {\n      \"start\": 26,\n      \"title\": \"The Beresford Ghost\"\n    },\n    {\n      \"start\": 28,\n      \"title\": \"John Dillon Ross-Lewin\"\n    },\n    {\n      \"start\": 29,\n      \"title\": \"The Deceased Cook in the Passage\"\n    },\n    {\n      \"start\": 30,\n      \"title\": \"The Vision of Samuel Penrose\"\n    },\n    {\n      \"start\": 31,\n      \"title\": \"The Transfigured Face of Miss B. Y.\"\n    },\n    {\n      \"start\": 33,\n      \"title\": \"The Captain of Inishinny\"\n    },\n    {\n      \"start\": 41,\n      \"title\": \"The Wreck off Killarney\"\n    },\n    {\n      \"start\": 46,\n      \"title\": \"The Suicide at Castleblaney\"\n    },\n    {\n      \"start\": 48,\n      \"title\": \"The Aunt in Philadelphia\"\n    }\n  ]\n}",
+ "usage": {
+  "promptTokenCount": 7394,
+  "candidatesTokenCount": 497,
+  "totalTokenCount": 7891,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 7394
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "result": {
+  "accounts": [
+   {
+    "start": 7,
+    "title": "The Archdeacon of Limerick's Experience"
+   },
+   {
+    "start": 11,
+    "title": "The Illuminated Armchair"
+   },
+   {
+    "start": 12,
+    "title": "The Man at Knowehead Lonan"
+   },
+   {
+    "start": 19,
+    "title": "The Visitation of P. Q."
+   },
+   {
+    "start": 22,
+    "title": "The Gentleman at the Dublin House"
+   },
+   {
+    "start": 23,
+    "title": "The Figure in the Graveyard"
+   },
+   {
+    "start": 24,
+    "title": "The Clerical Figure in the Boarding School"
+   },
+   {
+    "start": 25,
+    "title": "Mr. Miller and the Promise"
+   },
+   {
+    "start": 26,
+    "title": "The Beresford Ghost"
+   },
+   {
+    "start": 28,
+    "title": "John Dillon Ross-Lewin"
+   },
+   {
+    "start": 29,
+    "title": "The Deceased Cook in the Passage"
+   },
+   {
+    "start": 30,
+    "title": "The Vision of Samuel Penrose"
+   },
+   {
+    "start": 31,
+    "title": "The Transfigured Face of Miss B. Y."
+   },
+   {
+    "start": 33,
+    "title": "The Captain of Inishinny"
+   },
+   {
+    "start": 41,
+    "title": "The Wreck off Killarney"
+   },
+   {
+    "start": 46,
+    "title": "The Suicide at Castleblaney"
+   },
+   {
+    "start": 48,
+    "title": "The Aunt in Philadelphia"
+   }
+  ]
+ }
+}

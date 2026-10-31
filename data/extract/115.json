@@ -1,0 +1,47 @@
+{
+ "tale_id": 115,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 58.3,
+ "usage": {
+  "promptTokenCount": 611,
+  "candidatesTokenCount": 220,
+  "totalTokenCount": 3321,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 611
+   }
+  ],
+  "thoughtsTokenCount": 2490,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"as if by some unseen person hurriedly leaving the room\",\n  \"summary\": \"A house built on an ancient graveyard in the North of Ireland is haunted by strange noises and an unseen presence.\",\n  \"places\": [\n    {\n      \"name\": \"North of Ireland\",\n      \"quote\": \"A house in the North of Ireland, near that locality\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Ireland\",\n      \"quote\": \"how many houses in Ireland are traditionally said\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"South\",\n      \"quote\": \"The present writer knows of one, in the South\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "as if by some unseen person hurriedly leaving the room",
+  "summary": "A house built on an ancient graveyard in the North of Ireland is haunted by strange noises and an unseen presence.",
+  "places": [
+   {
+    "name": "North of Ireland",
+    "quote": "A house in the North of Ireland, near that locality",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Ireland",
+    "quote": "how many houses in Ireland are traditionally said",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "South",
+    "quote": "The present writer knows of one, in the South",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

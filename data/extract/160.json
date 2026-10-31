@@ -1,0 +1,28 @@
+{
+ "tale_id": 160,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 48.0,
+ "usage": {
+  "promptTokenCount": 554,
+  "candidatesTokenCount": 74,
+  "totalTokenCount": 2796,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 554
+   }
+  ],
+  "thoughtsTokenCount": 2168,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"death_warning\"\n  ],\n  \"beings_quote\": \"Suddenly that chair was illuminated by a light so intensely bright\",\n  \"summary\": \"A lady witnessed an armchair being illuminated by a bright light, which coincided with the death of her cousin.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "Suddenly that chair was illuminated by a light so intensely bright",
+  "summary": "A lady witnessed an armchair being illuminated by a bright light, which coincided with the death of her cousin.",
+  "places": []
+ }
+}

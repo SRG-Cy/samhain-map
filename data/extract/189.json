@@ -1,0 +1,35 @@
+{
+ "tale_id": 189,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 33.9,
+ "usage": {
+  "promptTokenCount": 511,
+  "candidatesTokenCount": 144,
+  "totalTokenCount": 2067,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 511
+   }
+  ],
+  "thoughtsTokenCount": 1412,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"death_warning\"\n  ],\n  \"beings_quote\": \"warned of the death, or approaching death, of some other member by the appearance of a ball of fire\",\n  \"summary\": \"A woman in Co. Cork sees a ball of fire, which is a sign that a family member is about to die.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Cork\",\n      \"quote\": \"The following portent occurs in a Co. Cork family.\",\n      \"modern_name\": \"County Cork\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "warned of the death, or approaching death, of some other member by the appearance of a ball of fire",
+  "summary": "A woman in Co. Cork sees a ball of fire, which is a sign that a family member is about to die.",
+  "places": [
+   {
+    "name": "Co. Cork",
+    "quote": "The following portent occurs in a Co. Cork family.",
+    "modern_name": "County Cork",
+    "role": "setting"
+   }
+  ]
+ }
+}

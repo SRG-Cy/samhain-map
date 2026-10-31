@@ -1,0 +1,40 @@
+{
+ "tale_id": 138,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 6.6,
+ "usage": {
+  "promptTokenCount": 2308,
+  "candidatesTokenCount": 248,
+  "totalTokenCount": 2556,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2308
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"poltergeist\"\n    ],\n    \"beings_quote\": \"as a result of the poltergeist's attentions he lost three-quarters of a stone in weight.\",\n    \"summary\": \"In 1910, lodgers in an Enniscorthy house experienced various disturbances, including moving beds and sliding bedclothes, caused by a poltergeist.\",\n    \"places\": [\n      {\n        \"name\": \"Court Street\",\n        \"quote\": \"In the year 1910, in a certain house in Court Street, Enniscorthy, there lived a labouring man named Redmond.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Enniscorthy\",\n        \"quote\": \"In the year 1910, in a certain house in Court Street, Enniscorthy, there lived a labouring man named Redmond.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "poltergeist"
+  ],
+  "beings_quote": "as a result of the poltergeist's attentions he lost three-quarters of a stone in weight.",
+  "summary": "In 1910, lodgers in an Enniscorthy house experienced various disturbances, including moving beds and sliding bedclothes, caused by a poltergeist.",
+  "places": [
+   {
+    "name": "Court Street",
+    "quote": "In the year 1910, in a certain house in Court Street, Enniscorthy, there lived a labouring man named Redmond.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Enniscorthy",
+    "quote": "In the year 1910, in a certain house in Court Street, Enniscorthy, there lived a labouring man named Redmond.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "tale_id": 148,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 82.4,
+ "usage": {
+  "promptTokenCount": 729,
+  "candidatesTokenCount": 195,
+  "totalTokenCount": 4627,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 729
+   }
+  ],
+  "thoughtsTokenCount": 3703,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"people had frequently seen a ghost there\",\n  \"summary\": \"A man walking his terrier near a village in Co. Kilkenny observes his dog barking at an invisible presence that appears as a vanishing grey-white object.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Kilkenny\",\n      \"quote\": \"near the village of G----, in Co. Kilkenny\",\n      \"modern_name\": \"County Kilkenny\",\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"S. Carlow district\",\n      \"quote\": \"crossing the bridge that leads into the S. Carlow district\",\n      \"modern_name\": \"South Carlow district\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "people had frequently seen a ghost there",
+  "summary": "A man walking his terrier near a village in Co. Kilkenny observes his dog barking at an invisible presence that appears as a vanishing grey-white object.",
+  "places": [
+   {
+    "name": "Co. Kilkenny",
+    "quote": "near the village of G----, in Co. Kilkenny",
+    "modern_name": "County Kilkenny",
+    "role": "setting"
+   },
+   {
+    "name": "S. Carlow district",
+    "quote": "crossing the bridge that leads into the S. Carlow district",
+    "modern_name": "South Carlow district",
+    "role": "setting"
+   }
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "raw": "{\n  \"accounts\": [\n    {\n      \"start\": 2,\n      \"title\": \"The Lady of Merrion Square\"\n    },\n    {\n      \"start\": 3,\n      \"title\": \"The Pumping at Dunluce Rectory\"\n    },\n    {\n      \"start\": 4,\n      \"title\": \"The Sea-weed Coffin\"\n    },\n    {\n      \"start\": 5,\n      \"title\": \"The Drowned Mouse\"\n    },\n    {\n      \"start\": 7,\n      \"title\": \"The Devil at Ardee\"\n    },\n    {\n      \"start\": 8,\n      \"title\": \"The Shroud-clad Man of Tipperary\"\n    },\n    {\n      \"start\": 10,\n      \"title\": \"The Returning Husband in County Clare\"\n    },\n    {\n      \"start\": 11,\n      \"title\": \"The Theft at Armagh\"\n    }\n  ]\n}",
+ "usage": {
+  "promptTokenCount": 5419,
+  "candidatesTokenCount": 232,
+  "totalTokenCount": 5651,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5419
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "result": {
+  "accounts": [
+   {
+    "start": 2,
+    "title": "The Lady of Merrion Square"
+   },
+   {
+    "start": 3,
+    "title": "The Pumping at Dunluce Rectory"
+   },
+   {
+    "start": 4,
+    "title": "The Sea-weed Coffin"
+   },
+   {
+    "start": 5,
+    "title": "The Drowned Mouse"
+   },
+   {
+    "start": 7,
+    "title": "The Devil at Ardee"
+   },
+   {
+    "start": 8,
+    "title": "The Shroud-clad Man of Tipperary"
+   },
+   {
+    "start": 10,
+    "title": "The Returning Husband in County Clare"
+   },
+   {
+    "start": 11,
+    "title": "The Theft at Armagh"
+   }
+  ]
+ }
+}

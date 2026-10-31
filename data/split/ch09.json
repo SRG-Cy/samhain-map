@@ -1,0 +1,47 @@
+{
+ "raw": "{\n  \"accounts\": [\n    {\n      \"start\": 2,\n      \"title\": \"The Wizard Earl of Kildare\"\n    },\n    {\n      \"start\": 8,\n      \"title\": \"The Ghost of Henry Bennett\"\n    },\n    {\n      \"start\": 9,\n      \"title\": \"The Ghost of Thomas Meredith\"\n    },\n    {\n      \"start\": 10,\n      \"title\": \"The Phantom Rat of Limerick\"\n    },\n    {\n      \"start\": 11,\n      \"title\": \"The Legend of Lord Tirawley\"\n    },\n    {\n      \"start\": 13,\n      \"title\": \"The Skeleton of the Boyne Valley\"\n    },\n    {\n      \"start\": 14,\n      \"title\": \"The Ghost of Anne Tottenham\"\n    }\n  ]\n}",
+ "usage": {
+  "promptTokenCount": 6357,
+  "candidatesTokenCount": 203,
+  "totalTokenCount": 6560,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 6357
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "result": {
+  "accounts": [
+   {
+    "start": 2,
+    "title": "The Wizard Earl of Kildare"
+   },
+   {
+    "start": 8,
+    "title": "The Ghost of Henry Bennett"
+   },
+   {
+    "start": 9,
+    "title": "The Ghost of Thomas Meredith"
+   },
+   {
+    "start": 10,
+    "title": "The Phantom Rat of Limerick"
+   },
+   {
+    "start": 11,
+    "title": "The Legend of Lord Tirawley"
+   },
+   {
+    "start": 13,
+    "title": "The Skeleton of the Boyne Valley"
+   },
+   {
+    "start": 14,
+    "title": "The Ghost of Anne Tottenham"
+   }
+  ]
+ }
+}

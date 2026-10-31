@@ -1,0 +1,35 @@
+{
+ "tale_id": 202,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 27.4,
+ "usage": {
+  "promptTokenCount": 536,
+  "candidatesTokenCount": 131,
+  "totalTokenCount": 1790,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 536
+   }
+  ],
+  "thoughtsTokenCount": 1123,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"Here is a story of a ghost who knew what it wanted\",\n  \"summary\": \"A deceased daughter's ghost haunted her parents until they finally reinterred her remains in her preferred graveyard.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Wicklow\",\n      \"quote\": \"In the part of Co. Wicklow from which my people come,\",\n      \"modern_name\": \"County Wicklow\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "Here is a story of a ghost who knew what it wanted",
+  "summary": "A deceased daughter's ghost haunted her parents until they finally reinterred her remains in her preferred graveyard.",
+  "places": [
+   {
+    "name": "Co. Wicklow",
+    "quote": "In the part of Co. Wicklow from which my people come,",
+    "modern_name": "County Wicklow",
+    "role": "setting"
+   }
+  ]
+ }
+}

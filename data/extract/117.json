@@ -1,0 +1,37 @@
+{
+ "tale_id": 117,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 121.9,
+ "usage": {
+  "promptTokenCount": 760,
+  "candidatesTokenCount": 161,
+  "totalTokenCount": 6466,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 760
+   }
+  ],
+  "thoughtsTokenCount": 5545,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\",\n    \"poltergeist\",\n    \"devil\"\n  ],\n  \"beings_quote\": \"she saw a man enter the room, who immediately seized her by the throat and well-nigh choked her.\",\n  \"summary\": \"A family running a grocery business experiences supernatural disturbances, including a choking man and moving furniture, which the brother attributes to the Devil.\",\n  \"places\": [\n    {\n      \"name\": \"Belturbet\",\n      \"quote\": \"as my sister had to go to Belturbet to do some Christmas shopping.\",\n      \"modern_name\": \"Belturbet\",\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost",
+   "poltergeist",
+   "devil"
+  ],
+  "beings_quote": "she saw a man enter the room, who immediately seized her by the throat and well-nigh choked her.",
+  "summary": "A family running a grocery business experiences supernatural disturbances, including a choking man and moving furniture, which the brother attributes to the Devil.",
+  "places": [
+   {
+    "name": "Belturbet",
+    "quote": "as my sister had to go to Belturbet to do some Christmas shopping.",
+    "modern_name": "Belturbet",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

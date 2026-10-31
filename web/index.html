@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Samhain Map</title>
-  <meta name="description" content="Ghost and fairy tales told in Kerry in the 1890s, put back on the map. Places found by an open-weight model, checked by code against real townlands.">
+  <meta name="description" content="Irish ghost and fairy stories from two public-domain books, 1895 and 1914, put back on the map. Places found by an open-weight model, checked by code against real townlands.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   <header class="top">
@@ -16,14 +16,17 @@
       <span class="candle" aria-hidden="true"></span>
       <div>
         <h1>Samhain Map</h1>
-        <p>Ghost and fairy tales told in Kerry in the 1890s, back where they happened.</p>
+        <p>Irish ghost and fairy stories, 1895 and 1914, back where they happened.</p>
       </div>
     </div>
-    <div class="filters" id="filters" role="group" aria-label="Filter by being"></div>
+    <div class="filter-rows">
+      <div class="filters" id="books" role="group" aria-label="Filter by book"></div>
+      <div class="filters" id="filters" role="group" aria-label="Filter by being"></div>
+    </div>
   </header>
 
   <main class="layout">
-    <div id="map" aria-label="Map of Munster with the places named in the tales"></div>
+    <div id="map" aria-label="Map of Ireland with the places named in the stories"></div>
     <aside class="panel" id="panel" aria-live="polite">
       <div id="panel-body"></div>
     </aside>
@@ -32,11 +35,14 @@
   <footer class="foot">
     Tales: Jeremiah Curtin, <em>Tales of the Fairies and of the Ghost World</em> (1895), public domain, via
     <a href="https://archive.org/details/cu31924029910563">archive.org</a> (Cornell University Library).
-    Townlands: © Tailte Éireann, CC BY 4.0. Places: <a href="https://www.geonames.org/">GeoNames</a>, CC BY 4.0.
+    St John D. Seymour &amp; Harry L. Neligan, <em>True Irish Ghost Stories</em> (1914), public domain, via
+    <a href="https://www.gutenberg.org/ebooks/14099">Project Gutenberg</a>.
+    Townlands: © Tailte Éireann, CC BY 4.0; Northern Ireland townlands and counties: OSNI Open Data, OGL v3.
+    Places: <a href="https://www.geonames.org/">GeoNames</a>, CC BY 4.0.
     Summaries and place reading by Gemma, an open-weight model; every pin checked by code.
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-  <script src="app.js?v=2"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>

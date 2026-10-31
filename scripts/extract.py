@@ -20,13 +20,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data/extract"
-PROMPT_VERSION = "v1"
+BOOKS = {
+    # v1 is the prompt the Curtin tales were read with; kept word for word so the cache stays valid
+    "curtin1895": {"version": "v1",
+                   "context": "one Irish folk tale, collected in south-west Munster (mostly County Kerry) and printed in 1895. The text comes from an old scan and has some OCR errors.",
+                   "beings": "ghost, fairy, banshee, pooka, mermaid_or_seal_woman, devil, dead_returning, changeling, fairy_doctor, saint, other"},
+    "seymour1914": {"version": "v2",
+                    "context": "one account from \"True Irish Ghost Stories\" (1914), a collection of ghost stories sent in from all over Ireland. The text is a transcription of the printed book.",
+                    "beings": "ghost, poltergeist, banshee, fairy, pooka, devil, dead_returning, death_warning, saint, other"},
+}
 
-PROMPT = """You are reading one Irish folk tale, collected in south-west Munster (mostly County Kerry) and printed in 1895. The text comes from an old scan and has some OCR errors.
+PROMPT = """You are reading {context}
 
 Return ONLY a JSON object with these keys:
 
-"beings": the supernatural beings in the tale, from this list only: ghost, fairy, banshee, pooka, mermaid_or_seal_woman, devil, dead_returning, changeling, fairy_doctor, saint, other. Empty list if none.
+"beings": the supernatural beings in the tale, from this list only: {beings}. Empty list if none.
 "beings_quote": the exact words from the tale (copied character for character, 3 to 25 words) that show the main being.
 "summary": one plain English sentence, at most 30 words, saying what happens. Do not add anything the tale does not say.
 "places": every real place the tale names (towns, villages, townlands, parishes, castles, bridges, rivers, mountains, lakes, islands, counties). For each:
@@ -99,10 +107,13 @@ def main():
     ap.add_argument("--model", default="gemma-4-26b-a4b-it")
     ap.add_argument("--only", type=int, nargs="*")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--reverse", action="store_true", help="work from the last tale back, to run a second worker")
     args = ap.parse_args()
 
     key = load_key()
     tales = json.loads((ROOT / "data/tales.json").read_text(encoding="utf-8"))
+    if args.reverse:
+        tales.reverse()
     CACHE.mkdir(parents=True, exist_ok=True)
     for t in tales:
         if args.only and t["id"] not in args.only:
@@ -110,7 +121,8 @@ def main():
         out = CACHE / f"{t['id']:02d}.json"
         if out.exists() and not args.force:
             continue
-        prompt = PROMPT.format(title=t["title"], text=t["text"])
+        book = BOOKS[t.get("book", "curtin1895")]
+        prompt = PROMPT.format(context=book["context"], beings=book["beings"], title=t["title"], text=t["text"])
         for attempt in range(4):
             try:
                 t0 = time.time()
@@ -134,7 +146,7 @@ def main():
         record = {
             "tale_id": t["id"],
             "model": args.model,
-            "prompt_version": PROMPT_VERSION,
+            "prompt_version": book["version"],
             "seconds": round(time.time() - t0, 1),
             "usage": usage,
             "raw": raw,

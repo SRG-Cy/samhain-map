@@ -1,0 +1,34 @@
+{
+ "tale_id": 155,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 4.4,
+ "usage": {
+  "promptTokenCount": 951,
+  "candidatesTokenCount": 160,
+  "totalTokenCount": 1111,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 951
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"the signalman made a dash at the 'spirit,' but was unable to strike down the ghost\",\n    \"summary\": \"Men working in an engine-house at Strabane railway station saw a ghost that yelled, tossed objects, and could not be struck with a crowbar.\",\n    \"places\": [\n      {\n        \"name\": \"Strabane\",\n        \"quote\": \"describing a ghost which appeared to men working in an engine-house at Strabane railway station\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the signalman made a dash at the 'spirit,' but was unable to strike down the ghost",
+  "summary": "Men working in an engine-house at Strabane railway station saw a ghost that yelled, tossed objects, and could not be struck with a crowbar.",
+  "places": [
+   {
+    "name": "Strabane",
+    "quote": "describing a ghost which appeared to men working in an engine-house at Strabane railway station",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

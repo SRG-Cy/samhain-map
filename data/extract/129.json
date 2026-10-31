@@ -1,0 +1,37 @@
+{
+ "tale_id": 129,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 58.5,
+ "usage": {
+  "promptTokenCount": 836,
+  "candidatesTokenCount": 148,
+  "totalTokenCount": 3571,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 836
+   }
+  ],
+  "thoughtsTokenCount": 2587,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\",\n    \"poltergeist\",\n    \"other\"\n  ],\n  \"beings_quote\": \"a lady passed him, entered a door facing the stairs\",\n  \"summary\": \"A clergyman's family experiences hauntings, including a lady in old-fashioned dress and a black dog, after discovering a child's skeleton beneath their house near Limerick.\",\n  \"places\": [\n    {\n      \"name\": \"Limerick\",\n      \"quote\": \"not very far from the city of Limerick.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost",
+   "poltergeist",
+   "other"
+  ],
+  "beings_quote": "a lady passed him, entered a door facing the stairs",
+  "summary": "A clergyman's family experiences hauntings, including a lady in old-fashioned dress and a black dog, after discovering a child's skeleton beneath their house near Limerick.",
+  "places": [
+   {
+    "name": "Limerick",
+    "quote": "not very far from the city of Limerick.",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

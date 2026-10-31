@@ -1,12 +1,15 @@
 {
- "beings_quote_ok": 29,
- "reported": 95,
- "pinned": 51,
- "pinned_modern": 8,
- "too_broad": 9,
- "unmatched": 21,
- "refused_quote": 2,
- "ambiguous_resolved": 8,
- "refused_far": 2,
- "beings_quote_bad": 1
+ "beings_quote_ok": 150,
+ "reported": 318,
+ "pinned": 108,
+ "ambiguous_resolved": 42,
+ "pinned_modern": 9,
+ "too_broad": 68,
+ "unmatched": 52,
+ "refused_quote": 5,
+ "refused_far": 4,
+ "beings_quote_bad": 4,
+ "mentioned_only": 65,
+ "pinned_county": 20,
+ "ambiguous_refused": 4
 }

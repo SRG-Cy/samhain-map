@@ -1,0 +1,41 @@
+{
+ "tale_id": 113,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 68.2,
+ "usage": {
+  "promptTokenCount": 939,
+  "candidatesTokenCount": 195,
+  "totalTokenCount": 4177,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 939
+   }
+  ],
+  "thoughtsTokenCount": 3043,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"the late resident who could not rest\",\n  \"summary\": \"A man experiences persistent, unexplained knocking at Emo House, which locals attribute to a former resident who could not rest.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Roscommon\",\n      \"quote\": \"Mrs. Acheson, of Co. Roscommon, sends the following:\",\n      \"modern_name\": \"County Roscommon\",\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Co. Westmeath\",\n      \"quote\": \"Emo House, Co. Westmeath, a very old mansion since pulled down\",\n      \"modern_name\": \"County Westmeath\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the late resident who could not rest",
+  "summary": "A man experiences persistent, unexplained knocking at Emo House, which locals attribute to a former resident who could not rest.",
+  "places": [
+   {
+    "name": "Co. Roscommon",
+    "quote": "Mrs. Acheson, of Co. Roscommon, sends the following:",
+    "modern_name": "County Roscommon",
+    "role": "mentioned"
+   },
+   {
+    "name": "Co. Westmeath",
+    "quote": "Emo House, Co. Westmeath, a very old mansion since pulled down",
+    "modern_name": "County Westmeath",
+    "role": "setting"
+   }
+  ]
+ }
+}

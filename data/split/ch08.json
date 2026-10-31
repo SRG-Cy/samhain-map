@@ -1,0 +1,87 @@
+{
+ "raw": "{\n  \"accounts\": [\n    {\n      \"start\": 2,\n      \"title\": \"Mrs. Seymour's Grandmother\"\n    },\n    {\n      \"start\": 3,\n      \"title\": \"The Rev. D. B. Knox's Experience\"\n    },\n    {\n      \"start\": 4,\n      \"title\": \"The Double of Mr. D----\"\n    },\n    {\n      \"start\": 5,\n      \"title\": \"Mrs. Mary Murnane's Double\"\n    },\n    {\n      \"start\": 7,\n      \"title\": \"The Vision of Dvorak\"\n    },\n    {\n      \"start\": 8,\n      \"title\": \"The Vision of the Red-Haired Woman\"\n    },\n    {\n      \"start\": 9,\n      \"title\": \"The Pale Figure and Clergyman\"\n    },\n    {\n      \"start\": 10,\n      \"title\": \"The Grand-Aunt's Dream\"\n    },\n    {\n      \"start\": 16,\n      \"title\": \"The Lady on the Tombstone\"\n    },\n    {\n      \"start\": 19,\n      \"title\": \"The Daughter in Wicklow\"\n    },\n    {\n      \"start\": 20,\n      \"title\": \"The Father's Yellow Parchment Book\"\n    },\n    {\n      \"start\": 21,\n      \"title\": \"The Warning Father\"\n    },\n    {\n      \"start\": 22,\n      \"title\": \"The Table-Turning Experience\"\n    },\n    {\n      \"start\": 31,\n      \"title\": \"The Father-in-Law by the Fireside\"\n    },\n    {\n      \"start\": 34,\n      \"title\": \"The Black Dog\"\n    },\n    {\n      \"start\": 37,\n      \"title\": \"The Phantom Carriage in Co. Down\"\n    },\n    {\n      \"start\": 41,\n      \"title\": \"The Phantom Coach of Limerick\"\n    }\n  ]\n}",
+ "usage": {
+  "promptTokenCount": 6271,
+  "candidatesTokenCount": 492,
+  "totalTokenCount": 6763,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 6271
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "result": {
+  "accounts": [
+   {
+    "start": 2,
+    "title": "Mrs. Seymour's Grandmother"
+   },
+   {
+    "start": 3,
+    "title": "The Rev. D. B. Knox's Experience"
+   },
+   {
+    "start": 4,
+    "title": "The Double of Mr. D----"
+   },
+   {
+    "start": 5,
+    "title": "Mrs. Mary Murnane's Double"
+   },
+   {
+    "start": 7,
+    "title": "The Vision of Dvorak"
+   },
+   {
+    "start": 8,
+    "title": "The Vision of the Red-Haired Woman"
+   },
+   {
+    "start": 9,
+    "title": "The Pale Figure and Clergyman"
+   },
+   {
+    "start": 10,
+    "title": "The Grand-Aunt's Dream"
+   },
+   {
+    "start": 16,
+    "title": "The Lady on the Tombstone"
+   },
+   {
+    "start": 19,
+    "title": "The Daughter in Wicklow"
+   },
+   {
+    "start": 20,
+    "title": "The Father's Yellow Parchment Book"
+   },
+   {
+    "start": 21,
+    "title": "The Warning Father"
+   },
+   {
+    "start": 22,
+    "title": "The Table-Turning Experience"
+   },
+   {
+    "start": 31,
+    "title": "The Father-in-Law by the Fireside"
+   },
+   {
+    "start": 34,
+    "title": "The Black Dog"
+   },
+   {
+    "start": 37,
+    "title": "The Phantom Carriage in Co. Down"
+   },
+   {
+    "start": 41,
+    "title": "The Phantom Coach of Limerick"
+   }
+  ]
+ }
+}

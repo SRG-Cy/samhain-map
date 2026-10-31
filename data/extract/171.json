@@ -1,0 +1,28 @@
+{
+ "tale_id": 171,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 41.7,
+ "usage": {
+  "promptTokenCount": 665,
+  "candidatesTokenCount": 92,
+  "totalTokenCount": 2596,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 665
+   }
+  ],
+  "thoughtsTokenCount": 1839,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"Suddenly she saw in front of her a brilliant light, in the midst of which was her friend's face\",\n  \"summary\": \"A woman sees the transfigured, beatific face of her deceased friend in a brilliant light, which brings her peace regarding her friend's salvation.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "Suddenly she saw in front of her a brilliant light, in the midst of which was her friend's face",
+  "summary": "A woman sees the transfigured, beatific face of her deceased friend in a brilliant light, which brings her peace regarding her friend's salvation.",
+  "places": []
+ }
+}

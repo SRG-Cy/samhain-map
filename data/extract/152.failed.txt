@@ -1,0 +1,11 @@
+{
+  "beings": [
+    "ghost"
+  ],
+  "beings_quote": "they heard the \"clink, clink\" of a chain coming towards them",
+  "summary": "Two sisters walking on Kimmage Road hear a strange clinking chain, which is thought to be connected to the murder of an old woman.",
+  "places": [
+    {
+      "name": "Dublin",
+      "quote": "occurrence near Dublin is sent us by a lady",
+      "modern_name": null,

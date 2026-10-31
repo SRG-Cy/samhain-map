@@ -1,0 +1,35 @@
+{
+ "tale_id": 123,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 90.0,
+ "usage": {
+  "promptTokenCount": 724,
+  "candidatesTokenCount": 130,
+  "totalTokenCount": 4946,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 724
+   }
+  ],
+  "thoughtsTokenCount": 4092,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"poltergeist\"\n  ],\n  \"beings_quote\": \"the house was nightly disturbed by strange noises\",\n  \"summary\": \"After a woman died, her house was plagued by strange noises and moving objects until a priest performed a service.\",\n  \"places\": [\n    {\n      \"name\": \"Portarlington\",\n      \"quote\": \"On a large farm near Portarlington there once lived a Mrs. ----\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "poltergeist"
+  ],
+  "beings_quote": "the house was nightly disturbed by strange noises",
+  "summary": "After a woman died, her house was plagued by strange noises and moving objects until a priest performed a service.",
+  "places": [
+   {
+    "name": "Portarlington",
+    "quote": "On a large farm near Portarlington there once lived a Mrs. ----",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

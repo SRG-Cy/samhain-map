@@ -1,0 +1,46 @@
+{
+ "tale_id": 137,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 6.5,
+ "usage": {
+  "promptTokenCount": 1531,
+  "candidatesTokenCount": 262,
+  "totalTokenCount": 1793,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1531
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"it contains sufficient \\\"ghosts\\\" to satisfy the most greedy ghost-hunter.\",\n    \"summary\": \"Kilman Castle is a heavily haunted mansion containing various spirits, including a monk, an old couple, and a terrifying entity known as \\\"It.\\\"\",\n    \"places\": [\n      {\n        \"name\": \"Ireland\",\n        \"quote\": \"\\\"Kilman\\\" Castle, in the heart of Ireland--the name is obviously a pseudonym\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Kilman Castle\",\n        \"quote\": \"Some time ago a lady, a Miss B., who was decidedly psychic, was invited to Kilman Castle\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Dublin\",\n        \"quote\": \"an ancestor was about to be taken to Dublin on a charge of rebellion\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "it contains sufficient \"ghosts\" to satisfy the most greedy ghost-hunter.",
+  "summary": "Kilman Castle is a heavily haunted mansion containing various spirits, including a monk, an old couple, and a terrifying entity known as \"It.\"",
+  "places": [
+   {
+    "name": "Ireland",
+    "quote": "\"Kilman\" Castle, in the heart of Ireland--the name is obviously a pseudonym",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Kilman Castle",
+    "quote": "Some time ago a lady, a Miss B., who was decidedly psychic, was invited to Kilman Castle",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Dublin",
+    "quote": "an ancestor was about to be taken to Dublin on a charge of rebellion",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "tale_id": 204,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 59.8,
+ "usage": {
+  "promptTokenCount": 613,
+  "candidatesTokenCount": 91,
+  "totalTokenCount": 3386,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 613
+   }
+  ],
+  "thoughtsTokenCount": 2682,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\",\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"saw, standing in it, his father as plainly as he ever saw him in life\",\n  \"summary\": \"A man's dead father appears as a ghost to warn him away from a fallen tree, preventing him from being framed for theft.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "ghost",
+   "dead_returning"
+  ],
+  "beings_quote": "saw, standing in it, his father as plainly as he ever saw him in life",
+  "summary": "A man's dead father appears as a ghost to warn him away from a fallen tree, preventing him from being framed for theft.",
+  "places": []
+ }
+}

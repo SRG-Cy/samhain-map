@@ -1,0 +1,35 @@
+{
+ "tale_id": 130,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 38.1,
+ "usage": {
+  "promptTokenCount": 791,
+  "candidatesTokenCount": 137,
+  "totalTokenCount": 2551,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 791
+   }
+  ],
+  "thoughtsTokenCount": 1623,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"The horrible unseen visitant stopped, and they felt it watching them.\",\n  \"summary\": \"A family and their guests experienced terrifying noises and an unseen presence in a haunted ruined house in east County Clare.\",\n  \"places\": [\n    {\n      \"name\": \"east Co. Clare\",\n      \"quote\": \"An old ruined house in the hills of east Co. Clare enjoyed the reputation\",\n      \"modern_name\": \"East County Clare\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "The horrible unseen visitant stopped, and they felt it watching them.",
+  "summary": "A family and their guests experienced terrifying noises and an unseen presence in a haunted ruined house in east County Clare.",
+  "places": [
+   {
+    "name": "east Co. Clare",
+    "quote": "An old ruined house in the hills of east Co. Clare enjoyed the reputation",
+    "modern_name": "East County Clare",
+    "role": "setting"
+   }
+  ]
+ }
+}

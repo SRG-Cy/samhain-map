@@ -1,0 +1,41 @@
+{
+ "tale_id": 135,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 5.0,
+ "usage": {
+  "promptTokenCount": 1817,
+  "candidatesTokenCount": 189,
+  "totalTokenCount": 2006,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1817
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\",\n    \"other\"\n  ],\n  \"beings_quote\": \"we knew it was only the 'phantom coach,' for we also heard it.\",\n  \"summary\": \"A rector describes hearing a phantom coach, seeing a spectral vehicle, and experiencing mysterious footsteps at his rectory.\",\n  \"places\": [\n    {\n      \"name\": \"Cashel\",\n      \"quote\": \"the rector of a parish in the diocese of Cashel:\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Queen's County\",\n      \"quote\": \"a man I got from the Queen's County.\",\n      \"modern_name\": \"Laois\",\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost",
+   "other"
+  ],
+  "beings_quote": "we knew it was only the 'phantom coach,' for we also heard it.",
+  "summary": "A rector describes hearing a phantom coach, seeing a spectral vehicle, and experiencing mysterious footsteps at his rectory.",
+  "places": [
+   {
+    "name": "Cashel",
+    "quote": "the rector of a parish in the diocese of Cashel:",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Queen's County",
+    "quote": "a man I got from the Queen's County.",
+    "modern_name": "Laois",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

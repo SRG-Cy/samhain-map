@@ -1,0 +1,47 @@
+{
+ "tale_id": 217,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 62.8,
+ "usage": {
+  "promptTokenCount": 653,
+  "candidatesTokenCount": 226,
+  "totalTokenCount": 3590,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 653
+   }
+  ],
+  "thoughtsTokenCount": 2711,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"saw a white apparition sit up and address him\",\n  \"summary\": \"A woman thought dead during an epidemic wakes up in her grave and returns to her home in Merrion Square.\",\n  \"places\": [\n    {\n      \"name\": \"Dublin\",\n      \"quote\": \"sent us by Mr. De Lacy of Dublin\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Merrion Square\",\n      \"quote\": \"The wife of a man living in Merrion Square\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Donnybrook\",\n      \"quote\": \"buried in a churchyard in Donnybrook which is now closed\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "saw a white apparition sit up and address him",
+  "summary": "A woman thought dead during an epidemic wakes up in her grave and returns to her home in Merrion Square.",
+  "places": [
+   {
+    "name": "Dublin",
+    "quote": "sent us by Mr. De Lacy of Dublin",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Merrion Square",
+    "quote": "The wife of a man living in Merrion Square",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Donnybrook",
+    "quote": "buried in a churchyard in Donnybrook which is now closed",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

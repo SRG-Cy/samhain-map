@@ -1,0 +1,41 @@
+{
+ "tale_id": 213,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 50.4,
+ "usage": {
+  "promptTokenCount": 611,
+  "candidatesTokenCount": 184,
+  "totalTokenCount": 2950,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 611
+   }
+  ],
+  "thoughtsTokenCount": 2155,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"a huge rat with fiery eyes galloped down to the quay.\",\n  \"summary\": \"A girl is haunted by a phantom rat after rejecting a man, until the creature appears at the quay as she departs for Queenstown.\",\n  \"places\": [\n    {\n      \"name\": \"Limerick\",\n      \"quote\": \"A story of a phantom rat, which comes from Limerick\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Queenstown\",\n      \"quote\": \"A coasting vessel was about to start for Queenstown\",\n      \"modern_name\": \"Cobh\",\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "a huge rat with fiery eyes galloped down to the quay.",
+  "summary": "A girl is haunted by a phantom rat after rejecting a man, until the creature appears at the quay as she departs for Queenstown.",
+  "places": [
+   {
+    "name": "Limerick",
+    "quote": "A story of a phantom rat, which comes from Limerick",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Queenstown",
+    "quote": "A coasting vessel was about to start for Queenstown",
+    "modern_name": "Cobh",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "tale_id": 194,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 36.0,
+ "usage": {
+  "promptTokenCount": 507,
+  "candidatesTokenCount": 76,
+  "totalTokenCount": 2163,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 507
+   }
+  ],
+  "thoughtsTokenCount": 1580,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"distinctly heard the heavy step of a man walking along the corridor\",\n  \"summary\": \"A family and a maid heard heavy footsteps in their house, and the maid's mother died two weeks later.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "distinctly heard the heavy step of a man walking along the corridor",
+  "summary": "A family and a maid heard heavy footsteps in their house, and the maid's mother died two weeks later.",
+  "places": []
+ }
+}

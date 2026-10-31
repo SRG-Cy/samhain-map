@@ -1,0 +1,41 @@
+{
+ "tale_id": 174,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 104.3,
+ "usage": {
+  "promptTokenCount": 699,
+  "candidatesTokenCount": 211,
+  "totalTokenCount": 5606,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 699
+   }
+  ],
+  "thoughtsTokenCount": 4696,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"death_warning\"\n  ],\n  \"beings_quote\": \"witnessed a vision (shall we call it) of a suicide a week before\",\n  \"summary\": \"A lady witnessed a vision of a man drowning in a lake, and a week later, a man committed suicide by drowning in that same lake.\",\n  \"places\": [\n    {\n      \"name\": \"Castleblaney\",\n      \"quote\": \"I drove to Castleblaney, in Co. Monaghan, to meet my sister\",\n      \"modern_name\": \"Castleblayney\",\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Co. Monaghan\",\n      \"quote\": \"I drove to Castleblaney, in Co. Monaghan, to meet my sister\",\n      \"modern_name\": \"County Monaghan\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "witnessed a vision (shall we call it) of a suicide a week before",
+  "summary": "A lady witnessed a vision of a man drowning in a lake, and a week later, a man committed suicide by drowning in that same lake.",
+  "places": [
+   {
+    "name": "Castleblaney",
+    "quote": "I drove to Castleblaney, in Co. Monaghan, to meet my sister",
+    "modern_name": "Castleblayney",
+    "role": "setting"
+   },
+   {
+    "name": "Co. Monaghan",
+    "quote": "I drove to Castleblaney, in Co. Monaghan, to meet my sister",
+    "modern_name": "County Monaghan",
+    "role": "setting"
+   }
+  ]
+ }
+}

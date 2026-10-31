@@ -1,0 +1,28 @@
+{
+ "tale_id": 188,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 35.8,
+ "usage": {
+  "promptTokenCount": 498,
+  "candidatesTokenCount": 78,
+  "totalTokenCount": 2154,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 498
+   }
+  ],
+  "thoughtsTokenCount": 1578,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"death_warning\"\n  ],\n  \"beings_quote\": \"Knocking on the door is another species of death-warning.\",\n  \"summary\": \"A man hears loud knocking on a hall-door multiple times before a woman dies, but no one is ever seen.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "Knocking on the door is another species of death-warning.",
+  "summary": "A man hears loud knocking on a hall-door multiple times before a woman dies, but no one is ever seen.",
+  "places": []
+ }
+}

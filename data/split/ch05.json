@@ -1,0 +1,79 @@
+{
+ "raw": "{\n  \"accounts\": [\n    {\n      \"start\": 2,\n      \"title\": \"The Girl in White near Clonmel\"\n    },\n    {\n      \"start\": 4,\n      \"title\": \"The Ghostly Policeman\"\n    },\n    {\n      \"start\": 6,\n      \"title\": \"The Phantom Dog of Rathfarnham\"\n    },\n    {\n      \"start\": 7,\n      \"title\": \"The Murdered Boy at the Castle\"\n    },\n    {\n      \"start\": 8,\n      \"title\": \"The Terrier and the Grey Object\"\n    },\n    {\n      \"start\": 9,\n      \"title\": \"The Shabby Man in Leitrim\"\n    },\n    {\n      \"start\": 10,\n      \"title\": \"The Old-Fashioned Woman near Cork\"\n    },\n    {\n      \"start\": 11,\n      \"title\": \"The Sounds at Deerpark\"\n    },\n    {\n      \"start\": 13,\n      \"title\": \"The Clinking Chain on Kimmage Road\"\n    },\n    {\n      \"start\": 15,\n      \"title\": \"The Monk of Abbeyshrule\"\n    },\n    {\n      \"start\": 16,\n      \"title\": \"The Little Sailor Man near Waterford\"\n    },\n    {\n      \"start\": 18,\n      \"title\": \"The Ghost at Strabane Railway Station\"\n    },\n    {\n      \"start\": 21,\n      \"title\": \"The Phantom Creamery near Limerick\"\n    },\n    {\n      \"start\": 23,\n      \"title\": \"The Talking in the Railway Waiting-Room\"\n    },\n    {\n      \"start\": 24,\n      \"title\": \"The Battle of the Mackey Cottage\"\n    }\n  ]\n}",
+ "usage": {
+  "promptTokenCount": 6364,
+  "candidatesTokenCount": 438,
+  "totalTokenCount": 6802,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 6364
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "result": {
+  "accounts": [
+   {
+    "start": 2,
+    "title": "The Girl in White near Clonmel"
+   },
+   {
+    "start": 4,
+    "title": "The Ghostly Policeman"
+   },
+   {
+    "start": 6,
+    "title": "The Phantom Dog of Rathfarnham"
+   },
+   {
+    "start": 7,
+    "title": "The Murdered Boy at the Castle"
+   },
+   {
+    "start": 8,
+    "title": "The Terrier and the Grey Object"
+   },
+   {
+    "start": 9,
+    "title": "The Shabby Man in Leitrim"
+   },
+   {
+    "start": 10,
+    "title": "The Old-Fashioned Woman near Cork"
+   },
+   {
+    "start": 11,
+    "title": "The Sounds at Deerpark"
+   },
+   {
+    "start": 13,
+    "title": "The Clinking Chain on Kimmage Road"
+   },
+   {
+    "start": 15,
+    "title": "The Monk of Abbeyshrule"
+   },
+   {
+    "start": 16,
+    "title": "The Little Sailor Man near Waterford"
+   },
+   {
+    "start": 18,
+    "title": "The Ghost at Strabane Railway Station"
+   },
+   {
+    "start": 21,
+    "title": "The Phantom Creamery near Limerick"
+   },
+   {
+    "start": 23,
+    "title": "The Talking in the Railway Waiting-Room"
+   },
+   {
+    "start": 24,
+    "title": "The Battle of the Mackey Cottage"
+   }
+  ]
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "tale_id": 108,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 83.2,
+ "usage": {
+  "promptTokenCount": 799,
+  "candidatesTokenCount": 175,
+  "totalTokenCount": 4694,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 799
+   }
+  ],
+  "thoughtsTokenCount": 3720,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"she often had the feeling that a person was standing beside her bed\",\n  \"summary\": \"A family experienced unexplained noises, bells ringing, and voices in houses in Rathgar and Rathmines.\",\n  \"places\": [\n    {\n      \"name\": \"Rathgar\",\n      \"quote\": \"a family had very uncanny experiences in a house in Rathgar\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Rathmines\",\n      \"quote\": \"subsequently in another in Rathmines\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "she often had the feeling that a person was standing beside her bed",
+  "summary": "A family experienced unexplained noises, bells ringing, and voices in houses in Rathgar and Rathmines.",
+  "places": [
+   {
+    "name": "Rathgar",
+    "quote": "a family had very uncanny experiences in a house in Rathgar",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Rathmines",
+    "quote": "subsequently in another in Rathmines",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

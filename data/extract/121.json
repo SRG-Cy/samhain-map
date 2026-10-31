@@ -1,0 +1,41 @@
+{
+ "tale_id": 121,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 96.2,
+ "usage": {
+  "promptTokenCount": 679,
+  "candidatesTokenCount": 186,
+  "totalTokenCount": 5167,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 679
+   }
+  ],
+  "thoughtsTokenCount": 4302,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"the apparition of an old woman dressed in a drab cape\",\n  \"summary\": \"A rector and his family in Co. Monaghan witnessed the apparition of an old woman in a house.\",\n  \"places\": [\n    {\n      \"name\": \"St. Patrick's\",\n      \"quote\": \"contributed by the present Dean of St. Patrick's\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Co. Monaghan\",\n      \"quote\": \"a rector in Co. Monaghan, where he used to preach\",\n      \"modern_name\": \"County Monaghan\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the apparition of an old woman dressed in a drab cape",
+  "summary": "A rector and his family in Co. Monaghan witnessed the apparition of an old woman in a house.",
+  "places": [
+   {
+    "name": "St. Patrick's",
+    "quote": "contributed by the present Dean of St. Patrick's",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Co. Monaghan",
+    "quote": "a rector in Co. Monaghan, where he used to preach",
+    "modern_name": "County Monaghan",
+    "role": "setting"
+   }
+  ]
+ }
+}

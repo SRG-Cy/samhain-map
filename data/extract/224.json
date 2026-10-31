@@ -1,0 +1,40 @@
+{
+ "tale_id": 224,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 5.0,
+ "usage": {
+  "promptTokenCount": 3559,
+  "candidatesTokenCount": 181,
+  "totalTokenCount": 3740,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 3559
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"that there were ghosts in the question\",\n    \"summary\": \"A young woman was accused of stealing money that the McFaul family believed was destroyed by ghosts to warn against a marriage.\",\n    \"places\": [\n      {\n        \"name\": \"Armagh\",\n        \"quote\": \"Patrick McFaul of Armagh.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Derry\",\n        \"quote\": \"but before this she had been into Derry and spent a night there\",\n        \"modern_name\": \"Derry\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "that there were ghosts in the question",
+  "summary": "A young woman was accused of stealing money that the McFaul family believed was destroyed by ghosts to warn against a marriage.",
+  "places": [
+   {
+    "name": "Armagh",
+    "quote": "Patrick McFaul of Armagh.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Derry",
+    "quote": "but before this she had been into Derry and spent a night there",
+    "modern_name": "Derry",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

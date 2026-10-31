@@ -1,0 +1,27 @@
+{
+ "tale_id": 105,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 2.8,
+ "usage": {
+  "promptTokenCount": 1146,
+  "candidatesTokenCount": 87,
+  "totalTokenCount": 1233,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1146
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"Knowing the reputation of the house, and being desirous of investigating a ghost-story\",\n    \"summary\": \"A man recounts the history of a house in the suburbs that has a reputation for being haunted, causing various tenants to leave.\",\n    \"places\": []\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "Knowing the reputation of the house, and being desirous of investigating a ghost-story",
+  "summary": "A man recounts the history of a house in the suburbs that has a reputation for being haunted, causing various tenants to leave.",
+  "places": []
+ }
+}

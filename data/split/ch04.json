@@ -1,0 +1,43 @@
+{
+ "raw": "{\n  \"accounts\": [\n    {\n      \"start\": 2,\n      \"title\": \"The Poltergeist of Court Street\"\n    },\n    {\n      \"start\": 12,\n      \"title\": \"The Haunted Farmhouse in Fermanagh\"\n    },\n    {\n      \"start\": 16,\n      \"title\": \"The Stones of Upper Ballygowan\"\n    },\n    {\n      \"start\": 18,\n      \"title\": \"The New Cottage in County Wexford\"\n    },\n    {\n      \"start\": 24,\n      \"title\": \"The Fairy Path in Portarlington\"\n    },\n    {\n      \"start\": 25,\n      \"title\": \"The Fraud in Passage East\"\n    }\n  ]\n}",
+ "usage": {
+  "promptTokenCount": 5221,
+  "candidatesTokenCount": 183,
+  "totalTokenCount": 5404,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5221
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "result": {
+  "accounts": [
+   {
+    "start": 2,
+    "title": "The Poltergeist of Court Street"
+   },
+   {
+    "start": 12,
+    "title": "The Haunted Farmhouse in Fermanagh"
+   },
+   {
+    "start": 16,
+    "title": "The Stones of Upper Ballygowan"
+   },
+   {
+    "start": 18,
+    "title": "The New Cottage in County Wexford"
+   },
+   {
+    "start": 24,
+    "title": "The Fairy Path in Portarlington"
+   },
+   {
+    "start": 25,
+    "title": "The Fraud in Passage East"
+   }
+  ]
+ }
+}

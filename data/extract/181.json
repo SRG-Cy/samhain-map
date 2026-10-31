@@ -1,0 +1,28 @@
+{
+ "tale_id": 181,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 30.6,
+ "usage": {
+  "promptTokenCount": 560,
+  "candidatesTokenCount": 76,
+  "totalTokenCount": 1948,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 560
+   }
+  ],
+  "thoughtsTokenCount": 1312,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"banshee\"\n  ],\n  \"beings_quote\": \"It is the Banshee, as I have heard it before.\",\n  \"summary\": \"A boy in a public school hears a banshee crying, and the following morning his brother is accidentally shot dead.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "banshee"
+  ],
+  "beings_quote": "It is the Banshee, as I have heard it before.",
+  "summary": "A boy in a public school hears a banshee crying, and the following morning his brother is accidentally shot dead.",
+  "places": []
+ }
+}

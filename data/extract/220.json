@@ -1,0 +1,54 @@
+{
+ "tale_id": 220,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 79.8,
+ "usage": {
+  "promptTokenCount": 596,
+  "candidatesTokenCount": 268,
+  "totalTokenCount": 4346,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 596
+   }
+  ],
+  "thoughtsTokenCount": 3482,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\",\n    \"devil\"\n  ],\n  \"beings_quote\": \"what we may perhaps call a ghost in the making\",\n  \"summary\": \"A lady was awakened by a mysterious noise and found a drowned mouse in her bathtub.\",\n  \"places\": [\n    {\n      \"name\": \"Dublin\",\n      \"quote\": \"story from a Dublin lady\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Ireland\",\n      \"quote\": \"The devil is very real to the average countryman in Ireland.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Devil's Elbow\",\n      \"quote\": \"the Devil's Elbow, a very nasty bit of road\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Kerry\",\n      \"quote\": \"a very nasty bit of road down in Kerry\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost",
+   "devil"
+  ],
+  "beings_quote": "what we may perhaps call a ghost in the making",
+  "summary": "A lady was awakened by a mysterious noise and found a drowned mouse in her bathtub.",
+  "places": [
+   {
+    "name": "Dublin",
+    "quote": "story from a Dublin lady",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Ireland",
+    "quote": "The devil is very real to the average countryman in Ireland.",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Devil's Elbow",
+    "quote": "the Devil's Elbow, a very nasty bit of road",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Kerry",
+    "quote": "a very nasty bit of road down in Kerry",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "tale_id": 102,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 40.0,
+ "usage": {
+  "promptTokenCount": 577,
+  "candidatesTokenCount": 121,
+  "totalTokenCount": 2447,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 577
+   }
+  ],
+  "thoughtsTokenCount": 1749,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"she had seen two ghostly forms flit past her\",\n  \"summary\": \"Two children were murdered in a Dublin house, and their ghostly heads are said to still appear at the nursery window.\",\n  \"places\": [\n    {\n      \"name\": \"Dublin\",\n      \"quote\": \"a young officer was ordered to Dublin\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "she had seen two ghostly forms flit past her",
+  "summary": "Two children were murdered in a Dublin house, and their ghostly heads are said to still appear at the nursery window.",
+  "places": [
+   {
+    "name": "Dublin",
+    "quote": "a young officer was ordered to Dublin",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

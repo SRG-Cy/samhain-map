@@ -1,0 +1,35 @@
+{
+ "tale_id": 147,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 53.0,
+ "usage": {
+  "promptTokenCount": 458,
+  "candidatesTokenCount": 137,
+  "totalTokenCount": 2916,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 458
+   }
+  ],
+  "thoughtsTokenCount": 2321,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"The ghost of a boy who was murdered by a Romany\",\n  \"summary\": \"A boy's ghost is said to haunt the lodge gates of a castle, but Jesuit Fathers claim there have been no recent sightings.\",\n  \"places\": [\n    {\n      \"name\": \"the Castle demesne\",\n      \"quote\": \"haunt one of the lodge gates of the Castle demesne\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "The ghost of a boy who was murdered by a Romany",
+  "summary": "A boy's ghost is said to haunt the lodge gates of a castle, but Jesuit Fathers claim there have been no recent sightings.",
+  "places": [
+   {
+    "name": "the Castle demesne",
+    "quote": "haunt one of the lodge gates of the Castle demesne",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

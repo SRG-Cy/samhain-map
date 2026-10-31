@@ -1,0 +1,67 @@
+{
+ "raw": "{\n  \"accounts\": [\n    {\n      \"start\": 4,\n      \"title\": \"The Spectral Charwoman\"\n    },\n    {\n      \"start\": 8,\n      \"title\": \"The Murdered Children in the North Side\"\n    },\n    {\n      \"start\": 9,\n      \"title\": \"Major Macgregor and Aunt Betty\"\n    },\n    {\n      \"start\": 10,\n      \"title\": \"The Evil Face in the Schoolroom\"\n    },\n    {\n      \"start\": 11,\n      \"title\": \"The Haunted House in the Suburbs\"\n    },\n    {\n      \"start\": 17,\n      \"title\": \"The Ghost of Primate Narcissus Marsh\"\n    },\n    {\n      \"start\": 18,\n      \"title\": \"The Ghostly Canon in the Cathedral\"\n    },\n    {\n      \"start\": 19,\n      \"title\": \"Uncanny Experiences in Rathgar and Rathmines\"\n    },\n    {\n      \"start\": 22,\n      \"title\": \"The Haunted House Lawsuit\"\n    },\n    {\n      \"start\": 27,\n      \"title\": \"The Troublesome Ghost Corney\"\n    },\n    {\n      \"start\": 40,\n      \"title\": \"The Nun of the Monastery\"\n    },\n    {\n      \"start\": 41,\n      \"title\": \"The Woman in the Kingstown House\"\n    }\n  ]\n}",
+ "usage": {
+  "promptTokenCount": 7737,
+  "candidatesTokenCount": 353,
+  "totalTokenCount": 8090,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 7737
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "result": {
+  "accounts": [
+   {
+    "start": 4,
+    "title": "The Spectral Charwoman"
+   },
+   {
+    "start": 8,
+    "title": "The Murdered Children in the North Side"
+   },
+   {
+    "start": 9,
+    "title": "Major Macgregor and Aunt Betty"
+   },
+   {
+    "start": 10,
+    "title": "The Evil Face in the Schoolroom"
+   },
+   {
+    "start": 11,
+    "title": "The Haunted House in the Suburbs"
+   },
+   {
+    "start": 17,
+    "title": "The Ghost of Primate Narcissus Marsh"
+   },
+   {
+    "start": 18,
+    "title": "The Ghostly Canon in the Cathedral"
+   },
+   {
+    "start": 19,
+    "title": "Uncanny Experiences in Rathgar and Rathmines"
+   },
+   {
+    "start": 22,
+    "title": "The Haunted House Lawsuit"
+   },
+   {
+    "start": 27,
+    "title": "The Troublesome Ghost Corney"
+   },
+   {
+    "start": 40,
+    "title": "The Nun of the Monastery"
+   },
+   {
+    "start": 41,
+    "title": "The Woman in the Kingstown House"
+   }
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "tale_id": 132,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 61.9,
+ "usage": {
+  "promptTokenCount": 454,
+  "candidatesTokenCount": 131,
+  "totalTokenCount": 3309,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 454
+   }
+  ],
+  "thoughtsTokenCount": 2724,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"a manifestation of this nature forms the haunting\",\n  \"summary\": \"In a farmhouse in Co. Limerick, blood appears on the floor if a light is not kept burning all night.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Limerick\",\n      \"quote\": \"a manifestation of this nature forms the haunting in a farmhouse in Co. Limerick.\",\n      \"modern_name\": \"County Limerick\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "a manifestation of this nature forms the haunting",
+  "summary": "In a farmhouse in Co. Limerick, blood appears on the floor if a light is not kept burning all night.",
+  "places": [
+   {
+    "name": "Co. Limerick",
+    "quote": "a manifestation of this nature forms the haunting in a farmhouse in Co. Limerick.",
+    "modern_name": "County Limerick",
+    "role": "setting"
+   }
+  ]
+ }
+}

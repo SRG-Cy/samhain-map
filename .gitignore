@@ -4,3 +4,4 @@ data/raw/
 node_modules/
 .venv/
 data/townland_shapes.json
+data/gazetteer.json

@@ -1,0 +1,28 @@
+{
+ "tale_id": 162,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 31.6,
+ "usage": {
+  "promptTokenCount": 663,
+  "candidatesTokenCount": 83,
+  "totalTokenCount": 2103,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 663
+   }
+  ],
+  "thoughtsTokenCount": 1357,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"saw my old friend P. Q. standing outside with his gun in his hand\",\n  \"summary\": \"A man is visited by his friend P. Q., who is later revealed to have died at his home nine miles away.\",\n  \"places\": []\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "saw my old friend P. Q. standing outside with his gun in his hand",
+  "summary": "A man is visited by his friend P. Q., who is later revealed to have died at his home nine miles away.",
+  "places": []
+ }
+}

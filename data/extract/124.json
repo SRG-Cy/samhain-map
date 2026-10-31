@@ -1,0 +1,35 @@
+{
+ "tale_id": 124,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 45.4,
+ "usage": {
+  "promptTokenCount": 625,
+  "candidatesTokenCount": 136,
+  "totalTokenCount": 2733,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 625
+   }
+  ],
+  "thoughtsTokenCount": 1972,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"it is only grandfather! He died in this room\",\n  \"summary\": \"A lady visiting a friend in Portarlington hears snoring from her bed, which her friend explains is the sound of her deceased grandfather.\",\n  \"places\": [\n    {\n      \"name\": \"Portarlington\",\n      \"quote\": \"When I was on a visit to a friend in Portarlington,\",\n      \"modern_name\": \"Portarlington\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "it is only grandfather! He died in this room",
+  "summary": "A lady visiting a friend in Portarlington hears snoring from her bed, which her friend explains is the sound of her deceased grandfather.",
+  "places": [
+   {
+    "name": "Portarlington",
+    "quote": "When I was on a visit to a friend in Portarlington,",
+    "modern_name": "Portarlington",
+    "role": "setting"
+   }
+  ]
+ }
+}

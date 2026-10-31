@@ -1,0 +1,35 @@
+{
+ "tale_id": 116,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 32.0,
+ "usage": {
+  "promptTokenCount": 822,
+  "candidatesTokenCount": 151,
+  "totalTokenCount": 2293,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 822
+   }
+  ],
+  "thoughtsTokenCount": 1320,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"In the year 1869 a ghost made its presence manifest\",\n  \"summary\": \"A ghost haunted a house in County Cavan by throwing soot and moving furniture until a religious station was held to drive it away.\",\n  \"places\": [\n    {\n      \"name\": \"Co. Cavan\",\n      \"quote\": \"In the year 1869 a ghost made its presence manifest in the house of a Mr. M---- in Co. Cavan.\",\n      \"modern_name\": \"County Cavan\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "In the year 1869 a ghost made its presence manifest",
+  "summary": "A ghost haunted a house in County Cavan by throwing soot and moving furniture until a religious station was held to drive it away.",
+  "places": [
+   {
+    "name": "Co. Cavan",
+    "quote": "In the year 1869 a ghost made its presence manifest in the house of a Mr. M---- in Co. Cavan.",
+    "modern_name": "County Cavan",
+    "role": "setting"
+   }
+  ]
+ }
+}

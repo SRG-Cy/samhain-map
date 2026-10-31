@@ -1,0 +1,41 @@
+{
+ "tale_id": 119,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 92.5,
+ "usage": {
+  "promptTokenCount": 685,
+  "candidatesTokenCount": 186,
+  "totalTokenCount": 5040,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 685
+   }
+  ],
+  "thoughtsTokenCount": 4169,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"the apparition of an old woman, who was supposed to have poisoned someone, used to be seen therein.\",\n  \"summary\": \"In a house in Galway, an old woman's apparition appeared and threatened to drag a lady to Hell.\",\n  \"places\": [\n    {\n      \"name\": \"Galway\",\n      \"quote\": \"relates a strange sight seen by her sister in Galway.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Drogheda\",\n      \"quote\": \"Two stories are told about haunted houses at Drogheda\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the apparition of an old woman, who was supposed to have poisoned someone, used to be seen therein.",
+  "summary": "In a house in Galway, an old woman's apparition appeared and threatened to drag a lady to Hell.",
+  "places": [
+   {
+    "name": "Galway",
+    "quote": "relates a strange sight seen by her sister in Galway.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Drogheda",
+    "quote": "Two stories are told about haunted houses at Drogheda",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

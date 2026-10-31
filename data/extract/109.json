@@ -1,0 +1,35 @@
+{
+ "tale_id": 109,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 47.8,
+ "usage": {
+  "promptTokenCount": 730,
+  "candidatesTokenCount": 132,
+  "totalTokenCount": 2934,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 730
+   }
+  ],
+  "thoughtsTokenCount": 2072,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"ghost\"\n  ],\n  \"beings_quote\": \"the ghost may be said to have won\",\n  \"summary\": \"A man sued his neighbor for damages to his house, but the jury found for the defendant because the house was notoriously haunted.\",\n  \"places\": [\n    {\n      \"name\": \"Dublin\",\n      \"quote\": \"A case about a haunted house took place in Dublin in the year 1885\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "the ghost may be said to have won",
+  "summary": "A man sued his neighbor for damages to his house, but the jury found for the defendant because the house was notoriously haunted.",
+  "places": [
+   {
+    "name": "Dublin",
+    "quote": "A case about a haunted house took place in Dublin in the year 1885",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

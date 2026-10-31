@@ -1,0 +1,35 @@
+{
+ "tale_id": 187,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v2",
+ "seconds": 34.9,
+ "usage": {
+  "promptTokenCount": 518,
+  "candidatesTokenCount": 129,
+  "totalTokenCount": 2118,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 518
+   }
+  ],
+  "thoughtsTokenCount": 1471,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"death_warning\"\n  ],\n  \"beings_quote\": \"that noise was always heard in their house before the death of any of them\",\n  \"summary\": \"A nurse in Wicklow hears a loud crash that is known to signal an impending death in the household.\",\n  \"places\": [\n    {\n      \"name\": \"Wicklow\",\n      \"quote\": \"was attending a case in the town of Wicklow.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "death_warning"
+  ],
+  "beings_quote": "that noise was always heard in their house before the death of any of them",
+  "summary": "A nurse in Wicklow hears a loud crash that is known to signal an impending death in the household.",
+  "places": [
+   {
+    "name": "Wicklow",
+    "quote": "was attending a case in the town of Wicklow.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}
