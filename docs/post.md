@@ -37,7 +37,7 @@ The rule behind all of it: **Gemma reads. Code decides.**
 
 **Live:** [samhain-map.onrender.com](https://samhain-map.onrender.com) (no sign-up, works on a phone)
 
-Try: filter by **Ghost**, click **Sneem**, open *The Ghost of Sneem*, then scroll to "Where it happened". Then zoom into Dublin Bay and click **Dún Laoghaire**: the 1914 story calls it Kingstown. Or click any white ghost, like **Leap Castle**.
+Try: filter by **Ghost**, click **Sneem**, open *The Ghost of Sneem*, then scroll to "Where it happened". Then zoom into Dublin Bay and click **Dún Laoghaire**: the 1914 story calls it Kingstown. Or click any white ghost, like **Leap Castle**, open its story and press play under "Listen to the story". Headphones, lights off.
 
 ## Code
 
@@ -96,7 +96,7 @@ Each site has an image from Wikimedia Commons, taken only if its licence is free
 
 ### Told aloud again
 
-These stories were told by a fire long before anyone wrote them down, so reading them silently felt like half of them. Twelve are now read aloud by an ElevenLabs voice ("George", an older storyteller), set slow and slightly unsteady: lower stability so the voice can drop and linger, speed at 0.9.
+These stories were told by a fire long before anyone wrote them down, so reading them silently felt like half of them. Twelve, about 69 minutes in all, are now read aloud by an ElevenLabs voice ("George", an older storyteller), set slow and slightly unsteady: lower stability so the voice can drop and linger, speed at 0.9.
 
 The same rule holds: the voice reads only the book's own words and the story's title, nothing generated. The audio is made once by a script and served as small static files (32 kbps speech, about a quarter of a megabyte a minute), so the API key never reaches the page and the site still costs nothing to host. Long stories go up in 4,000-character pieces cut at paragraph ends, each sent with the end of the piece before it, so the voice keeps its tone across the joins.
 
@@ -188,4 +188,4 @@ So that's what I'd ask you to do with it: find your own place on the map. If a s
 
 ---
 
-*Tales: Jeremiah Curtin (1895), public domain, scan by Cornell University Library via archive.org. Stories: St John D. Seymour and Harry L. Neligan (1914), public domain, Project Gutenberg #14099. Haunted sites also from T. Crofton Croker (1825) and D. R. McAnally (1888), public domain, Project Gutenberg. Townland boundaries © Tailte Éireann, CC BY 4.0; Northern Ireland townlands and counties from OSNI Open Data, OGL v3. Places: GeoNames, CC BY 4.0. Built with Claude Code; I directed it and checked the results.*
+*Tales: Jeremiah Curtin (1895), public domain, scan by Cornell University Library via archive.org. Stories: St John D. Seymour and Harry L. Neligan (1914), public domain, Project Gutenberg #14099. Haunted sites also from T. Crofton Croker (1825) and D. R. McAnally (1888), public domain, Project Gutenberg. Townland boundaries © Tailte Éireann, CC BY 4.0; Northern Ireland townlands and counties from OSNI Open Data, OGL v3. Places: GeoNames, CC BY 4.0. Site images: Wikimedia Commons, CC BY-SA, credited on each page. Narration: ElevenLabs. Built with Claude Code; I directed it and checked the results.*
