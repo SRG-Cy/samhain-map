@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samhain Map</title>
+  <meta name="description" content="Ghost and fairy tales told in Kerry in the 1890s, put back on the map. Places found by an open-weight model, checked by code against real townlands.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="candle" aria-hidden="true"></span>
+      <div>
+        <h1>Samhain Map</h1>
+        <p>Ghost and fairy tales told in Kerry in the 1890s, back where they happened.</p>
+      </div>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter by being"></div>
+  </header>
+
+  <main class="layout">
+    <div id="map" aria-label="Map of Munster with the places named in the tales"></div>
+    <aside class="panel" id="panel" aria-live="polite">
+      <div id="panel-body"></div>
+    </aside>
+  </main>
+
+  <footer class="foot">
+    Tales: Jeremiah Curtin, <em>Tales of the Fairies and of the Ghost World</em> (1895), public domain, via
+    <a href="https://archive.org/details/cu31924029910563">archive.org</a> (Cornell University Library).
+    Townlands: © Tailte Éireann, CC BY 4.0. Places: <a href="https://www.geonames.org/">GeoNames</a>, CC BY 4.0.
+    Summaries and place reading by Gemma, an open-weight model; every pin checked by code.
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
