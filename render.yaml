@@ -2,6 +2,7 @@ services:
   - type: web
     name: samhain-map
     runtime: static
+    buildCommand: echo "nothing to build; the map is plain HTML in web/"
     staticPublishPath: ./web
     headers:
       - path: /data/*
