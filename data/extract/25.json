@@ -1,0 +1,40 @@
+{
+ "tale_id": 25,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 5.6,
+ "usage": {
+  "promptTokenCount": 1683,
+  "candidatesTokenCount": 220,
+  "totalTokenCount": 1903,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1683
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"mermaid_or_seal_woman\"\n  ],\n  \"beings_quote\": \"who were seals in the daytime, but men and woman at night.\",\n  \"summary\": \"A man named Tom Moore marries a seal woman after taking her hood, but she eventually returns to the sea with a seal.\",\n  \"places\": [\n    {\n      \"name\": \"Kilshanig\",\n      \"quote\": \"In the village of Kilshanig, two miles north-east of Castlegregory, there lived at one time\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Castlegregory\",\n      \"quote\": \"In the village of Kilshanig, two miles north-east of Castlegregory, there lived at one time\",\n      \"modern_name\": \"Castlegregory\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "mermaid_or_seal_woman"
+  ],
+  "beings_quote": "who were seals in the daytime, but men and woman at night.",
+  "summary": "A man named Tom Moore marries a seal woman after taking her hood, but she eventually returns to the sea with a seal.",
+  "places": [
+   {
+    "name": "Kilshanig",
+    "quote": "In the village of Kilshanig, two miles north-east of Castlegregory, there lived at one time",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Castlegregory",
+    "quote": "In the village of Kilshanig, two miles north-east of Castlegregory, there lived at one time",
+    "modern_name": "Castlegregory",
+    "role": "setting"
+   }
+  ]
+ }
+}

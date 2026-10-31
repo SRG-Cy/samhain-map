@@ -56,19 +56,19 @@ def load_key():
     return key
 
 
-def call_gemma(model, key, prompt):
+def call_gemma(model, key, prompt, max_tokens=8192):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     body = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         # JSON mode stops Gemma 4 26B from looping in its reasoning; at temperature 0 it repeated itself
-        "generationConfig": {"temperature": 0.3, "maxOutputTokens": 8192, "responseMimeType": "application/json"},
+        "generationConfig": {"temperature": 0.3, "maxOutputTokens": max_tokens, "responseMimeType": "application/json"},
     }
     req = urllib.request.Request(
         url,
         data=json.dumps(body).encode(),
         headers={"Content-Type": "application/json", "x-goog-api-key": key},
     )
-    with urllib.request.urlopen(req, timeout=180) as r:
+    with urllib.request.urlopen(req, timeout=400) as r:
         data = json.loads(r.read())
     parts = data["candidates"][0]["content"]["parts"]
     # Gemma 4 can return its reasoning as separate "thought" parts; keep only the answer

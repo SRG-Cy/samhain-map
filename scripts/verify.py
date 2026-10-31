@@ -26,6 +26,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MAX_KM = 30  # a respelled place further than this from the tale's other places is refused
 SAME_PLACE_KM = 4  # a townland and a GeoNames point this close with one name are one place
+FAR_KM = 60  # an exact match further than this from the tale's other places is refused
+HOME = {"Kerry", "Cork"}  # Curtin collected in south-west Munster
+TRAVEL_KINDS = {"geonames:PPLA", "geonames:PPLA2", "geonames:PPLC"}  # county towns and cities
 BROAD = {
     "ireland", "erin", "munster", "ulster", "leinster", "connacht", "connaught", "kerry", "cork county",
     "county kerry", "county cork", "county limerick", "county clare", "limerick county", "america",
@@ -125,8 +128,11 @@ def main():
                         stats["unmatched"] += 1
             places.append(item)
 
-        # anchors: places that match the tale's own spelling with exactly one real location
-        anchors = [p["cands"][0] for p in places if p.get("via") == "tale" and len(p["cands"]) == 1]
+        # anchors: places that match the tale's own spelling with exactly one real location, in the
+        # region Curtin collected in. (A lone "Drummond" in Tipperary once dragged Waterville to Limerick.)
+        anchors = [p["cands"][0] for p in places
+                   if p.get("via") == "tale" and len(p["cands"]) == 1 and p["cands"][0]["county"] in HOME
+                   and p["cands"][0]["kind"] not in TRAVEL_KINDS]  # a trip to Cork city isn't where the tale is set
         if not anchors:
             anchors = [c for p in places if p.get("via") == "tale" for c in p["cands"] if c["county"] == "Kerry"][:3]
         centre = None
@@ -145,6 +151,14 @@ def main():
             pick = cands[0]
             if via == "modern" and centre and km(pick, centre) > MAX_KM:
                 p["status"] = f"refused: '{p['suggested']}' exists, but {round(km(pick, centre))} km from the tale's other places"
+                stats["refused_far"] += 1
+                continue
+            # an exact-spelling match far from everything else is probably a different place with the
+            # same name; big towns people travelled to (Cork city) are allowed to be far
+            far = centre and km(pick, centre) > FAR_KM and pick["kind"] not in TRAVEL_KINDS
+            if via == "tale" and (far or (not centre and pick["county"] not in HOME)):
+                where = f"{round(km(pick, centre))} km from the tale's other places" if centre else "outside Kerry and Cork"
+                p["status"] = f"refused: the only '{pick['name']}' found is in Co. {pick['county']}, {where}"
                 stats["refused_far"] += 1
                 continue
             if pick["id"] in seen:

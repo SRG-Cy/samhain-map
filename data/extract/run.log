@@ -26,3 +26,57 @@ tale 16: HTTP 429 {
     "code": 429,
     "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
 tale 16 St. Martin's Eve                         places=6 beings=['ghost', 'saint']
+tale 17 James Murray and Saint Martin            places=5 beings=['saint']
+tale 18 Fairy Cows                               places=1 beings=['fairy']
+tale 19 John Reardon and the Sister Ghosts       places=2 beings=['ghost']
+tale 20: HTTP 500 {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "INTERNAL"
+  }
+}
+
+tale 20: HTTP 500 {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "INTERNAL"
+  }
+}
+
+tale 20: HTTP 500 {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "INTERNAL"
+  }
+}
+
+tale 20 Maggie Doyle and the Dead Man            places=1 beings=['dead_returning']
+tale 21 Pat Doyle and the Ghost                  places=0 beings=['ghost', 'devil']
+tale 22: HTTP 500 {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "INTERNAL"
+  }
+}
+
+tale 22 The Ghost of Sneem                       places=7 beings=['ghost', 'other']
+tale 23 The Dead Mother                          places=4 beings=['dead_returning']
+tale 24 Tim Sheehy Sent Back to this World to Pr places=1 beings=['dead_returning']
+tale 25 Tom Moore and the Seal Woman             places=2 beings=['mermaid_or_seal_woman']
+tale 26: HTTP 500 {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "INTERNAL"
+  }
+}
+
+tale 26 The Four-leafed Shamrock                 places=2 beings=[]
+tale 27 John Cokeley and the Fairy               places=2 beings=['fairy', 'dead_returning']
+tale 28 Tom Foley's Ghost                        places=3 beings=['ghost']
+tale 29 The Blood-drawing Ghost                  places=3 beings=['ghost', 'dead_returning']
+tale 30 Murderous Ghosts                         places=5 beings=['ghost', 'fairy']

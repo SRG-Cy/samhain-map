@@ -1,0 +1,28 @@
+{
+ "tale_id": 21,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 2.8,
+ "usage": {
+  "promptTokenCount": 1420,
+  "candidatesTokenCount": 85,
+  "totalTokenCount": 1505,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1420
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\",\n      \"devil\"\n    ],\n    \"beings_quote\": \"a ghost appeared behind the priest and the clerk.\",\n    \"summary\": \"A young man named Pat Doyle is killed by a ghost in flames of fire after being left alone while traveling with a priest.\",\n    \"places\": []\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost",
+   "devil"
+  ],
+  "beings_quote": "a ghost appeared behind the priest and the clerk.",
+  "summary": "A young man named Pat Doyle is killed by a ghost in flames of fire after being left alone while traveling with a priest.",
+  "places": []
+ }
+}

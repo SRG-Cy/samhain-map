@@ -1,0 +1,34 @@
+{
+ "tale_id": 20,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 4.0,
+ "usage": {
+  "promptTokenCount": 1786,
+  "candidatesTokenCount": 141,
+  "totalTokenCount": 1927,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1786
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"There is a dead man above in the room ; come with me.\",\n  \"summary\": \"A woman is tricked by her husband who disguises himself as his dead twin brother to test her faithfulness.\",\n  \"places\": [\n    {\n      \"name\": \"Killarney\",\n      \"quote\": \"I went on till I came to Killarney, and sold my bag of sea-moss\",\n      \"modern_name\": \"Killarney\",\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "There is a dead man above in the room ; come with me.",
+  "summary": "A woman is tricked by her husband who disguises himself as his dead twin brother to test her faithfulness.",
+  "places": [
+   {
+    "name": "Killarney",
+    "quote": "I went on till I came to Killarney, and sold my bag of sea-moss",
+    "modern_name": "Killarney",
+    "role": "setting"
+   }
+  ]
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "tale_id": 26,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 110.4,
+ "usage": {
+  "promptTokenCount": 824,
+  "candidatesTokenCount": 167,
+  "totalTokenCount": 5957,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 824
+   }
+  ],
+  "thoughtsTokenCount": 4966,
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [],\n  \"beings_quote\": \"\",\n  \"summary\": \"A showman buys a bundle of grass containing a four-leafed shamrock from a man, causing the man to lose his ability to see through enchantments.\",\n  \"places\": [\n    {\n      \"name\": \"Dingle\",\n      \"quote\": \"came to the town of Dingle and performed many tricks\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"Brandon Mountain\",\n      \"quote\": \"on the road toward Brandon Mountain, he met a man\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [],
+  "beings_quote": "",
+  "summary": "A showman buys a bundle of grass containing a four-leafed shamrock from a man, causing the man to lose his ability to see through enchantments.",
+  "places": [
+   {
+    "name": "Dingle",
+    "quote": "came to the town of Dingle and performed many tricks",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Brandon Mountain",
+    "quote": "on the road toward Brandon Mountain, he met a man",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

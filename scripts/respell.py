@@ -37,17 +37,23 @@ def main():
     if not todo:
         print("nothing to respell")
         return
-    items = "\n".join(f'- "{v["name"]}" (from: "{v["quote"]}")' for v in todo.values())
-    raw, usage = call_gemma("gemma-4-26b-a4b-it", load_key(), PROMPT.format(items=items))
-    answers = json.loads(raw[raw.find("{"): raw.rfind("}") + 1])["answers"]
-    for a in answers:
-        k = norm(a.get("name"))
-        if k in todo:
-            done[k] = {**todo[k], "suggestions": a.get("suggestions") or []}
-    out_file.write_text(json.dumps(done, ensure_ascii=False, indent=1), encoding="utf-8")
-    for k, v in done.items():
-        print(f"{v['name']!r:24} -> {v['suggestions']}")
-    print(usage)
+    key = load_key()
+    names = list(todo.values())
+    # small batches: one call with all names reasoned past the time limit
+    for i in range(0, len(names), 5):
+        batch = names[i : i + 5]
+        items = "\n".join(f'- "{v["name"]}" (from: "{v["quote"]}")' for v in batch)
+        # reasoning used the whole 8k budget on the first try, so allow more here
+        raw, usage = call_gemma("gemma-4-26b-a4b-it", key, PROMPT.format(items=items), max_tokens=32768)
+        if "{" not in raw:
+            print(f"batch {i // 5}: no answer ({usage.get('thoughtsTokenCount')} reasoning tokens)")
+            continue
+        for a in json.loads(raw[raw.find("{"): raw.rfind("}") + 1])["answers"]:
+            k = norm(a.get("name"))
+            if k in todo:
+                done[k] = {**todo[k], "suggestions": a.get("suggestions") or []}
+                print(f"{todo[k]['name']!r:28} -> {done[k]['suggestions']}")
+        out_file.write_text(json.dumps(done, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 if __name__ == "__main__":

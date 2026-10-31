@@ -1,0 +1,34 @@
+{
+ "tale_id": 24,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 4.2,
+ "usage": {
+  "promptTokenCount": 1263,
+  "candidatesTokenCount": 145,
+  "totalTokenCount": 1408,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1263
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"dead_returning\"\n    ],\n    \"beings_quote\": \"Tim Sheehy sat up on the table and began to speak to them.\",\n    \"summary\": \"After being falsely accused of arson, Tim Sheehy dies of grief but returns from the dead during his wake to prove his innocence.\",\n    \"places\": [\n      {\n        \"name\": \"Tralee\",\n        \"quote\": \"There was a farmer, fourteen miles from Tralee, named Fitzgerald\",\n        \"modern_name\": \"Tralee\",\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "Tim Sheehy sat up on the table and began to speak to them.",
+  "summary": "After being falsely accused of arson, Tim Sheehy dies of grief but returns from the dead during his wake to prove his innocence.",
+  "places": [
+   {
+    "name": "Tralee",
+    "quote": "There was a farmer, fourteen miles from Tralee, named Fitzgerald",
+    "modern_name": "Tralee",
+    "role": "setting"
+   }
+  ]
+ }
+}

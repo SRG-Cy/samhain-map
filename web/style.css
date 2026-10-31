@@ -105,6 +105,7 @@ summary { cursor: pointer; color: var(--flame); }
 .foot { padding: 10px 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 
 .leaflet-container { font: 14px var(--sans); background: #0b0a09; }
+.dark-tiles { filter: invert(1) hue-rotate(180deg) brightness(0.62) contrast(0.95) sepia(0.25); }
 .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--surface-2); color: var(--text); }
 .leaflet-tooltip { background: var(--surface-2); color: var(--text); border-color: var(--line); }
 .leaflet-tooltip-top::before { border-top-color: var(--surface-2); }

@@ -1,0 +1,47 @@
+{
+ "tale_id": 29,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 6.8,
+ "usage": {
+  "promptTokenCount": 3926,
+  "candidatesTokenCount": 276,
+  "totalTokenCount": 4202,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 3926
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\",\n      \"dead_returning\"\n    ],\n    \"beings_quote\": \"Take the lid off now,\\\" said the dead man\",\n    \"summary\": \"A young woman named Kate retrieves a stick from a graveyard, encounters a dead man who makes her carry him, and eventually uses his secret to save three young men and find gold.\",\n    \"places\": [\n      {\n        \"name\": \"Drimalegue\",\n        \"quote\": \"There was a young man in the parish of Drimalegue, county Cork\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"county Cork\",\n        \"quote\": \"There was a young man in the parish of Drimalegue, county Cork\",\n        \"modern_name\": \"County Cork\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Gort na Leachtan\",\n        \"quote\": \"is Gort na Leachtan (the field of the stone heaps) as fortune.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost",
+   "dead_returning"
+  ],
+  "beings_quote": "Take the lid off now,\" said the dead man",
+  "summary": "A young woman named Kate retrieves a stick from a graveyard, encounters a dead man who makes her carry him, and eventually uses his secret to save three young men and find gold.",
+  "places": [
+   {
+    "name": "Drimalegue",
+    "quote": "There was a young man in the parish of Drimalegue, county Cork",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "county Cork",
+    "quote": "There was a young man in the parish of Drimalegue, county Cork",
+    "modern_name": "County Cork",
+    "role": "setting"
+   },
+   {
+    "name": "Gort na Leachtan",
+    "quote": "is Gort na Leachtan (the field of the stone heaps) as fortune.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

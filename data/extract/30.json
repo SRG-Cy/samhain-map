@@ -1,0 +1,59 @@
+{
+ "tale_id": 30,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 8.5,
+ "usage": {
+  "promptTokenCount": 2348,
+  "candidatesTokenCount": 359,
+  "totalTokenCount": 2707,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2348
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\",\n      \"fairy\"\n    ],\n    \"beings_quote\": \"when killed by ghosts or fairies.\",\n    \"summary\": \"Various people are attacked and killed by ghosts, including a young man, a servant boy, a man with a hatchet, and a woman carrying a marriage quittance.\",\n    \"places\": [\n      {\n        \"name\": \"Drummond\",\n        \"quote\": \"Four men in the parish of Drummond went to Cahirdonnell\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Cahirdonnell\",\n        \"quote\": \"Four men in the parish of Drummond went to Cahirdonnell to Mass\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Waterville\",\n        \"quote\": \"Some time later a man was drowned in Waterville,\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Cahirciveen\",\n        \"quote\": \"which is over the mountains from Cahirciveen.\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Cahirciveen\",\n        \"quote\": \"She got marriage quittance from the priest in Cahirciveen,\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost",
+   "fairy"
+  ],
+  "beings_quote": "when killed by ghosts or fairies.",
+  "summary": "Various people are attacked and killed by ghosts, including a young man, a servant boy, a man with a hatchet, and a woman carrying a marriage quittance.",
+  "places": [
+   {
+    "name": "Drummond",
+    "quote": "Four men in the parish of Drummond went to Cahirdonnell",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Cahirdonnell",
+    "quote": "Four men in the parish of Drummond went to Cahirdonnell to Mass",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Waterville",
+    "quote": "Some time later a man was drowned in Waterville,",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Cahirciveen",
+    "quote": "which is over the mountains from Cahirciveen.",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Cahirciveen",
+    "quote": "She got marriage quittance from the priest in Cahirciveen,",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

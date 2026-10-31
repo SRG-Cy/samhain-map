@@ -1,0 +1,52 @@
+{
+ "tale_id": 23,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 7.1,
+ "usage": {
+  "promptTokenCount": 1318,
+  "candidatesTokenCount": 289,
+  "totalTokenCount": 1607,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1318
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "{\n  \"beings\": [\n    \"dead_returning\"\n  ],\n  \"beings_quote\": \"I died two weeks ago, but don't be in dread of me\",\n  \"summary\": \"A woman who died in America returns as a ghost to tell a girl to deliver a message to her family.\",\n  \"places\": [\n    {\n      \"name\": \"Ventry Strand\",\n      \"quote\": \"fairy tales told at Ventry Strand.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Cloghane\",\n      \"quote\": \"There was a girl in Cloghane whose name was Mary Shea.\",\n      \"modern_name\": null,\n      \"role\": \"setting\"\n    },\n    {\n      \"name\": \"America\",\n      \"quote\": \"money to go to America with her two girls\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    },\n    {\n      \"name\": \"Castlegregory\",\n      \"quote\": \"a girl in Cloghane was going one evening to Castlegregory for sea-moss.\",\n      \"modern_name\": null,\n      \"role\": \"mentioned\"\n    }\n  ]\n}",
+ "result": {
+  "beings": [
+   "dead_returning"
+  ],
+  "beings_quote": "I died two weeks ago, but don't be in dread of me",
+  "summary": "A woman who died in America returns as a ghost to tell a girl to deliver a message to her family.",
+  "places": [
+   {
+    "name": "Ventry Strand",
+    "quote": "fairy tales told at Ventry Strand.",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Cloghane",
+    "quote": "There was a girl in Cloghane whose name was Mary Shea.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "America",
+    "quote": "money to go to America with her two girls",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Castlegregory",
+    "quote": "a girl in Cloghane was going one evening to Castlegregory for sea-moss.",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

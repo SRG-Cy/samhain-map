@@ -1,0 +1,46 @@
+{
+ "tale_id": 28,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 6.7,
+ "usage": {
+  "promptTokenCount": 5284,
+  "candidatesTokenCount": 260,
+  "totalTokenCount": 5544,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5284
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"Foley's ghost is there as sure as I am standing before you\",\n    \"summary\": \"After Tom Foley's brother dies, a man mistakenly drowns while wearing Tom's coat, leading people to believe Tom is dead until he appears alive.\",\n    \"places\": [\n      {\n        \"name\": \"Castlemain\",\n        \"quote\": \"a farmer who lived at Castlemain, near the Leann River\",\n        \"modern_name\": \"Castlemaine\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Leann River\",\n        \"quote\": \"a farmer who lived at Castlemain, near the Leann River\",\n        \"modern_name\": \"Lee River\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Tralee\",\n        \"quote\": \"who lived eight miles beyond Tralee, on a farm of his own\",\n        \"modern_name\": \"Tralee\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "Foley's ghost is there as sure as I am standing before you",
+  "summary": "After Tom Foley's brother dies, a man mistakenly drowns while wearing Tom's coat, leading people to believe Tom is dead until he appears alive.",
+  "places": [
+   {
+    "name": "Castlemain",
+    "quote": "a farmer who lived at Castlemain, near the Leann River",
+    "modern_name": "Castlemaine",
+    "role": "setting"
+   },
+   {
+    "name": "Leann River",
+    "quote": "a farmer who lived at Castlemain, near the Leann River",
+    "modern_name": "Lee River",
+    "role": "setting"
+   },
+   {
+    "name": "Tralee",
+    "quote": "who lived eight miles beyond Tralee, on a farm of his own",
+    "modern_name": "Tralee",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

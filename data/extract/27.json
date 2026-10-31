@@ -1,0 +1,41 @@
+{
+ "tale_id": 27,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 5.8,
+ "usage": {
+  "promptTokenCount": 3284,
+  "candidatesTokenCount": 226,
+  "totalTokenCount": 3510,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 3284
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\",\n      \"dead_returning\"\n    ],\n    \"beings_quote\": \"In the following tale, that relating to John Cokeley, we have a good instance of punishment by fairies.\",\n    \"summary\": \"John Cokeley is punished by fairies for blocking a passage, leading to his illness and eventual replacement by a fairy substitute.\",\n    \"places\": [\n      {\n        \"name\": \"Cahirciveen\",\n        \"quote\": \"That it is held necessary to free the feet of the corpse is shown by what happened once in Cahirciveen.\",\n        \"modern_name\": \"Caherciveen\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Killarney\",\n        \"quote\": \"The wife went one day to Killarney, where she met the gossip.\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy",
+   "dead_returning"
+  ],
+  "beings_quote": "In the following tale, that relating to John Cokeley, we have a good instance of punishment by fairies.",
+  "summary": "John Cokeley is punished by fairies for blocking a passage, leading to his illness and eventual replacement by a fairy substitute.",
+  "places": [
+   {
+    "name": "Cahirciveen",
+    "quote": "That it is held necessary to free the feet of the corpse is shown by what happened once in Cahirciveen.",
+    "modern_name": "Caherciveen",
+    "role": "mentioned"
+   },
+   {
+    "name": "Killarney",
+    "quote": "The wife went one day to Killarney, where she met the gossip.",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

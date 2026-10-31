@@ -1,0 +1,40 @@
+{
+ "tale_id": 19,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 4.8,
+ "usage": {
+  "promptTokenCount": 1927,
+  "candidatesTokenCount": 180,
+  "totalTokenCount": 2107,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1927
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"a ghost rose up before John, a woman\",\n    \"summary\": \"A young man uses plough chains to capture three successive ghosts, eventually discovering their hidden treasure after they turn into doves.\",\n    \"places\": [\n      {\n        \"name\": \"Castlemain\",\n        \"quote\": \"who lived near Castlemain.\",\n        \"modern_name\": \"Castlemahone\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Ireland\",\n        \"quote\": \"Long ago her father was one of the richest men in all Ireland\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "a ghost rose up before John, a woman",
+  "summary": "A young man uses plough chains to capture three successive ghosts, eventually discovering their hidden treasure after they turn into doves.",
+  "places": [
+   {
+    "name": "Castlemain",
+    "quote": "who lived near Castlemain.",
+    "modern_name": "Castlemahone",
+    "role": "setting"
+   },
+   {
+    "name": "Ireland",
+    "quote": "Long ago her father was one of the richest men in all Ireland",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

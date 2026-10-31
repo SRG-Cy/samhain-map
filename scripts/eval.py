@@ -22,8 +22,8 @@ def main():
         t = tales[int(tid)]
         gold_n = {norm(g) for g in gold}
         reported = {norm(p["name"]) for p in t["places"]}
-        pinned = {norm(p["name"]) for p in t["places"] if p.get("status", "").startswith("verified")}
-        invented = {norm(p["name"]) for p in t["places"] if p.get("status", "").startswith("rejected")}
+        pinned = {norm(p["name"]) for p in t["places"] if p.get("status", "").startswith("pinned")}
+        invented = {norm(p["name"]) for p in t["places"] if p.get("status", "").startswith("refused: quote")}
         # a reported name counts as correct if it matches, contains or is contained in a gold name
         hit = lambda n: any(n == g or n in g or g in n for g in gold_n)
         g_tp = sum(1 for g in gold_n if any(n == g or n in g or g in n for n in reported))

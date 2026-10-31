@@ -10,10 +10,13 @@ const state = { tales: [], byId: new Map(), places: null, filter: null, layer: n
 const panel = document.getElementById("panel-body");
 
 const map = L.map("map", { zoomControl: true, minZoom: 6 }).setView([52.0, -9.6], 8);
-L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+// standard OSM tiles, darkened in CSS (.dark-tiles) to suit the candlelit theme
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 16,
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  className: "dark-tiles",
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
+const isPinned = (p) => p.status?.startsWith("pinned");
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const beingTags = (t) => t.beings.map((b) => `<span class="tag">${esc(BEING_LABEL[b] || b)}</span>`).join("");
@@ -35,15 +38,15 @@ function bindCards() {
 
 function showHome() {
   const all = state.tales.flatMap((t) => t.places);
-  const ok = all.filter((p) => p.status?.startsWith("verified")).length;
-  const thrown = all.length - ok;
+  const ok = all.filter(isPinned).length;
+  const thrown = all.filter((p) => !isPinned(p) && !p.status?.startsWith("listed")).length;
   panel.innerHTML = `
     <h2>Click a place on the map</h2>
     <p class="lede">In the 1890s Jeremiah Curtin sat by firesides in Kerry and wrote down the stories people told him: ghosts on the road to Sneem, fairy cows, the dead coming back. Each glowing place below is somewhere a tale names.</p>
     <div class="stat-row">
       <div class="stat"><b>${state.tales.length}</b><span>tales</span></div>
-      <div class="stat"><b>${ok}</b><span>places checked and pinned</span></div>
-      <div class="stat"><b>${thrown}</b><span>places the checker refused</span></div>
+      <div class="stat"><b>${ok}</b><span>place names checked and pinned</span></div>
+      <div class="stat"><b>${thrown}</b><span>place names the checker would not pin</span></div>
     </div>
     <h3>All tales</h3>
     ${state.tales.filter(visible).map(taleCard).join("")}`;
@@ -64,10 +67,9 @@ function showTale(id) {
   const t = state.byId.get(id);
   const pageLink = t.pages ? `<a href="${SCAN}${t.pages[0]}/mode/1up" target="_blank" rel="noopener">Read the 1895 page scan (p. ${t.pages[0]})</a>` : "";
   const rows = t.places.map((p) => {
-    const ok = p.status?.startsWith("verified");
-    const label = ok
+    const label = isPinned(p)
       ? `<button data-place="${esc(p.place_id)}">${esc(p.matched_name)}</button>, Co. ${esc(p.county)}<span class="st ok">✓ ${esc(p.status)}</span>`
-      : `${esc(p.name)}<span class="st bad">✗ ${esc(p.status)}</span>`;
+      : `${esc(p.name)}<span class="st ${p.status?.startsWith("listed") ? "" : "bad"}">${p.status?.startsWith("listed") ? "·" : "✗"} ${esc(p.status)}</span>`;
     const note = p.note ? `<span class="q">${esc(p.note)}</span>` : "";
     return `<li>${label}<span class="q">“${esc(p.quote)}”</span>${note}</li>`;
   }).join("");

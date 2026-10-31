@@ -1,0 +1,71 @@
+{
+ "tale_id": 22,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 10.9,
+ "usage": {
+  "promptTokenCount": 1472,
+  "candidatesTokenCount": 465,
+  "totalTokenCount": 1937,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1472
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\",\n      \"other\"\n    ],\n    \"beings_quote\": \"a ghost stood before him in the road, and began to make at him.\",\n    \"summary\": \"James delivers a letter to Sneem, encountering ghosts and a headless man along the way, before the storyteller recounts another tale involving a fairy stroke.\",\n    \"places\": [\n      {\n        \"name\": \"Sneem\",\n        \"quote\": \"an errand to Sneem.\",\n        \"modern_name\": \"Sneem\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Blackwater bridge\",\n        \"quote\": \"near Blackwater bridge, half-way between Sneem and Kenmare.\",\n        \"modern_name\": \"Blackwater Bridge\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Kenmare\",\n        \"quote\": \"half-way between Sneem and Kenmare.\",\n        \"modern_name\": \"Kenmare\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Drumfada\",\n        \"quote\": \"I came from Drumfada.\",\n        \"modern_name\": \"Drumfada\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Cahirciveen\",\n        \"quote\": \"what I saw one night beyond Cahirciveen :\",\n        \"modern_name\": \"Caherciveen\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Waterville\",\n        \"quote\": \"at a house near Waterville, about six miles from Derrynane.\",\n        \"modern_name\": \"Waterville\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Derrynane\",\n        \"quote\": \"about six miles from Derrynane.\",\n        \"modern_name\": \"Derrynane\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost",
+   "other"
+  ],
+  "beings_quote": "a ghost stood before him in the road, and began to make at him.",
+  "summary": "James delivers a letter to Sneem, encountering ghosts and a headless man along the way, before the storyteller recounts another tale involving a fairy stroke.",
+  "places": [
+   {
+    "name": "Sneem",
+    "quote": "an errand to Sneem.",
+    "modern_name": "Sneem",
+    "role": "setting"
+   },
+   {
+    "name": "Blackwater bridge",
+    "quote": "near Blackwater bridge, half-way between Sneem and Kenmare.",
+    "modern_name": "Blackwater Bridge",
+    "role": "setting"
+   },
+   {
+    "name": "Kenmare",
+    "quote": "half-way between Sneem and Kenmare.",
+    "modern_name": "Kenmare",
+    "role": "mentioned"
+   },
+   {
+    "name": "Drumfada",
+    "quote": "I came from Drumfada.",
+    "modern_name": "Drumfada",
+    "role": "mentioned"
+   },
+   {
+    "name": "Cahirciveen",
+    "quote": "what I saw one night beyond Cahirciveen :",
+    "modern_name": "Caherciveen",
+    "role": "mentioned"
+   },
+   {
+    "name": "Waterville",
+    "quote": "at a house near Waterville, about six miles from Derrynane.",
+    "modern_name": "Waterville",
+    "role": "mentioned"
+   },
+   {
+    "name": "Derrynane",
+    "quote": "about six miles from Derrynane.",
+    "modern_name": "Derrynane",
+    "role": "mentioned"
+   }
+  ]
+ }
+}
