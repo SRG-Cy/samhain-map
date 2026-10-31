@@ -1,0 +1,11 @@
+{
+ "_about": "Hand labels for the eval: every real place in Ireland each tale names, below county level, as spelled in the tale. Counties and places outside Ireland (America, the city of Cork as a destination is kept) are not pinned by design. Drafted by the coding agent from the tale text; check before quoting numbers.",
+ "_reviewed_by_human": false,
+ "6": ["Listowel"],
+ "9": ["Dingle", "Slea Head", "Ventry", "Rahin", "Rahonain"],
+ "17": ["Slieve Mish", "Cork", "Dingle"],
+ "22": ["Sneem", "Blackwater bridge", "Kenmare", "Drumfada", "Cahirciveen", "Waterville", "Derrynane"],
+ "23": ["Ventry Strand", "Cloghane", "Castlegregory"],
+ "24": ["Tralee"],
+ "26": ["Dingle", "Brandon Mountain"]
+}

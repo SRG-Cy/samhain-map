@@ -1,0 +1,46 @@
+{
+ "tale_id": 8,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 6.6,
+ "usage": {
+  "promptTokenCount": 1451,
+  "candidatesTokenCount": 266,
+  "totalTokenCount": 1717,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1451
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\"\n    ],\n    \"beings_quote\": \"he believed in one minute that it was the godfather who was before him.\",\n    \"summary\": \"After seeing a man cracking nuts on his godfather's tomb, Tom Daly mistakenly believes the man is a ghost, only to realize it was a thief.\",\n    \"places\": [\n      {\n        \"name\": \"Kenmare\",\n        \"quote\": \"Tom Daly lived between Kenmare and Skneem, but nearer to Kenmare\",\n        \"modern_name\": \"Kenmare\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Skneem\",\n        \"quote\": \"Tom Daly lived between Kenmare and Skneem, but nearer to Kenmare\",\n        \"modern_name\": \"Skean\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Drummond Castle\",\n        \"quote\": \"Tom Daly while alive was in the employ of a gentleman Uving at Drummond Castle.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost"
+  ],
+  "beings_quote": "he believed in one minute that it was the godfather who was before him.",
+  "summary": "After seeing a man cracking nuts on his godfather's tomb, Tom Daly mistakenly believes the man is a ghost, only to realize it was a thief.",
+  "places": [
+   {
+    "name": "Kenmare",
+    "quote": "Tom Daly lived between Kenmare and Skneem, but nearer to Kenmare",
+    "modern_name": "Kenmare",
+    "role": "setting"
+   },
+   {
+    "name": "Skneem",
+    "quote": "Tom Daly lived between Kenmare and Skneem, but nearer to Kenmare",
+    "modern_name": "Skean",
+    "role": "setting"
+   },
+   {
+    "name": "Drummond Castle",
+    "quote": "Tom Daly while alive was in the employ of a gentleman Uving at Drummond Castle.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

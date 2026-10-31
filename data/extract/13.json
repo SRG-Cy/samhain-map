@@ -1,0 +1,53 @@
+{
+ "tale_id": 13,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 7.3,
+ "usage": {
+  "promptTokenCount": 2872,
+  "candidatesTokenCount": 295,
+  "totalTokenCount": 3167,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2872
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy_doctor\",\n      \"fairy\"\n    ],\n    \"beings_quote\": \"Maurice Griffin the Fairy Doctor\",\n    \"summary\": \"A man named Maurice Griffin gains supernatural powers of foretelling and curing after consuming milk from a cow that licked a mysterious white foam.\",\n    \"places\": [\n      {\n        \"name\": \"Dun Lean\",\n        \"quote\": \"There was a man at Dun Lean named Maurice Griffin.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Travug\",\n        \"quote\": \"Do you remember that when you were passing Travug your horse stooped to drink\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Cork\",\n        \"quote\": \"In those days everything was carried to Cork on horseback.\",\n        \"modern_name\": \"Cork\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Dingle\",\n        \"quote\": \"Three women were going to a village a mile out of Dingle.\",\n        \"modern_name\": \"Dingle\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy_doctor",
+   "fairy"
+  ],
+  "beings_quote": "Maurice Griffin the Fairy Doctor",
+  "summary": "A man named Maurice Griffin gains supernatural powers of foretelling and curing after consuming milk from a cow that licked a mysterious white foam.",
+  "places": [
+   {
+    "name": "Dun Lean",
+    "quote": "There was a man at Dun Lean named Maurice Griffin.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Travug",
+    "quote": "Do you remember that when you were passing Travug your horse stooped to drink",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Cork",
+    "quote": "In those days everything was carried to Cork on horseback.",
+    "modern_name": "Cork",
+    "role": "mentioned"
+   },
+   {
+    "name": "Dingle",
+    "quote": "Three women were going to a village a mile out of Dingle.",
+    "modern_name": "Dingle",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

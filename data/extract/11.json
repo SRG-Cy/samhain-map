@@ -1,0 +1,40 @@
+{
+ "tale_id": 11,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 5.2,
+ "usage": {
+  "promptTokenCount": 2288,
+  "candidatesTokenCount": 200,
+  "totalTokenCount": 2488,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2288
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\"\n    ],\n    \"beings_quote\": \"he saw a whole troop of fairies going towards a large fort\",\n    \"summary\": \"A gambler finds a young woman in a fairy coffin, rescues her using a magic horn, and eventually marries her after proving his wealth to her parents.\",\n    \"places\": [\n      {\n        \"name\": \"Killarney\",\n        \"quote\": \"he went to a fair which was held near Killarney.\",\n        \"modern_name\": \"Killarney\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Dublin\",\n        \"quote\": \"wished her parents, who lived near Dublin, to know where she was.\",\n        \"modern_name\": \"Dublin\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy"
+  ],
+  "beings_quote": "he saw a whole troop of fairies going towards a large fort",
+  "summary": "A gambler finds a young woman in a fairy coffin, rescues her using a magic horn, and eventually marries her after proving his wealth to her parents.",
+  "places": [
+   {
+    "name": "Killarney",
+    "quote": "he went to a fair which was held near Killarney.",
+    "modern_name": "Killarney",
+    "role": "setting"
+   },
+   {
+    "name": "Dublin",
+    "quote": "wished her parents, who lived near Dublin, to know where she was.",
+    "modern_name": "Dublin",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

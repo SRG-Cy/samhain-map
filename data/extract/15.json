@@ -1,0 +1,58 @@
+{
+ "tale_id": 15,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 8.4,
+ "usage": {
+  "promptTokenCount": 2961,
+  "candidatesTokenCount": 352,
+  "totalTokenCount": 3313,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2961
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\"\n    ],\n    \"beings_quote\": \"in Banog, two fields from your house, is a fairy fort\",\n    \"summary\": \"A poor man travels to Lochlin, meets supernatural beings, and returns to Ireland with gold, but loses his knowledge of the treasure after drinking mouse broth.\",\n    \"places\": [\n      {\n        \"name\": \"Dingle\",\n        \"quote\": \"Between Dingle and the village of Banog there lived one John Shea\",\n        \"modern_name\": \"Dingle\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Banog\",\n        \"quote\": \"Between Dingle and the village of Banog there lived one John Shea\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Cork\",\n        \"quote\": \"till he came to Cork and found a ship bound for Lochlin\",\n        \"modern_name\": \"Cork\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Lochlin\",\n        \"quote\": \"till he came to Cork and found a ship bound for Lochlin\",\n        \"modern_name\": \"Denmark\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Erin\",\n        \"quote\": \"\\\" From Erin,\\\" said Shea.\",\n        \"modern_name\": \"Ireland\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy"
+  ],
+  "beings_quote": "in Banog, two fields from your house, is a fairy fort",
+  "summary": "A poor man travels to Lochlin, meets supernatural beings, and returns to Ireland with gold, but loses his knowledge of the treasure after drinking mouse broth.",
+  "places": [
+   {
+    "name": "Dingle",
+    "quote": "Between Dingle and the village of Banog there lived one John Shea",
+    "modern_name": "Dingle",
+    "role": "setting"
+   },
+   {
+    "name": "Banog",
+    "quote": "Between Dingle and the village of Banog there lived one John Shea",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Cork",
+    "quote": "till he came to Cork and found a ship bound for Lochlin",
+    "modern_name": "Cork",
+    "role": "mentioned"
+   },
+   {
+    "name": "Lochlin",
+    "quote": "till he came to Cork and found a ship bound for Lochlin",
+    "modern_name": "Denmark",
+    "role": "setting"
+   },
+   {
+    "name": "Erin",
+    "quote": "\" From Erin,\" said Shea.",
+    "modern_name": "Ireland",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

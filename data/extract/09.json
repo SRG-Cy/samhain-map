@@ -1,0 +1,59 @@
+{
+ "tale_id": 9,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 8.3,
+ "usage": {
+  "promptTokenCount": 1293,
+  "candidatesTokenCount": 351,
+  "totalTokenCount": 1644,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1293
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\",\n      \"dead_returning\"\n    ],\n    \"beings_quote\": \"there's a ghost in it.\",\n    \"summary\": \"Tom Connors encounters the ghost of a man he thought was dead and later is followed by the spirit of a girl he once knew.\",\n    \"places\": [\n      {\n        \"name\": \"Dingle\",\n        \"quote\": \"who hved beyond Dingle, and there's a ghost in it.\",\n        \"modern_name\": \"Dingle\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Slea Head\",\n        \"quote\": \"between Slea Head and Ventry with other men.\",\n        \"modern_name\": \"Slea Head\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Ventry\",\n        \"quote\": \"between Slea Head and Ventry with other men.\",\n        \"modern_name\": \"Ventry\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Rahin\",\n        \"quote\": \"this side of Rahin.\",\n        \"modern_name\": \"Rahin\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Rahonain\",\n        \"quote\": \"he went on alone to Rahonain, for he thought\",\n        \"modern_name\": \"Rahonain\",\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost",
+   "dead_returning"
+  ],
+  "beings_quote": "there's a ghost in it.",
+  "summary": "Tom Connors encounters the ghost of a man he thought was dead and later is followed by the spirit of a girl he once knew.",
+  "places": [
+   {
+    "name": "Dingle",
+    "quote": "who hved beyond Dingle, and there's a ghost in it.",
+    "modern_name": "Dingle",
+    "role": "mentioned"
+   },
+   {
+    "name": "Slea Head",
+    "quote": "between Slea Head and Ventry with other men.",
+    "modern_name": "Slea Head",
+    "role": "setting"
+   },
+   {
+    "name": "Ventry",
+    "quote": "between Slea Head and Ventry with other men.",
+    "modern_name": "Ventry",
+    "role": "setting"
+   },
+   {
+    "name": "Rahin",
+    "quote": "this side of Rahin.",
+    "modern_name": "Rahin",
+    "role": "setting"
+   },
+   {
+    "name": "Rahonain",
+    "quote": "he went on alone to Rahonain, for he thought",
+    "modern_name": "Rahonain",
+    "role": "setting"
+   }
+  ]
+ }
+}

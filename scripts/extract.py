@@ -60,7 +60,8 @@ def call_gemma(model, key, prompt):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     body = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0, "maxOutputTokens": 2048},
+        # JSON mode stops Gemma 4 26B from looping in its reasoning; at temperature 0 it repeated itself
+        "generationConfig": {"temperature": 0.3, "maxOutputTokens": 8192, "responseMimeType": "application/json"},
     }
     req = urllib.request.Request(
         url,
@@ -69,19 +70,33 @@ def call_gemma(model, key, prompt):
     )
     with urllib.request.urlopen(req, timeout=180) as r:
         data = json.loads(r.read())
-    return data["candidates"][0]["content"]["parts"][0]["text"], data.get("usageMetadata", {})
+    parts = data["candidates"][0]["content"]["parts"]
+    # Gemma 4 can return its reasoning as separate "thought" parts; keep only the answer
+    answer = [p["text"] for p in parts if "text" in p and not p.get("thought")]
+    return (answer[-1] if answer else parts[-1]["text"]), data.get("usageMetadata", {})
 
 
 def parse_json(raw):
-    m = re.search(r"\{.*\}", raw, re.S)
-    if not m:
-        raise ValueError("no JSON object in reply")
-    return json.loads(m.group(0))
+    """Take the last complete JSON object in the reply (reasoning text may come first)."""
+    raw = re.sub(r"```(?:json)?", "", raw)
+    dec = json.JSONDecoder()
+    found = None
+    for i, ch in enumerate(raw):
+        if ch == "{":
+            try:
+                obj, _ = dec.raw_decode(raw[i:])
+            except json.JSONDecodeError:
+                continue
+            if isinstance(obj, dict) and "places" in obj:
+                found = obj
+    if found is None:
+        raise ValueError("no JSON object with 'places' in reply")
+    return found
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--model", default="gemma-4-31b-it")
+    ap.add_argument("--model", default="gemma-4-26b-a4b-it")
     ap.add_argument("--only", type=int, nargs="*")
     ap.add_argument("--force", action="store_true")
     args = ap.parse_args()
@@ -110,6 +125,8 @@ def main():
                 time.sleep(20 * (attempt + 1))
             except (ValueError, json.JSONDecodeError, KeyError, TimeoutError) as e:
                 print(f"tale {t['id']}: bad reply ({e}), retrying")
+                if "raw" in locals():
+                    (CACHE / f"{t['id']:02d}.failed.txt").write_text(raw, encoding="utf-8")
                 time.sleep(5)
         else:
             print(f"tale {t['id']}: gave up")

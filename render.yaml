@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: samhain-map
+    runtime: static
+    staticPublishPath: ./web
+    headers:
+      - path: /data/*
+        name: Cache-Control
+        value: public, max-age=3600

@@ -1,0 +1,47 @@
+{
+ "tale_id": 1,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 7.0,
+ "usage": {
+  "promptTokenCount": 4011,
+  "candidatesTokenCount": 285,
+  "totalTokenCount": 4296,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 4011
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\",\n      \"ghost\"\n    ],\n    \"beings_quote\": \"Oh, then, it's Daniel O'Donohue, King of Lochlein, that played the trick on you\",\n    \"summary\": \"A man named John Connors is tricked by a fairy king into sleeping for three weeks, causing his family to believe he is dead.\",\n    \"places\": [\n      {\n        \"name\": \"Killarney\",\n        \"quote\": \"There was a man named John Connors, who lived near Killarney\",\n        \"modern_name\": \"Killarney\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Beaufort\",\n        \"quote\": \"The village to which he was going was Beaufort, south of Killarney.\",\n        \"modern_name\": \"Beaufort\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Lochlein\",\n        \"quote\": \"Oh, then, it's Daniel O'Donohue, King of Lochlein, that played the trick on you\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy",
+   "ghost"
+  ],
+  "beings_quote": "Oh, then, it's Daniel O'Donohue, King of Lochlein, that played the trick on you",
+  "summary": "A man named John Connors is tricked by a fairy king into sleeping for three weeks, causing his family to believe he is dead.",
+  "places": [
+   {
+    "name": "Killarney",
+    "quote": "There was a man named John Connors, who lived near Killarney",
+    "modern_name": "Killarney",
+    "role": "setting"
+   },
+   {
+    "name": "Beaufort",
+    "quote": "The village to which he was going was Beaufort, south of Killarney.",
+    "modern_name": "Beaufort",
+    "role": "setting"
+   },
+   {
+    "name": "Lochlein",
+    "quote": "Oh, then, it's Daniel O'Donohue, King of Lochlein, that played the trick on you",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

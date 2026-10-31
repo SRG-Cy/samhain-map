@@ -1,0 +1,34 @@
+{
+ "tale_id": 6,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 4.1,
+ "usage": {
+  "promptTokenCount": 1367,
+  "candidatesTokenCount": 151,
+  "totalTokenCount": 1518,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1367
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\"\n    ],\n    \"beings_quote\": \"She knew that she was in a fort among fairies\",\n    \"summary\": \"A midwife is taken by a fairy on a plough beam to attend a birth, and later loses an eye after accidentally touching herself with magical ointment.\",\n    \"places\": [\n      {\n        \"name\": \"Listowel\",\n        \"quote\": \"There was an old woman, a midwife, who lived in a little house by herself between this and Listowel.\",\n        \"modern_name\": \"Listowel\",\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy"
+  ],
+  "beings_quote": "She knew that she was in a fort among fairies",
+  "summary": "A midwife is taken by a fairy on a plough beam to attend a birth, and later loses an eye after accidentally touching herself with magical ointment.",
+  "places": [
+   {
+    "name": "Listowel",
+    "quote": "There was an old woman, a midwife, who lived in a little house by herself between this and Listowel.",
+    "modern_name": "Listowel",
+    "role": "setting"
+   }
+  ]
+ }
+}

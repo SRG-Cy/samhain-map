@@ -1,0 +1,65 @@
+{
+ "tale_id": 16,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 10.0,
+ "usage": {
+  "promptTokenCount": 2859,
+  "candidatesTokenCount": 427,
+  "totalTokenCount": 3286,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2859
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\",\n      \"saint\"\n    ],\n    \"beings_quote\": \"they saw the ghost of a woman, and she in chains.\",\n    \"summary\": \"After a family is destroyed by fire due to a mother's cruelty, Saint Martin protects the surviving children from the mother's vengeful ghost.\",\n    \"places\": [\n      {\n        \"name\": \"Iveragh\",\n        \"quote\": \"In Iveragh, not very far from the town of Cahirciveen,\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Cahirciveen\",\n        \"quote\": \"In Iveragh, not very far from the town of Cahirciveen,\",\n        \"modern_name\": \"Caherciveen\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Kerry Mountains\",\n        \"quote\": \"This was before the roads and cars were in the Kerry Mountains.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Cork\",\n        \"quote\": \"James Shea was going in the beginning of November to Cork\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Killarney\",\n        \"quote\": \"They stopped the first night at a farmer's house not far from Killarney.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Rathmore\",\n        \"quote\": \"They never stopped nor stayed till they came to Rathmore, near Cork,\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost",
+   "saint"
+  ],
+  "beings_quote": "they saw the ghost of a woman, and she in chains.",
+  "summary": "After a family is destroyed by fire due to a mother's cruelty, Saint Martin protects the surviving children from the mother's vengeful ghost.",
+  "places": [
+   {
+    "name": "Iveragh",
+    "quote": "In Iveragh, not very far from the town of Cahirciveen,",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Cahirciveen",
+    "quote": "In Iveragh, not very far from the town of Cahirciveen,",
+    "modern_name": "Caherciveen",
+    "role": "setting"
+   },
+   {
+    "name": "Kerry Mountains",
+    "quote": "This was before the roads and cars were in the Kerry Mountains.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Cork",
+    "quote": "James Shea was going in the beginning of November to Cork",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Killarney",
+    "quote": "They stopped the first night at a farmer's house not far from Killarney.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Rathmore",
+    "quote": "They never stopped nor stayed till they came to Rathmore, near Cork,",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

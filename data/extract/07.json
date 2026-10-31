@@ -1,0 +1,47 @@
+{
+ "tale_id": 7,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 6.3,
+ "usage": {
+  "promptTokenCount": 3089,
+  "candidatesTokenCount": 250,
+  "totalTokenCount": 3339,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 3089
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"ghost\",\n      \"fairy\"\n    ],\n    \"beings_quote\": \"He sang about the good people, the fairies.\",\n    \"summary\": \"After being insulted by a woman, a coffin-maker invites the dead to a feast, resulting in a chaotic gathering of skeletons at his shop.\",\n    \"places\": [\n      {\n        \"name\": \"Cork\",\n        \"quote\": \"There lived a man in Cork whose name was Daniel Crowley.\",\n        \"modern_name\": \"Cork\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Brandon Mountain\",\n        \"quote\": \"you'd think it was Brandon Mountain that was striking Mount Eagle\",\n        \"modern_name\": \"Brandon Mountain\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Mount Eagle\",\n        \"quote\": \"you'd think it was Brandon Mountain that was striking Mount Eagle\",\n        \"modern_name\": \"Mount Eagle\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "ghost",
+   "fairy"
+  ],
+  "beings_quote": "He sang about the good people, the fairies.",
+  "summary": "After being insulted by a woman, a coffin-maker invites the dead to a feast, resulting in a chaotic gathering of skeletons at his shop.",
+  "places": [
+   {
+    "name": "Cork",
+    "quote": "There lived a man in Cork whose name was Daniel Crowley.",
+    "modern_name": "Cork",
+    "role": "setting"
+   },
+   {
+    "name": "Brandon Mountain",
+    "quote": "you'd think it was Brandon Mountain that was striking Mount Eagle",
+    "modern_name": "Brandon Mountain",
+    "role": "mentioned"
+   },
+   {
+    "name": "Mount Eagle",
+    "quote": "you'd think it was Brandon Mountain that was striking Mount Eagle",
+    "modern_name": "Mount Eagle",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+﻿tale  1 John Connors and the Fairies             places=3 beings=['fairy', 'ghost']
+tale  2 Fitzgerald and Daniel O'Donohue          places=4 beings=['fairy']
+tale  3 The Fairies of Rahonain and Elizabeth Sh places=5 beings=['fairy', 'changeling']
+tale  4 The Knights of Kerry: Rahonain Castle    places=8 beings=['banshee', 'fairy']
+tale  5 The Cattle Jobber of Awnascawil          places=1 beings=['fairy']
+tale  6 The Midwife of Listowel                  places=1 beings=['fairy']
+tale  7 Daniel Crowley and the Ghosts            places=3 beings=['ghost', 'fairy']
+tale 8: HTTP 500 {
+  "error": {
+    "code": 500,
+    "message": "Internal error encountered.",
+    "status": "INTERNAL"
+  }
+}
+
+tale  8 Tom Daly and the Nut-eating Ghost        places=3 beings=['ghost']
+tale  9 Tom Connors and the Dead Girl            places=5 beings=['ghost', 'dead_returning']
+tale 10 The Farmer of Tralee and the Fairy Cows  places=2 beings=['fairy']
+tale 11 The Two Gamblers and the Fairies         places=2 beings=['fairy']
+tale 12 The Girl and the Robber                  places=3 beings=['saint']
+tale 13 Maurice Griffin the Fairy Doctor         places=4 beings=['fairy_doctor', 'fairy']
+tale 14 The Three Sisters and their Husbands' Th places=2 beings=['devil']
+tale 15 John Shea and the Treasure               places=5 beings=['fairy']
+tale 16: HTTP 429 {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota ex
+tale 16 St. Martin's Eve                         places=6 beings=['ghost', 'saint']

@@ -1,0 +1,40 @@
+{
+ "tale_id": 14,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 5.5,
+ "usage": {
+  "promptTokenCount": 4446,
+  "candidatesTokenCount": 206,
+  "totalTokenCount": 4652,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 4446
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"devil\"\n    ],\n    \"beings_quote\": \"screaming to the people who were sitting outside that the devil was coming\",\n    \"summary\": \"Three sisters compete to outwit their husbands to win a prize from Lord Fermoy, using various tricks to fool them.\",\n    \"places\": [\n      {\n        \"name\": \"Cork\",\n        \"quote\": \"In the county Cork, a mile and a half from Fermoy, there lived three brothers.\",\n        \"modern_name\": \"County Cork\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Fermoy\",\n        \"quote\": \"In the county Cork, a mile and a half from Fermoy, there lived three brothers.\",\n        \"modern_name\": \"Fermoy\",\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "devil"
+  ],
+  "beings_quote": "screaming to the people who were sitting outside that the devil was coming",
+  "summary": "Three sisters compete to outwit their husbands to win a prize from Lord Fermoy, using various tricks to fool them.",
+  "places": [
+   {
+    "name": "Cork",
+    "quote": "In the county Cork, a mile and a half from Fermoy, there lived three brothers.",
+    "modern_name": "County Cork",
+    "role": "setting"
+   },
+   {
+    "name": "Fermoy",
+    "quote": "In the county Cork, a mile and a half from Fermoy, there lived three brothers.",
+    "modern_name": "Fermoy",
+    "role": "setting"
+   }
+  ]
+ }
+}

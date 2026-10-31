@@ -1,0 +1,77 @@
+{
+ "tale_id": 4,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 12.7,
+ "usage": {
+  "promptTokenCount": 2439,
+  "candidatesTokenCount": 555,
+  "totalTokenCount": 2994,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2439
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"banshee\",\n      \"fairy\"\n    ],\n    \"beings_quote\": \"A banshee came then and took the child\",\n    \"summary\": \"After a knight's men kill a man named Trant, a banshee takes his infant son to a fairy fort, but the nurse rescues him.\",\n    \"places\": [\n      {\n        \"name\": \"Dingle\",\n        \"quote\": \"when the knights of Kerry were in Dingle and wished to build a castle\",\n        \"modern_name\": \"Dingle\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Ventry\",\n        \"quote\": \"they went to a place above Ventry, and the chief knight set men to work there.\",\n        \"modern_name\": \"Ventry\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Rahonain\",\n        \"quote\": \"\\\" Beyond there at Rahonain,\\\" said the voice.\",\n        \"modern_name\": \"Rahonain\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Cahir a Trant\",\n        \"quote\": \"Trant lived in Cahir a Trant at that time\",\n        \"modern_name\": \"Cahir a Trant\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Kil Vicadowny\",\n        \"quote\": \"and his nurse lived in Kil Vicadowny.\",\n        \"modern_name\": \"Kilvicadowny\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Mount Eagle\",\n        \"quote\": \"Young Trant took his course back to Kil Vicadowny, and around the foot of Mount Eagle\",\n        \"modern_name\": \"Mount Eagle\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Rahonain Mountain\",\n        \"quote\": \"from that he rode to Rahonain Mountain.\",\n        \"modern_name\": \"Rahonain Mountain\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Ballymore\",\n        \"quote\": \"where he turned at last, and was making for home by the way of Ballymore.\",\n        \"modern_name\": \"Ballymore\",\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "banshee",
+   "fairy"
+  ],
+  "beings_quote": "A banshee came then and took the child",
+  "summary": "After a knight's men kill a man named Trant, a banshee takes his infant son to a fairy fort, but the nurse rescues him.",
+  "places": [
+   {
+    "name": "Dingle",
+    "quote": "when the knights of Kerry were in Dingle and wished to build a castle",
+    "modern_name": "Dingle",
+    "role": "setting"
+   },
+   {
+    "name": "Ventry",
+    "quote": "they went to a place above Ventry, and the chief knight set men to work there.",
+    "modern_name": "Ventry",
+    "role": "setting"
+   },
+   {
+    "name": "Rahonain",
+    "quote": "\" Beyond there at Rahonain,\" said the voice.",
+    "modern_name": "Rahonain",
+    "role": "setting"
+   },
+   {
+    "name": "Cahir a Trant",
+    "quote": "Trant lived in Cahir a Trant at that time",
+    "modern_name": "Cahir a Trant",
+    "role": "setting"
+   },
+   {
+    "name": "Kil Vicadowny",
+    "quote": "and his nurse lived in Kil Vicadowny.",
+    "modern_name": "Kilvicadowny",
+    "role": "setting"
+   },
+   {
+    "name": "Mount Eagle",
+    "quote": "Young Trant took his course back to Kil Vicadowny, and around the foot of Mount Eagle",
+    "modern_name": "Mount Eagle",
+    "role": "setting"
+   },
+   {
+    "name": "Rahonain Mountain",
+    "quote": "from that he rode to Rahonain Mountain.",
+    "modern_name": "Rahonain Mountain",
+    "role": "setting"
+   },
+   {
+    "name": "Ballymore",
+    "quote": "where he turned at last, and was making for home by the way of Ballymore.",
+    "modern_name": "Ballymore",
+    "role": "setting"
+   }
+  ]
+ }
+}

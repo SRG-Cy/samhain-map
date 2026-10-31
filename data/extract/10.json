@@ -1,0 +1,40 @@
+{
+ "tale_id": 10,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 5.6,
+ "usage": {
+  "promptTokenCount": 2109,
+  "candidatesTokenCount": 210,
+  "totalTokenCount": 2319,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2109
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\"\n    ],\n    \"beings_quote\": \"\\\" Stop your hand,\\\" said the fairy, \\\" and don't try the like of that.\\\"\",\n    \"summary\": \"A farmer's son helps a fairy retrieve a woman, but after he keeps her for himself, the fairy ruins his family until they recover her through effort.\",\n    \"places\": [\n      {\n        \"name\": \"Tralee\",\n        \"quote\": \"There was a rich farmer near Tralee, and he had a\",\n        \"modern_name\": \"Tralee\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"North of Ireland\",\n        \"quote\": \"They started off and never stopped nor drew bridle till they reached the North of Ireland\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy"
+  ],
+  "beings_quote": "\" Stop your hand,\" said the fairy, \" and don't try the like of that.\"",
+  "summary": "A farmer's son helps a fairy retrieve a woman, but after he keeps her for himself, the fairy ruins his family until they recover her through effort.",
+  "places": [
+   {
+    "name": "Tralee",
+    "quote": "There was a rich farmer near Tralee, and he had a",
+    "modern_name": "Tralee",
+    "role": "setting"
+   },
+   {
+    "name": "North of Ireland",
+    "quote": "They started off and never stopped nor drew bridle till they reached the North of Ireland",
+    "modern_name": null,
+    "role": "mentioned"
+   }
+  ]
+ }
+}

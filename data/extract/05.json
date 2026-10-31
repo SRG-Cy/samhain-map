@@ -1,0 +1,34 @@
+{
+ "tale_id": 5,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 4.4,
+ "usage": {
+  "promptTokenCount": 2268,
+  "candidatesTokenCount": 156,
+  "totalTokenCount": 2424,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2268
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\"\n    ],\n    \"beings_quote\": \"he met the good people [fairies] about nightfall\",\n    \"summary\": \"A cattle jobber is taken to a fairy fort, escapes by breaking the back of a fairy piper, and later encounters a legion of fairies.\",\n    \"places\": [\n      {\n        \"name\": \"Awnascawil\",\n        \"quote\": \"There was a cattle jobber once who was going to a fair near Awnascawil\",\n        \"modern_name\": \"Awnascawil\",\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy"
+  ],
+  "beings_quote": "he met the good people [fairies] about nightfall",
+  "summary": "A cattle jobber is taken to a fairy fort, escapes by breaking the back of a fairy piper, and later encounters a legion of fairies.",
+  "places": [
+   {
+    "name": "Awnascawil",
+    "quote": "There was a cattle jobber once who was going to a fair near Awnascawil",
+    "modern_name": "Awnascawil",
+    "role": "setting"
+   }
+  ]
+ }
+}

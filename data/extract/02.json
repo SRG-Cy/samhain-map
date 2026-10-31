@@ -1,0 +1,52 @@
+{
+ "tale_id": 2,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 7.8,
+ "usage": {
+  "promptTokenCount": 2168,
+  "candidatesTokenCount": 315,
+  "totalTokenCount": 2483,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2168
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\"\n    ],\n    \"beings_quote\": \"Daniel O'Donohue, a fairy chief and King of Lochlein\",\n    \"summary\": \"Fitzgerald challenges the fairies after a blight destroys his potatoes, and Hanifin protects a cow for a fairy child, receiving supernatural help when creditors try to seize his cattle.\",\n    \"places\": [\n      {\n        \"name\": \"Lochlein\",\n        \"quote\": \"Daniel O'Donohue, a fairy chief and King of Lochlein\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Killarney\",\n        \"quote\": \"Lochlein is the old name of the upper lake of Killarney.\",\n        \"modern_name\": \"Killarney\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Ulster\",\n        \"quote\": \"the fairies of Ulster were stronger than the fairies of Munster\",\n        \"modern_name\": \"Ulster\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Munster\",\n        \"quote\": \"the fairies of Ulster were stronger than the fairies of Munster\",\n        \"modern_name\": \"Munster\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy"
+  ],
+  "beings_quote": "Daniel O'Donohue, a fairy chief and King of Lochlein",
+  "summary": "Fitzgerald challenges the fairies after a blight destroys his potatoes, and Hanifin protects a cow for a fairy child, receiving supernatural help when creditors try to seize his cattle.",
+  "places": [
+   {
+    "name": "Lochlein",
+    "quote": "Daniel O'Donohue, a fairy chief and King of Lochlein",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Killarney",
+    "quote": "Lochlein is the old name of the upper lake of Killarney.",
+    "modern_name": "Killarney",
+    "role": "mentioned"
+   },
+   {
+    "name": "Ulster",
+    "quote": "the fairies of Ulster were stronger than the fairies of Munster",
+    "modern_name": "Ulster",
+    "role": "mentioned"
+   },
+   {
+    "name": "Munster",
+    "quote": "the fairies of Ulster were stronger than the fairies of Munster",
+    "modern_name": "Munster",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

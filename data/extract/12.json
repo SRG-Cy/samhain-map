@@ -1,0 +1,46 @@
+{
+ "tale_id": 12,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 6.2,
+ "usage": {
+  "promptTokenCount": 3168,
+  "candidatesTokenCount": 240,
+  "totalTokenCount": 3408,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 3168
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"saint\"\n    ],\n    \"beings_quote\": \"offering a beast to St. Martin.\",\n    \"summary\": \"A brave young woman kills three robbers with a sword and later marries the Mayor of Cork after avenging herself against the last robber.\",\n    \"places\": [\n      {\n        \"name\": \"Kerry\",\n        \"quote\": \"There was a farmer in the county Kerry who had a deal of cattle and sheep.\",\n        \"modern_name\": \"County Kerry\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Ireland\",\n        \"quote\": \"That was a custom all over Ireland, and is observed yet.\",\n        \"modern_name\": \"Ireland\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Cork\",\n        \"quote\": \"\\\" Cork is eight miles from this,\\\" said the old man\",\n        \"modern_name\": \"Cork\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "saint"
+  ],
+  "beings_quote": "offering a beast to St. Martin.",
+  "summary": "A brave young woman kills three robbers with a sword and later marries the Mayor of Cork after avenging herself against the last robber.",
+  "places": [
+   {
+    "name": "Kerry",
+    "quote": "There was a farmer in the county Kerry who had a deal of cattle and sheep.",
+    "modern_name": "County Kerry",
+    "role": "setting"
+   },
+   {
+    "name": "Ireland",
+    "quote": "That was a custom all over Ireland, and is observed yet.",
+    "modern_name": "Ireland",
+    "role": "mentioned"
+   },
+   {
+    "name": "Cork",
+    "quote": "\" Cork is eight miles from this,\" said the old man",
+    "modern_name": "Cork",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

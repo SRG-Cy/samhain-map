@@ -1,0 +1,58 @@
+{
+ "tale_id": 17,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 8.5,
+ "usage": {
+  "promptTokenCount": 1290,
+  "candidatesTokenCount": 358,
+  "totalTokenCount": 1648,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1290
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"saint\"\n    ],\n    \"beings_quote\": \"It was the Almighty God and Saint Martin who sent these cows\",\n    \"summary\": \"After a mysterious gentleman helps James Murray return home quickly from Cork, he receives seven gray cows that make him wealthy until he kills a bull calf.\",\n    \"places\": [\n      {\n        \"name\": \"Slieve Mish\",\n        \"quote\": \"who lived between this and Slieve Mish.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Cork\",\n        \"quote\": \"he went to Cork with four firkins of butter\",\n        \"modern_name\": \"Cork\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Kerry\",\n        \"quote\": \"Near the foot of Slieve Mish, in Kerry.\",\n        \"modern_name\": \"County Kerry\",\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Slieve, Mish\",\n        \"quote\": \"there are cows of that breed around Slieve, Mish, and Dingle to this day\",\n        \"modern_name\": \"Slieve Mish\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Dingle\",\n        \"quote\": \"there are cows of that breed around Slieve, Mish, and Dingle to this day\",\n        \"modern_name\": \"Dingle\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "saint"
+  ],
+  "beings_quote": "It was the Almighty God and Saint Martin who sent these cows",
+  "summary": "After a mysterious gentleman helps James Murray return home quickly from Cork, he receives seven gray cows that make him wealthy until he kills a bull calf.",
+  "places": [
+   {
+    "name": "Slieve Mish",
+    "quote": "who lived between this and Slieve Mish.",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Cork",
+    "quote": "he went to Cork with four firkins of butter",
+    "modern_name": "Cork",
+    "role": "mentioned"
+   },
+   {
+    "name": "Kerry",
+    "quote": "Near the foot of Slieve Mish, in Kerry.",
+    "modern_name": "County Kerry",
+    "role": "setting"
+   },
+   {
+    "name": "Slieve, Mish",
+    "quote": "there are cows of that breed around Slieve, Mish, and Dingle to this day",
+    "modern_name": "Slieve Mish",
+    "role": "mentioned"
+   },
+   {
+    "name": "Dingle",
+    "quote": "there are cows of that breed around Slieve, Mish, and Dingle to this day",
+    "modern_name": "Dingle",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

@@ -2,9 +2,12 @@
 
 For every place Gemma reported:
   1. the quote must really be in the tale, and the name must be in the quote
-  2. the name (or Gemma's suggested modern spelling) must be a real place in the
-     Munster gazetteer (Tailte Éireann townlands + GeoNames)
-  3. if several real places share the name, pick the one closest to the tale's
+  2. counties, provinces and countries are listed but not pinned (too broad)
+  3. the name must be a real place in the Munster gazetteer (Tailte Éireann
+     townlands + GeoNames). If the tale's 1890s spelling isn't found, Gemma's
+     suggested modern spelling (from extract.py or respell.py) is tried, but it is
+     only accepted within MAX_KM of the tale's other places
+  4. if several real places share the name, pick the one closest to the tale's
      other verified places, and say that it was a choice
 
 Anything that fails is kept in the output with the reason, so the map can show
@@ -16,11 +19,18 @@ import json
 import math
 import re
 import unicodedata
-from collections import Counter, defaultdict
+from collections import Counter
+from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-COUNTY_ORDER = ["Kerry", "Cork", "Limerick", "Clare", "Tipperary", "Waterford"]
+MAX_KM = 30  # a respelled place further than this from the tale's other places is refused
+SAME_PLACE_KM = 4  # a townland and a GeoNames point this close with one name are one place
+BROAD = {
+    "ireland", "erin", "munster", "ulster", "leinster", "connacht", "connaught", "kerry", "cork county",
+    "county kerry", "county cork", "county limerick", "county clare", "limerick county", "america",
+    "england", "scotland", "france", "spain", "rome",
+}
 BEINGS = {
     "ghost", "fairy", "banshee", "pooka", "mermaid_or_seal_woman", "devil",
     "dead_returning", "changeling", "fairy_doctor", "saint", "other",
@@ -40,17 +50,37 @@ def quote_in(quote, text_norm):
     return bool(q) and q in text_norm
 
 
-def dist(a, b):
-    return math.hypot(a["lat"] - b["lat"], (a["lon"] - b["lon"]) * math.cos(math.radians(52)))
+def km(a, b):
+    dy = (a["lat"] - b["lat"]) * 111.0
+    dx = (a["lon"] - b["lon"]) * 111.0 * math.cos(math.radians(52))
+    return math.hypot(dx, dy)
+
+
+def clusters(cands):
+    """Group candidates that are the same place (townland + town point a few km apart)."""
+    groups = []
+    for c in cands:
+        for g in groups:
+            if km(g[0], c) <= SAME_PLACE_KM:
+                g.append(c)
+                break
+        else:
+            groups.append([c])
+    # represent each group by a townland polygon if there is one (clickable area), else the point
+    return [sorted(g, key=lambda c: 0 if c["kind"] == "townland" else 1)[0] for g in groups]
 
 
 def main():
     tales = json.loads((ROOT / "data/tales.json").read_text(encoding="utf-8"))
     gaz = json.loads((ROOT / "data/gazetteer.json").read_text(encoding="utf-8"))
     shapes = json.loads((ROOT / "data/townland_shapes.json").read_text(encoding="utf-8"))
+    respell_file = ROOT / "data/respell.json"
+    respell = json.loads(respell_file.read_text(encoding="utf-8")) if respell_file.exists() else {}
 
     index = defaultdict(list)
     for p in gaz:
+        if p["kind"].startswith("geonames:ADM") or p["kind"] in ("geonames:RGN", "geonames:AREA"):
+            continue
         for n in [p["name"], *(p.get("alt") or [])]:
             index[norm(n)].append(p)
 
@@ -69,59 +99,65 @@ def main():
         beings_quote_ok = quote_in(bq, text_norm)
         stats["beings_quote_ok" if beings_quote_ok else "beings_quote_bad"] += 1
 
-        places, seen = [], set()
+        places = []
         for pl in res.get("places", []):
             name, quote = pl.get("name") or "", pl.get("quote") or ""
-            item = {"name": name, "quote": quote, "role": pl.get("role"), "modern_name": pl.get("modern_name")}
+            item = {"name": name, "quote": quote, "role": pl.get("role")}
             stats["reported"] += 1
             if not quote_in(quote, text_norm) or norm(name) not in norm(quote):
-                item["status"] = "rejected: quote not in tale"
-                stats["rejected_quote"] += 1
-                places.append(item)
-                continue
-            cands = index.get(norm(name), [])
-            via = "spelling in tale"
-            if not cands and pl.get("modern_name"):
-                cands = index.get(norm(pl["modern_name"]), [])
-                via = "modern spelling suggested by Gemma"
-            if not cands:
-                item["status"] = "unmatched: not in gazetteer"
-                stats["unmatched"] += 1
-                places.append(item)
-                continue
-            item["candidates"] = cands
-            item["via"] = via
+                item["status"] = "refused: quote not in the tale"
+                stats["refused_quote"] += 1
+            elif norm(name) in BROAD or norm(name).startswith("county "):
+                item["status"] = "listed: too broad to pin"
+                stats["too_broad"] += 1
+            else:
+                exact = index.get(norm(name), [])
+                if exact:
+                    item.update(cands=clusters(exact), via="tale")
+                else:
+                    tries = [pl.get("modern_name"), *(respell.get(norm(name), {}).get("suggestions", []))]
+                    for alt in [a for a in tries if a]:
+                        if index.get(norm(alt)):
+                            item.update(cands=clusters(index[norm(alt)]), via="modern", suggested=alt)
+                            break
+                    else:
+                        item["status"] = "not pinned: no such place found"
+                        stats["unmatched"] += 1
             places.append(item)
 
-        # resolve candidates: prefer a single unambiguous match, then closeness to the others
-        anchors = [p["candidates"][0] for p in places if p.get("candidates") and len(p["candidates"]) == 1]
+        # anchors: places that match the tale's own spelling with exactly one real location
+        anchors = [p["cands"][0] for p in places if p.get("via") == "tale" and len(p["cands"]) == 1]
+        if not anchors:
+            anchors = [c for p in places if p.get("via") == "tale" for c in p["cands"] if c["county"] == "Kerry"][:3]
+        centre = None
+        if anchors:
+            centre = {"lat": sum(a["lat"] for a in anchors) / len(anchors),
+                      "lon": sum(a["lon"] for a in anchors) / len(anchors)}
+
+        seen = set()
         for p in places:
-            cands = p.pop("candidates", None)
+            cands = p.pop("cands", None)
             if not cands:
                 continue
-            if len(cands) == 1:
-                pick, note = cands[0], None
-            else:
-                ref = anchors or [c for c in cands if c["kind"].startswith("geonames:PPL")] or cands
-                cy = sum(a["lat"] for a in ref) / len(ref)
-                cx = sum(a["lon"] for a in ref) / len(ref)
-                centre = {"lat": cy, "lon": cx}
-                cands = sorted(
-                    cands,
-                    key=lambda c: (dist(c, centre), COUNTY_ORDER.index(c["county"]) if c["county"] in COUNTY_ORDER else 9),
-                )
-                pick, note = cands[0], f"{len(cands)} places share this name; chose the one nearest the tale's other places"
-            key = (pick["id"])
-            if key in seen:
+            via = p.pop("via")
+            ref = centre or {"lat": 52.1, "lon": -9.7}  # middle of Kerry, where Curtin collected
+            cands = sorted(cands, key=lambda c: km(c, ref))
+            pick = cands[0]
+            if via == "modern" and centre and km(pick, centre) > MAX_KM:
+                p["status"] = f"refused: '{p['suggested']}' exists, but {round(km(pick, centre))} km from the tale's other places"
+                stats["refused_far"] += 1
+                continue
+            if pick["id"] in seen:
                 p["status"] = "duplicate"
                 continue
-            seen.add(key)
+            seen.add(pick["id"])
+            note = f"{len(cands)} places share this name; chose the one nearest the tale's other places" if len(cands) > 1 else None
             p.update(
-                status="verified" if p["via"] == "spelling in tale" else "verified (modern spelling)",
+                status="pinned" if via == "tale" else f"pinned via modern spelling '{p['suggested']}' (suggested by Gemma)",
                 place_id=pick["id"], matched_name=pick["name"], county=pick["county"],
                 kind=pick["kind"], lat=pick["lat"], lon=pick["lon"], note=note,
             )
-            stats["verified" if p["via"] == "spelling in tale" else "verified_modern"] += 1
+            stats["pinned" if via == "tale" else "pinned_modern"] += 1
             if note:
                 stats["ambiguous_resolved"] += 1
             feat = features.setdefault(pick["id"], {

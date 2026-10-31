@@ -1,0 +1,34 @@
+{
+ "tale_id": 18,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 4.2,
+ "usage": {
+  "promptTokenCount": 2057,
+  "candidatesTokenCount": 151,
+  "totalTokenCount": 2208,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2057
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\"\n    ],\n    \"beings_quote\": \"it isn't much luck there is for any cow or calf that is fond of going into these fairy forts.\",\n    \"summary\": \"A farmer discovers that his dead cow has returned as a supernatural creature being milked by a girl in a fairy fort.\",\n    \"places\": [\n      {\n        \"name\": \"Drummor\",\n        \"quote\": \"In the parish of Drummor lived a farmer, whose name was Tom Connors.\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy"
+  ],
+  "beings_quote": "it isn't much luck there is for any cow or calf that is fond of going into these fairy forts.",
+  "summary": "A farmer discovers that his dead cow has returned as a supernatural creature being milked by a girl in a fairy fort.",
+  "places": [
+   {
+    "name": "Drummor",
+    "quote": "In the parish of Drummor lived a farmer, whose name was Tom Connors.",
+    "modern_name": null,
+    "role": "setting"
+   }
+  ]
+ }
+}

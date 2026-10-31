@@ -1,0 +1,59 @@
+{
+ "tale_id": 3,
+ "model": "gemma-4-26b-a4b-it",
+ "prompt_version": "v1",
+ "seconds": 8.6,
+ "usage": {
+  "promptTokenCount": 2222,
+  "candidatesTokenCount": 362,
+  "totalTokenCount": 2584,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 2222
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "raw": "[\n  {\n    \"beings\": [\n      \"fairy\",\n      \"changeling\"\n    ],\n    \"beings_quote\": \"a practice among the fairies (quite common it seems) of carrying away living people\",\n    \"summary\": \"A woman named Elizabeth Shea is taken by fairies and replaced by a substitute, eventually revealing her true self after seven years.\",\n    \"places\": [\n      {\n        \"name\": \"Rahonain Castle\",\n        \"quote\": \"there lived in a village near Rahonain Castle a man named James\",\n        \"modern_name\": null,\n        \"role\": \"setting\"\n      },\n      {\n        \"name\": \"Dingle\",\n        \"quote\": \"Pat Mahony, who worked for a hotel-keeper in Dingle\",\n        \"modern_name\": \"Dingle\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Listowel\",\n        \"quote\": \"went to a fair at Listowel.\",\n        \"modern_name\": \"Listowel\",\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Rahonain\",\n        \"quote\": \"Do you know families at Rahonain named Shea and Kivane ?\",\n        \"modern_name\": null,\n        \"role\": \"mentioned\"\n      },\n      {\n        \"name\": \"Lismore\",\n        \"quote\": \"in the place where I am living now, in Lismore.\",\n        \"modern_name\": \"Lismore\",\n        \"role\": \"mentioned\"\n      }\n    ]\n  }\n]",
+ "result": {
+  "beings": [
+   "fairy",
+   "changeling"
+  ],
+  "beings_quote": "a practice among the fairies (quite common it seems) of carrying away living people",
+  "summary": "A woman named Elizabeth Shea is taken by fairies and replaced by a substitute, eventually revealing her true self after seven years.",
+  "places": [
+   {
+    "name": "Rahonain Castle",
+    "quote": "there lived in a village near Rahonain Castle a man named James",
+    "modern_name": null,
+    "role": "setting"
+   },
+   {
+    "name": "Dingle",
+    "quote": "Pat Mahony, who worked for a hotel-keeper in Dingle",
+    "modern_name": "Dingle",
+    "role": "mentioned"
+   },
+   {
+    "name": "Listowel",
+    "quote": "went to a fair at Listowel.",
+    "modern_name": "Listowel",
+    "role": "mentioned"
+   },
+   {
+    "name": "Rahonain",
+    "quote": "Do you know families at Rahonain named Shea and Kivane ?",
+    "modern_name": null,
+    "role": "mentioned"
+   },
+   {
+    "name": "Lismore",
+    "quote": "in the place where I am living now, in Lismore.",
+    "modern_name": "Lismore",
+    "role": "mentioned"
+   }
+  ]
+ }
+}

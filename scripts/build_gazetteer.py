@@ -67,6 +67,11 @@ def main():
             pt = Point(lon, lat)
             county = next((c for c, g in county_shapes.items() if g.contains(pt)), None)
             if not county:
+                # city centres (Cork, Limerick) have no townlands, so they sit in holes in the outline
+                near = min(county_shapes.items(), key=lambda cg: cg[1].distance(pt))
+                if near[1].distance(pt) < 0.05:
+                    county = near[0]
+            if not county:
                 continue
             places.append(
                 {
