@@ -18,13 +18,13 @@ So I built **Samhain Map**: click a place anywhere in Ireland and read the ghost
 
 ## What I Built
 
-![Samhain Map: all of Ireland with glowing marks where the stories happen, filters by book and by ghost, banshee, poltergeist and fairy, and a list of stories](https://raw.githubusercontent.com/SRG-Cy/samhain-map/main/docs/img/home.jpg)
+![Samhain Map: all of Ireland with glowing marks where the stories happen, filters by ghost, banshee, poltergeist and fairy, and a list of stories](https://raw.githubusercontent.com/SRG-Cy/samhain-map/main/docs/img/home.jpg)
 
 {{TALE VIEW SCREENSHOT OR GIF}}
 
 - **A map of Ireland** with a glowing mark at every place the stories happen: 154 stories, 80 places, 22 of the 32 counties, north and south. Click one and you get the stories set there.
 - **Each story** has a one-line summary, the line that shows its ghost or fairy, every place it names with a ✓ or ✗ and the reason, the full text, and a link to the 1895 page scan or the 1914 book.
-- **Filters** by book (Kerry 1895, all Ireland 1914) and by what haunts the story: ghosts, banshees, poltergeists, death warnings, fairies, the dead returning, a seal woman.
+- **Filters** by what haunts the story: ghosts, banshees, poltergeists, death warnings, fairies, the dead returning, a seal woman.
 - **A count of what the checker refused**, right on the front page. That number matters to me as much as the pins.
 
 The rule behind all of it: **Gemma reads. Code decides.**
@@ -33,7 +33,7 @@ The rule behind all of it: **Gemma reads. Code decides.**
 
 **Live:** [samhain-map.onrender.com](https://samhain-map.onrender.com) (no sign-up, works on a phone)
 
-Try: filter by **Ghost**, click **Sneem**, open *The Ghost of Sneem*, then scroll to "Places in this tale". Then switch to **All Ireland, 1914**, zoom into Dublin Bay and click **Dún Laoghaire**: the 1914 story calls it Kingstown.
+Try: filter by **Ghost**, click **Sneem**, open *The Ghost of Sneem*, then scroll to "Places in this tale". Then zoom into Dublin Bay and click **Dún Laoghaire**: the 1914 story calls it Kingstown.
 
 ## Code
 

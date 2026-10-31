@@ -52,11 +52,8 @@ a { color: var(--flame); }
 @keyframes flicker { 0%,100% { opacity: 1; transform: translateX(-50%) scale(1); } 50% { opacity: .82; transform: translateX(-50%) scale(.92, 1.05); } }
 @media (prefers-reduced-motion: reduce) { .candle::before { animation: none; } }
 
-.filter-rows { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
 .filters { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
-#books .chip { font-weight: 600; }
-.tale-card .src { color: var(--muted); font-size: 12px; margin-top: 6px; }
-@media (max-width: 860px) { .filter-rows, .filters { align-items: flex-start; justify-content: flex-start; } }
+@media (max-width: 860px) { .filters { justify-content: flex-start; } }
 .chip {
   border: 1px solid var(--line); background: var(--surface); color: var(--text);
   border-radius: 999px; padding: 5px 12px; font: 500 13px var(--sans); cursor: pointer;

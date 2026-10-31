@@ -2,11 +2,11 @@
 const DATA_VERSION = 4;
 const BOOKS = {
   curtin1895: {
-    short: "Kerry, 1895", source: "Jeremiah Curtin, Tales of the Fairies and of the Ghost World (1895)",
+    source: "Jeremiah Curtin, Tales of the Fairies and of the Ghost World (1895)",
     link: (t) => t.pages && `<a href="https://archive.org/details/cu31924029910563/page/${t.pages[0]}/mode/1up" target="_blank" rel="noopener">Read the 1895 page scan (p. ${t.pages[0]})</a>`,
   },
   seymour1914: {
-    short: "All Ireland, 1914", source: "Seymour & Neligan, True Irish Ghost Stories (1914)",
+    source: "Seymour & Neligan, True Irish Ghost Stories (1914)",
     link: () => `<a href="https://www.gutenberg.org/ebooks/14099" target="_blank" rel="noopener">Read the 1914 book on Project Gutenberg</a>`,
   },
 };
@@ -17,7 +17,7 @@ const BEING_LABEL = {
   poltergeist: "Poltergeist", death_warning: "Death warning",
 };
 
-const state = { tales: [], byId: new Map(), places: null, filter: null, book: null, layer: null };
+const state = { tales: [], byId: new Map(), places: null, filter: null, layer: null };
 const panel = document.getElementById("panel-body");
 
 const map = L.map("map", { zoomControl: true, minZoom: 6 }).setView([53.4, -8.0], 7);
@@ -31,15 +31,13 @@ const isPinned = (p) => p.status?.startsWith("pinned");
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const beingTags = (t) => t.beings.map((b) => `<span class="tag">${esc(BEING_LABEL[b] || b)}</span>`).join("");
-const inBook = (t) => !state.book || t.book === state.book;
-const visible = (t) => inBook(t) && (!state.filter || t.beings.includes(state.filter));
+const visible = (t) => !state.filter || t.beings.includes(state.filter);
 
 function taleCard(t) {
   return `<button class="tale-card" data-tale="${t.id}">
     <div class="t">${esc(t.title)}</div>
     <div class="s">${esc(t.summary || "")}</div>
     <div class="tags">${beingTags(t)}</div>
-    <div class="src">${esc(BOOKS[t.book].short)}</div>
   </button>`;
 }
 
@@ -50,15 +48,14 @@ function bindCards() {
 }
 
 function showHome() {
-  const shown = state.tales.filter(inBook);
-  const all = shown.flatMap((t) => t.places);
+  const all = state.tales.flatMap((t) => t.places);
   const ok = all.filter(isPinned).length;
   const thrown = all.filter((p) => !isPinned(p) && !p.status?.startsWith("listed")).length;
   panel.innerHTML = `
     <h2>Click a place on the map</h2>
     <p class="lede">In the 1890s Jeremiah Curtin sat by firesides in Kerry and wrote down the stories people told him: ghosts on the road to Sneem, fairy cows, the dead coming back. In 1914 a Tipperary rector and a police district inspector printed ghost accounts sent in from all over the country: haunted rectories, banshees, poltergeists. Each glowing place is somewhere a story names.</p>
     <div class="stat-row">
-      <div class="stat"><b>${shown.length}</b><span>stories</span></div>
+      <div class="stat"><b>${state.tales.length}</b><span>stories</span></div>
       <div class="stat"><b>${ok}</b><span>place names checked and pinned</span></div>
       <div class="stat"><b>${thrown}</b><span>place names the checker would not pin</span></div>
     </div>
@@ -138,22 +135,9 @@ function drawPlaces() {
   });
 }
 
-function drawBooks() {
-  const el = document.getElementById("books");
-  const n = (k) => state.tales.filter((t) => t.book === k).length;
-  el.innerHTML = [`<button class="chip" data-k="" aria-pressed="${!state.book}">Both books</button>`]
-    .concat(Object.entries(BOOKS).map(([k, b]) => `<button class="chip" data-k="${k}" aria-pressed="${state.book === k}">${esc(b.short)}<span class="n">${n(k)}</span></button>`))
-    .join("");
-  el.querySelectorAll(".chip").forEach((c) => c.addEventListener("click", () => {
-    state.book = c.dataset.k || null;
-    state.filter = null;
-    drawBooks(); drawFilters(); drawPlaces(); showHome();
-  }));
-}
-
 function drawFilters() {
   const counts = {};
-  state.tales.filter(inBook).forEach((t) => t.beings.forEach((b) => (counts[b] = (counts[b] || 0) + 1)));
+  state.tales.forEach((t) => t.beings.forEach((b) => (counts[b] = (counts[b] || 0) + 1)));
   const keys = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
   const el = document.getElementById("filters");
   el.innerHTML = [`<button class="chip" data-b="" aria-pressed="${!state.filter}">All</button>`]
@@ -177,7 +161,6 @@ async function init() {
   state.tales = tales;
   tales.forEach((t) => state.byId.set(t.id, t));
   state.places = places;
-  drawBooks();
   drawFilters();
   drawPlaces();
   showHome();
