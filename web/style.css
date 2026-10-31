@@ -81,7 +81,27 @@ button { font: inherit; color: inherit; }
 .site {
   all: unset; cursor: pointer; display: flex; gap: 8px; align-items: baseline; padding: 4px 0; width: 100%;
 }
-.site svg { width: 12px; height: 14px; flex: none; fill: var(--moon); transform: translateY(1px); }
+.site { align-items: center; padding: 5px 0; }
+.site img, .site .noimg {
+  width: 52px; height: 52px; flex: none; border-radius: 4px; object-fit: cover;
+  border: 1px solid var(--rule); background: var(--slate-2);
+  filter: saturate(.55) brightness(.85); /* photos join the night instead of glaring */
+}
+.site:hover img { filter: none; }
+.site .noimg { display: grid; place-items: center; }
+.site svg { width: 16px; height: 19px; fill: var(--moon); }
+
+/* a site's photo, toned to the night until you look at it */
+.photo { margin: 4px 0 18px; }
+.photo img {
+  display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 4px;
+  border: 1px solid var(--rule); background: var(--slate-2);
+  filter: saturate(.6) brightness(.8) contrast(1.05); transition: filter .4s ease;
+}
+.photo img:hover { filter: none; }
+.photo figcaption { color: var(--mist); font-size: 13px; margin-top: 6px; }
+.photo figcaption a { color: var(--mist); }
+@media (prefers-reduced-motion: reduce) { .photo img { transition: none; } }
 .site b { font: 400 18px/1.2 var(--fell); color: var(--moon); }
 .site span { color: var(--mist); font-size: 14px; }
 .site:hover b { text-decoration: underline; text-underline-offset: 3px; }

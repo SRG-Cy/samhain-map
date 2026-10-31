@@ -89,6 +89,8 @@ Leap Castle is the one everyone in Ireland names. The 1914 book has it, but unde
 
 The sites are a short hand-picked list, but nothing on it is taken on trust. For each one, code checks that its quote is word for word in exactly one story, and takes the location from the same gazetteer as everything else. Only Charles Fort and Dunseverick Castle, which the gazetteer doesn't have, use Wikipedia's coordinates, and say so. Gill Hall, home of the famous Beresford ghost, is in the 1914 book, but I couldn't find a source for exactly where the house stood, so it isn't a ghost on the map.
 
+Each site has an image from Wikimedia Commons, taken only if its licence is free (all turned out CC BY-SA) and credited on the page. Kilkea Castle has none: Commons tags its postcard CC BY-SA, but the postcard's own credit line says CC BY-NC, and when two licences disagree I leave the image out.
+
 ### Mentioned is not where it happened
 
 My first 1914 map pinned Waterloo, in Co. Cavan. The story says the widow's husband "fought at Waterloo". It also pinned the town of Shannon for "the estuary of the Shannon", and Cashel for "the diocese of Cashel". A review of every 1914 pin found them.

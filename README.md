@@ -35,6 +35,7 @@ python scripts/build_gazetteer.py    # townlands + GeoNames -> data/gazetteer.js
 python scripts/extract.py            # Gemma 4 26B -> data/extract/NN.json (cached, resumable)
 python scripts/verify.py             # checks -> web/data/tales.json, web/data/places.geojson
 python scripts/respell.py && python scripts/verify.py   # modern spellings for old names, then re-check
+python scripts/site_images.py        # freely licensed Commons images of the sites, with credits -> data/site_images.json
 python scripts/sites.py              # famous haunted sites: quote must be in the story -> web/data/sites.json
 python scripts/eval.py               # against data/labels.json
 python -m http.server 8765 --directory web
@@ -58,6 +59,7 @@ Raw inputs (not committed) go in `data/raw/`:
   Two site locations (Charles Fort, Dunseverick Castle) are Wikipedia coordinates; the rest come from GeoNames.
 - Townland boundaries: © Tailte Éireann, CC BY 4.0. Northern Ireland: OSNI Open Data, Open Government Licence v3.
 - Place names: GeoNames, CC BY 4.0.
+- Site images: Wikimedia Commons, CC BY-SA; each is credited (author, licence, file page) on its site page and in `data/site_images.json`.
 - Map tiles: © OpenStreetMap contributors.
 - Model: Gemma 4 (open weights), called through Google AI Studio.
 - Code: MIT.

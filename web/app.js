@@ -1,5 +1,5 @@
 // Samhain Map: tales and verified places come from web/data, written by scripts/verify.py and scripts/sites.py.
-const DATA_VERSION = 5;
+const DATA_VERSION = 6;
 const BOOKS = {
   croker1825: {
     source: "Thomas Crofton Croker, Fairy Legends and Traditions of the South of Ireland (1825)",
@@ -59,6 +59,18 @@ const reveal = () => {
   if (narrow.matches) leaf.scrollIntoView({ behavior: "smooth" });
 };
 const back = `<button class="back">Back to all stories</button>`;
+// Commons serves fixed thumbnail widths; the list uses the small one
+const thumb = (src) => src.replace(/\/\d+px-([^/]+)$/, "/250px-$1");
+
+function photo(s) {
+  const im = s.image;
+  if (!im) return "";
+  const licence = im.licence_url ? `<a href="${esc(im.licence_url)}" target="_blank" rel="noopener">${esc(im.licence)}</a>` : esc(im.licence);
+  return `<figure class="photo">
+    <img src="${esc(im.src)}" alt="${esc(s.name)}" loading="lazy" decoding="async">
+    <figcaption>Image: ${esc(im.author)}, ${licence}, via <a href="${esc(im.page)}" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
+  </figure>`;
+}
 
 function storyRow(t) {
   return `<li><button class="story" data-tale="${t.id}">
@@ -101,13 +113,16 @@ function showHome() {
     <p class="intro">On Samhain night the wall between this world and the other wears thin. These are the stories people told about it, from four old books, each put back on the road, house or lake where it happened.</p>
     <p class="counts">Orange lights are places a story names. White ghosts are famous haunted sites. <b>${state.tales.length}</b> stories; <b>${pinned}</b> place names checked against real townlands and pinned; <b>${refused}</b> the checker refused.</p>
     <h3>Famous haunted sites</h3>
-    <ul class="sites">${state.sites.map((s, i) => `<li><button class="site" data-site="${i}"><svg viewBox="0 0 24 28" aria-hidden="true"><path d="${GHOST_PATH}"/></svg><span><b>${esc(s.name)}</b><br><span>County ${esc(s.county)}</span></span></button></li>`).join("")}</ul>
+    <ul class="sites">${state.sites.map((s, i) => `<li><button class="site" data-site="${i}">${s.image
+      ? `<img src="${esc(thumb(s.image.src))}" alt="" loading="lazy" decoding="async">`
+      : `<span class="noimg"><svg viewBox="0 0 24 28" aria-hidden="true"><path d="${GHOST_PATH}"/></svg></span>`}<span><b>${esc(s.name)}</b><br><span>County ${esc(s.county)}</span></span></button></li>`).join("")}</ul>
     <h3>Stories</h3>
     ${filters()}
     <ul class="stories">${shown.map(storyRow).join("") || `<li class="empty">No stories match.</li>`}</ul>
     <details class="sources"><summary>Sources and licences</summary>
       <p>Jeremiah Curtin, <em>Tales of the Fairies and of the Ghost World</em> (1895), public domain, scan by Cornell University Library via <a href="https://archive.org/details/cu31924029910563">archive.org</a>. St John D. Seymour and Harry L. Neligan, <em>True Irish Ghost Stories</em> (1914), T. Crofton Croker (1825) and D. R. McAnally (1888), public domain, via <a href="https://www.gutenberg.org/">Project Gutenberg</a>.</p>
       <p>Townlands © Tailte Éireann, CC BY 4.0. Northern Ireland townlands and counties: OSNI Open Data, OGL v3. Places: <a href="https://www.geonames.org/">GeoNames</a>, CC BY 4.0. Map © OpenStreetMap contributors.</p>
+      <p>Images of the haunted sites from Wikimedia Commons, each credited on its site page with its licence (CC BY-SA).</p>
       <p>Summaries and place reading by Gemma, an open-weight model. Every pin is checked by code. <a href="https://github.com/SRG-Cy/samhain-map">Code on GitHub</a>.</p>
     </details>`;
   bind();
@@ -120,6 +135,7 @@ function showSite(i) {
     ${back}
     <h2>${esc(s.name)}</h2>
     <p class="meta">A famous haunted site in County ${esc(s.county)}</p>
+    ${photo(s)}
     <blockquote class="moon">${esc(s.quote)}</blockquote>
     <p class="meta">From ${esc(BOOKS[t.book].source)}.</p>
     ${s.note ? `<p class="summary">${esc(s.note)} <a href="${esc(s.note_source)}" target="_blank" rel="noopener">Source</a></p>` : ""}

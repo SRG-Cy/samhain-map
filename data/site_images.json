@@ -1,0 +1,51 @@
+{
+ "Leap Castle": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Castles_of_Leinster-_Leap%2C_Offaly_%28geograph_1952750%29.jpg/960px-Castles_of_Leinster-_Leap%2C_Offaly_%28geograph_1952750%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Castles_of_Leinster-_Leap,_Offaly_(geograph_1952750).jpg",
+  "author": "Mike Searle",
+  "licence": "CC BY-SA 2.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ "Loftus Hall": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Loftus_Hall%2C_Loftushall%2C_Co._Wexford_%281%29_-_geograph.org.uk_-_7610084.jpg/960px-Loftus_Hall%2C_Loftushall%2C_Co._Wexford_%281%29_-_geograph.org.uk_-_7610084.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Loftus_Hall,_Loftushall,_Co._Wexford_(1)_-_geograph.org.uk_-_7610084.jpg",
+  "author": "Mike Searle",
+  "licence": "CC BY-SA 2.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ "Charles Fort": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Kinsale-fortress-plan.jpg/960px-Kinsale-fortress-plan.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Kinsale-fortress-plan.jpg",
+  "author": "Chmee2 or Mates",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Dunluce Castle": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Dunluce_Castle_Northern_Ireland_1.jpg/960px-Dunluce_Castle_Northern_Ireland_1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Dunluce_Castle_Northern_Ireland_1.jpg",
+  "author": "Iain Irwin",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Dunseverick Castle": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/DunseverickCastle.jpg/960px-DunseverickCastle.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:DunseverickCastle.jpg",
+  "author": "The original uploader was Pdean at English Wikipedia.",
+  "licence": "CC BY-SA 2.5",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/2.5"
+ },
+ "Clare Abbey": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Clare_Abbey%2C_County_Clare%2C_Ireland%2C_Autumn%2C_2015%2C_long_exposure.jpg/960px-Clare_Abbey%2C_County_Clare%2C_Ireland%2C_Autumn%2C_2015%2C_long_exposure.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Clare_Abbey,_County_Clare,_Ireland,_Autumn,_2015,_long_exposure.jpg",
+  "author": "Frank Chandler",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Lough Leane": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Lough_Leane_%28pixinn.net%29.jpg/960px-Lough_Leane_%28pixinn.net%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Lough_Leane_(pixinn.net).jpg",
+  "author": "Christophe Meneboeuf",
+  "licence": "CC BY-SA 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/3.0"
+ }
+}
